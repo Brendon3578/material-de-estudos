@@ -20,24 +20,20 @@
 
 # O que é o Microsoft Azure
 
-É a plataforma e Cloud Computing da Microsoft, com vários conjuntos de serviços, que estão em constante expansão, que ajuda os desenvolvedores a superar os desafios empresariais atuais e se preparar para os desafios futuros.
+É a plataforma e Cloud Computing da Microsoft, com vários conjuntos de serviços que são pagos conforme o uso e que estão em constante expansão, que ajuda os desenvolvedores a superar os desafios empresariais atuais e se preparar para os desafios futuros.
 
 - Dá suporte à computação de IaaS, PaaS e SaaS, com serviços (soluções) como VMs, hospedagem de site e banco de dados e serviços de computação avançada, como IA, ML, e IoT
-- A maioria é paga conforme o uso.
 - Oferece armazenamento baseado em nuvem (armazenar ou fazer backup de dados)
 - Oferece serviço de hospedagem escalonável, que permite os desenvolvedores criar usando as ferramentas que quiserem (PHP, Python, Node, Java)
 
 # Contas do Azure
 
-É necessário uma assinatura do Azure para criar e usar os serviços dos Azure
+- É necessário uma assinatura do Azure para criar e usar os serviços dos Azure
+- É possível criar **assinaturas adicionais** para fins de gerenciamento de recursos ou orçamento.
 
-É possível criar **assinaturas adicionais** para fins de gerenciamento de recursos ou orçamento.
-
-Por exemplo se uma empresa quer ter apenas uma conta do Azure para os negócios e assinaturas separadas para cada departamento de TI, a empresa pode criar assinaturas adicionais e organizá-las em seções de fatura, para configurando várias faturas dentro da mesma conta de cobrança usando perfis de cobranças (cada perfil tem sua própria fatura mensal e formas de pagamento).
+Por exemplo se uma empresa quer ter apenas uma conta do Azure para os negócios e **assinaturas separadas** para cada departamento de TI, e organizar essas assinaturas adicionar em seções de fatura, configurando várias faturas dentro da mesma conta de cobrança usando perfis de cobranças (cada perfil tem sua própria fatura mensal e formas de pagamento).
 
 <img alt="Conta do Azure" src="../../assets/account-azure.png" width="450px">
-
-É possível criar uma conta gratuita, mas é necessário ter um  o cartão crédito  e uma conta Microsoft ou Github
 
 É possível criar uma [conta estudante gratuita](https://azure.microsoft.com/free/students/) do Azure que oferece:
 
@@ -47,41 +43,32 @@ Por exemplo se uma empresa quer ter apenas uma conta do Azure para os negócios 
 
 ## Testando recursos em uma conta
 
-O Microsoft Learn oferece uma **área restrita** (um laboratório/sandbox) que fornece acesso a recursos gratuitos, usado apenas para o treinamento dentro da plataforma Learn
+O Microsoft Learn oferece uma **laboratório sandbox** (área restrita) que fornece acesso a recursos gratuitos, usado apenas para o treinamento dentro da plataforma Learn
 
 # Exercício - Explorando o Sandbox do Learn
 
-Você consegue usar a **CLI do PowerShell** para gerenciar o ambiente do Azure
+- Você consegue usar a **CLI do PowerShell** para gerenciar o ambiente do Azure
+- A maioria dos comandos do Azure começa com as letras `az`
 
 ```powershell
 # Use o comando Get-date do PowerShell para obter a data e a hora atuais.
 Get-Date
-```
-
-A maioria dos comandos do Azure começa com as letras `az`
-
-```powershell
+# Usar o comando az version, para ver a versão do CLI do azure
 az version
 ```
 
-OUTPUT:
-
 ![OUTPUT do comando az version](../../assets/learn-az-version.PNG)
 
-É possível usar a CLI do BASH também, escrevendo `bash`
+- É possível usar a CLI do BASH também, escrevendo `bash`
+- Ou voltar novamente para o PowerShell, escrevendo `pwsh`
 
 ```bash
 # Use o comando date do Bash para obter a data e a hora atuais.
 date
 ```
 
-Para voltar novamente para o PowerShell, usa o `pwsh`
-
-É possível usar o **modo interativo** da CLI do Azure. É semelhante a uma IDE (ambiente de desenvolvimento integrado). Usando o Comando `az interactive`.
-
-Nele, não precisa obrigatoriamente inserir `az` para iniciar um comando
-
-É possível usar o **portal do Azure** também para gerenciar os recursos do Azure.
+- É possível usar o **modo interativo** da CLI do Azure usando o comando `az interactive`. É semelhante a uma IDE (ambiente de desenvolvimento integrado), mas o uso de `az` não é obrigatório para escrever um comando que interaja diretamente com o Azure.
+- É possível usar o **portal do Azure** também para gerenciar os recursos do Azure.
 
 # Infraestrutura física do Azure
 
@@ -92,24 +79,24 @@ Os principais componentes da arquitetura do Azure podem ser divididos em dois ag
 
 ## Infraestrutura física
 
-- Começa com datacenters (instalações com recursos organizados em racks com energia, refrigeração e infraestrutura de rede dedicadas). Tendo o Azure datacenters em todo o mundo, sendo eles individuais que não estão diretamente ligados.
+Começa com datacenters (instalações com recursos organizados em racks com energia, refrigeração e infraestrutura de rede dedicadas) instaladas em várias regiões do mundo.
 
-Eles são agrupados em **Regiões do Azure** ou em **Zonas de Disponibilidade do Azure**, projetadas para obter a **resiliência e confiabilidade** para as cargas de trabalho críticas para os negócios.
+Eles são agrupados em **Regiões do Azure** ou em **Zonas de Disponibilidade do Azure**, projetadas para obter a **resiliência e confiabilidade** para obter performance e trabalhar com cargas de trabalho críticas para os negócios.
 
 ### Regiões
 
-Uma região é uma **área geográfica** do planeta que contém pelo menos um, ou vários, datacenters, conectados a uma rede de baixa latência. Com o Azure controlando o acesso aos recursos de modo inteligente em cada região garantindo que as cargas de trabalho sejam **balanceadas corretamente**.
+É uma **área geográfica** do planeta que contém pelo menos um datacenter, que são conectados a uma rede de baixa latência. Com o Azure controlando acesso aos recursos de cada região de modo inteligente, garantindo que as cargas de trabalho sejam **balanceadas corretamente**.
 
-- Quando você implanta um recurso, você necessariamente precisa escolher a região em que ele será implantado
-- Alguns serviços/recursos de VM estão disponíveis somente em determinadas regiões
-- Há alguns serviços globais que não exigem uma região especifica, como o Azure Active Directory, o Gerenciador de Tráfego do Azure, ou o DNS do Azure
+- Quando você implanta um recurso, você necessariamente precisa escolher a região em que ele será implantado.
+- Alguns serviços/recursos de VM estão disponíveis somente em determinadas regiões.
+- Há alguns serviços globais que não exigem uma região especifica, como o Azure Active Directory, o Gerenciador de Tráfego do Azure, ou o DNS do Azure.
 
 ### Zonas de Disponibilidade
 
 São datacenters separados fisicamente dentro de uma região do Azure. Cada zona é composta de um ou mais datacenters.
 
-- Uma zona de disponibilidade é configurada para ser um limite de isolamento
-- Se uma zona ficar inativa, as outras continuarão funcionando
+- Uma zona é configurada para ser um limite de isolamento.
+- Se uma zona ficar inativa, as outras continuarão funcionando.
 - São conectadas por meio de redes de fibra óptica privadas de alta velocidade.
 
 <img alt="Região do Azure" src="../../assets/availability-zones-c22f95a3.png" width="350px">
@@ -121,7 +108,7 @@ Nem todas as Regiões do Azure atualmente dão suporte a zonas de disponibilidad
 Ao hospedar a infraestrutura, a configuração de sua redundância exigirá a criação de ambientes de hardware duplicados. O Azure pode tornar o aplicativo **altamente disponível** por meio dessas zonas de disponibilidade.
 
 - As zonas são usadas principalmente à VMs, discos gerenciados, balanceadores de cargas e banco de dados SQL.
-- Os serviços que dao suporte às zonas possuem três categorias
+- Os serviços que dão suporte às zonas de disponibilidade possuem três categorias
   - **Serviços em zonas**: fixa o recurso a uma zona específica (exemplo: VMs, endereços IP)
   - **Serviços com redundância de zona**: replicação automática entre zonas (exemplo: Banco de Dados SQL)
   - **Serviços não regionais**: serviços  serviços sempre disponíveis em geografias do Azure, sendo também resilientes a interrupções em toda a zona ou toda região
@@ -150,7 +137,7 @@ O Azure também tem regiões soberanas, que são instâncias do Azure isoladas d
 
 ## Recursos e Grupo de Recursos
 
-Qualquer coisa que você cria e implanta é um recurso, sendo o  bloco de construção básico do Azure.
+Qualquer coisa que você cria e implanta é um recurso, sendo o bloco de construção básico do Azure.
 
 <img alt="Grupo de recursos" src="../../assets/region-pairs-7c495a33.png" width="500px">
 
@@ -162,15 +149,16 @@ Qualquer coisa que você cria e implanta é um recurso, sendo o  bloco de constr
   - Se excluir um grupo, excluirá todos os recursos dentro dele.
   - Se conceder ou negar acesso a um grupo de recursos, concederá/negará acesso à todos os recursos dentro dele
 
-Se você estiver provisionando recursos de computação que precisarão de 3 esquemas de acesso diferentes, é melhor agrupar recursos com base no esquema de acesso e depois atribuir acesso no nível do grupo de recursos
+Se você estiver provisionando recursos de computação que precisarão de 3 esquemas de acesso diferentes, a melhor prática é agrupar recursos com base no esquema de acesso e depois atribuir acesso no nível do grupo de recursos
 
 ## Assinaturas (Subscriptions) do Azure
 
 São uma unidade de gerenciamento, cobrança e escala. Elas permitem organizar logicamente os grupos de recursos e facilitar a cobrança
 
-- A utilização do Azure exige uma Assinatura do Azure. Uma assinatura fornece a você acesso autenticado a serviços e produtos do Azure.
+- A utilização do Azure exige uma Assinatura do Azure. Uma assinatura fornece acesso autenticado a serviços e produtos do Azure.
 - Uma assinatura se vincula a uma conta do Azure, que é uma identidade no Azure AD (**Azure Active Directory**) ou em um diretório no qual o Azure AD confia.
-- Uma conta pode ter várias assinaturas, podendo ser utilizado para configurar diferentes **modelos de cobrança** e aplicar diferentes **políticas de gerenciamento de acesso**. Podendo usa-lás para definir **limites** em relação aos recursos do Azure. Existe dois tipos de **limites de assinatura**:
+- Uma conta pode ter várias assinaturas, podendo ser utilizado para configurar diferentes **modelos de cobrança** e aplicar diferentes **políticas de gerenciamento de acesso**. Podendo usa-lás para definir **limites** em relação aos recursos do Azure.
+- Existe dois tipos de **limites de assinatura**:
   - **Limite de cobrança**: usado para determinar como uma conta é cobrada pelo uso do Azure (definir requisitos de cobrança). No qual o Azure gera relatórios de cobrança e faturas separadas
   - **Limite de controle de acesso**: aplicar políticas de gerenciamento de acesso ao nível da assinatura. Usado, por exemplo para criar políticas de assinatura para cad departamento.
 

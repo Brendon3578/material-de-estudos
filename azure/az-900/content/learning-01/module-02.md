@@ -6,9 +6,9 @@ Ao utilizar um serviço ou aplicativo da nuvem, deve-ser considerado dois fatore
 
 ## Alta Disponibilidade (UpTime)
 
-Quando implanta um serviço de TI, é importante que os recursos estejam disponíveis quando necessário. **A alta disponibilidade** significa garantir a **disponibilidade máxima**, independente de interrupções ou eventos que possam ocorrer.
+**A alta disponibilidade** significa garantir a **disponibilidade máxima**, independente de interrupções ou eventos que possam ocorrer.
 
-Ao arquitetar uma solução, deve ser levado em conta as **garantias de disponibilidade do serviço**, que são as SLAs (Service Level Agreement), que são contratos de nível de serviço
+Ao arquitetar uma solução, deve ser levado em conta as **garantias de disponibilidade do serviço**, que são as SLAs ou contratos de nível de serviço (*Service Level Agreement*)
 
 ### SLAs - Garantias de Disponibilidade do Serviço
 
@@ -22,15 +22,13 @@ São contratos formais entre um provedor de serviço e o cliente, que garante ao
 
 ## Escalabilidade
 
-Com a computação a nuvem, outro grande benefício é de os recursos possuem escalabilidade, que é a **capacidade de ajustar recursos par atender à demanda**. Por exemplo, o pico repentino de tráfego sobre um sistema no feriado
+Com a computação a nuvem, outro grande benefício é a **capacidade de ajustar recursos par atender à demanda** (**escalabilidade**). Por exemplo, o pico repentino de tráfego sobre um sistema em uma data de feriado.
 
-Outro benefício é que como a nuvem é um modelo baseado em consumo, vocÊ paga apenas pelo que usa. Se a demanda cair, poderá reduzir seus recursos e, assim, reduzir seus custos
+Sendo um **modelo baseado em consumo**, se a demanda cair, reduzirá seus recursos e por consequência, reduzirá seus custos.
 
-A escala vem com duas variedades: vertical e horizontal. Sendo que a vertical, trabalha com a **Capacidade dos recursos** (potência), e a horizontal, a quantidade do **número dos recursos** (quantidade).
+Há duas maneiras de se escalar um aplicativo: de modo **vertical** ou **horizontal**. Sendo que a vertical, trabalha com a capacidade dos recursos (potência), e a horizontal, a quantidade do número dos recursos (quantidade). Ambos podendo ser configurados automaticamente ou manualmente
 
-Ambos podem ser configurados automaticamente ou manualmente
-
-### Dimensionamento Vertical (Potência)
+### Dimensionamento Vertical (Capacidade)
 
 Utiliza-se quando precisa de maior capacidade de processamento, você pode escalar verticalmente para adicionar mais CPUs ou RAM à máquina virtual ou diminuir as especificações de CPU ou RAM.
 
@@ -48,23 +46,21 @@ Confiabilidade e Previsibilidade são dois benefícios cruciais que um provedor 
 
 **Resiliência** é a capacidade de um sistema de se recuperar de falhas e continuar operando, sendo também um dos pilares do Microsoft Azure Well-Architected Framework.
 
-Com o design descentralizado (não focado em um único local), a nuvem consegue dar suporte a uma infraestrutura confiável e resiliente. Permitindo que os desenvolvedores consigam ter recursos implantados em várias regiões do mundo. Utilizando essa escala global, se houver um evento fatal em uma região, as outras ainda estarão funcionando normalmente.
-
-Em alguns casos o próprio ambiente da nuvem muda automaticamente de uma região para outra.
+Com o design descentralizado, a nuvem consegue dar suporte a uma infraestrutura confiável e resiliente. Permitindo que os desenvolvedores consigam ter recursos implantados em várias regiões do mundo. Se houver um evento fatal em uma região, as outras regiões ainda estarão funcionando normalmente.
 
 ## Previsibilidade
 
 Permite que **custos** e **desempenho** se tornem previsíveis em casos futuros. São bastante influenciadas pelo Microsoft Azure Well-Architected Framework.
 
-### Desempenho
+### Previsibilidade de desempenho
 
 A **previsibilidade do desempenho** se concentra em prever os recursos necessários para oferecer uma experiência positiva aos clientes.
 
 Utilizando ferramentas como: **dimensionamento automático**, **balanceamento de carga** e alta **disponibilidade**, para controlar o acesso às soluções conforme surge sobrecargas sobre os sistemas e lidar com essas sobrecargas.
 
-### Custo
+### Previsibilidade de custos
 
-A **previsibilidade de custos** se concentra em prever o custo dos gastos com a nuvem. No qual o desenvolvedor pode acompanhar o uso de recursos em tempo real, monitorar os recursos para garantir a maior eficiência de uso possível e aplicar a análise de dados para encontrar padrões que ajudam a planejar melhor as implantações dde recursos.
+Se concentra em prever o custo dos gastos com a nuvem. No qual o desenvolvedor pode acompanhar o uso de recursos em **tempo real**, monitorar os recursos para garantir a maior eficiência de uso possível e aplicar a análise de dados para encontrar padrões que ajudam a planejar melhor as implantações dde recursos.
 
 você pode prever custos futuros e ajustar os recursos conforme o necessário. Podendo usar ferramentas como **TCO** (*total cost of ownership* ou custo total de propriedade) ou a Calculadora de Preços para obter uma estimativa de possíveis gastos com a nuvem.
 
@@ -90,19 +86,18 @@ Há dois tipos de Capacidade de Gerenciamento de Nuvem
 
 Diz respeito sobre **como gerenciar seus recursos de nuvem**. Na nuvem, você pode:
 
-- Escala automaticamente os recursos com base na demanda
+- Escalar automaticamente os recursos com base na demanda
 - Implantar recursos com base em um modelo pré-configurado
-- Monitora a integridade dos recursos e substitui os que apresentam falhas
+- Monitorar a integridade dos recursos e substitui os que apresentam falhas
 - Receber alertas automáticos com base em métricas configuradas, ficando ciente do desempenho em tempo real
 
 ## Gerenciamento na nuvem (o meio)
 
 Diz respeito ao **modo de gerenciar seu ambiente de nuvem e seus recursos**. Podendo gerencía-los:
 
-- Por meio de um site Web.
-- Usando uma CLI
+- Por meio de um portal Web (plataforma web).
+- Usando uma CLI ou o PowerShell
 - Usando APIs
-- Usando o PowerShell.
 
 # Recursos adicionais
 
