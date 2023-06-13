@@ -1,4 +1,6 @@
-# Locus de Controle
+# Ser Protagonista da própria carreira
+
+## Locus de Controle
 
 É usado para se referir à percepção que uma pessoa tem sobre as causas do que acontece na sua vida: ou seja, em que medida ela é considerada responsável pela origem do comportamento? Ela é externa ou interna?
 

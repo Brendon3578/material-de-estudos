@@ -63,3 +63,65 @@ constructor() {
 ```
 
 É possível combinar Observables, por exemplo chamar duas APIs concorrentemente, e retornar ao usuário apenas um retorno.
+
+# Resgatando dados pelo URL
+
+- Adicione uma nova rota no module de rotas de produto `product-routing.module.ts`
+
+```ts
+const routes: Routes = [
+  { path: '', redirectTo: 'list', pathMatch: 'full' },
+  { path: 'list', component: ListingComponent },
+  { path: 'new', component: RegisterComponent },
+  { path: 'edit/:id', component: RegisterComponent },
+];
+```
+
+- Crie um novo método no **service** de produto para resgatar um único produto pelo ID
+
+```ts
+export class ProductService {
+  private baseApiUrl = 'http://localhost:3000/';
+
+  constructor(private http: HttpClient) {}
+
+  getProducts(): Observable<ProductList> {
+    return this.http.get<ProductList>(`${this.baseApiUrl}products`);
+  }
+
+  // novo método para resgatar o produto pelo IDd
+  getProductById(id: string): Observable<Product> {
+    return this.http.get<Product>(`${this.baseApiUrl}products/${id}`);
+  }
+}
+```
+
+- Resgate o produto no componente que será renderizado o produto, utilizando o serviço injetado de router `ActivatedRoute`
+
+```ts
+export class RegisterComponent implements OnInit {
+  id!: string;
+  product!: Product;
+
+  constructor(
+    private ProductService: ProductService,
+    private activatedRoute: ActivatedRoute
+  ) {}
+
+  ngOnInit(): void {
+    // pegar o id do produto em uma url: [//http](http://localhost:4200/product/edit/1)
+    // sendo o '/product', o url raiz
+    this.id = this.activatedRoute.snapshot.url[1].path;
+
+    this.ProductService.getProductById(this.id).subscribe(
+      (product: Product) => (this.product = product)
+    );
+  }
+}
+```
+
+# Capturar e Preencher os campos de um Formulário
+
+## Utilizando Template Driven (forma antiga)
+
+## Utilizando Reactive Forms
