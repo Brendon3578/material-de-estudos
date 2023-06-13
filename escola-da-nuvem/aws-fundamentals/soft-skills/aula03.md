@@ -57,7 +57,7 @@ Sintomas de não pertencimento:
 
 ### Curva de aprendizagem
 
-<img src="./images/curva-de-aprendizagem.png" alt="Curva d de aprendizagem" width="400px">
+<img src="./images/curva.png" alt="Curva d de aprendizagem" width="400px">
 
 ## Inteligência Emocional
 
