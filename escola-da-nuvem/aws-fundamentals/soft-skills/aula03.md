@@ -41,7 +41,7 @@ Sintomas de não pertencimento:
 
 ### Zona de Conforto X Zona de Crescimento
 
-![Zona de Conforto e Zona de Crescimento](./images/zona-de-conforto.png)
+<img src="./images/zona-de-conforto.png" alt="Zona de Conforto e Crescimento" width="400px">
 
 ### Ter sempre em mente
 
@@ -57,7 +57,7 @@ Sintomas de não pertencimento:
 
 ### Curva de aprendizagem
 
-![curva de aprendizagem](images/curva-de-aprendizagem.png)
+<img src="./images/curva-de-aprendizagem.png" alt="Curva d de aprendizagem" width="400px">
 
 ## Inteligência Emocional
 

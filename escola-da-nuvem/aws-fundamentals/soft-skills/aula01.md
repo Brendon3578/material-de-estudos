@@ -29,5 +29,4 @@ Para acompanhar o mercado de trabalho é necessário adotar as seguintes tendên
 
 - Competências Comportamentais
 - Competências Técnicas
-
 - Precisam estar ambas em equilíbrio
