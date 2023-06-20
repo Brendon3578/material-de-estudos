@@ -3,6 +3,7 @@
 <h2>Sumário</h2>
 
 - [Começando com um `Hello World!`](#começando-com-um-hello-world)
+- [Comentário](#comentário)
 - [O que é uma função](#o-que-é-uma-função)
 - [Comportamento da função `print`](#comportamento-da-função-print)
   - [Argumentos Posicionais](#argumentos-posicionais)
@@ -45,6 +46,12 @@ nome = input("Digite o seu nome")
 # O nome digitado pelo usuário será exibido em tela (no terminal)
 print(nome)
 ```
+
+## Comentário
+
+Em toda as linguagens de programação, um recurso muito utilizado é os comentários, no qual é possível comentar o que determinado código faz, no python usa-se o símbolo de Cerquilha ou Hashtag: `#`, como visto nos blocos de comando anteriores, para comentar um trecho de código.
+
+Em certas IDEs existem atalhos que podem fazer uma determinada linha ser comentada.
 
 ## O que é uma função
 

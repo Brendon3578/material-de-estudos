@@ -10,6 +10,6 @@ A fonte desse conteúdo foi extraída originalmente do curso de [#MaratónLATAM2
 
 1. [O que é Python?](./content/modulo-1.md)
 2. [Programando em Python e Tipos de Dados](./content/modulo-2.md)
-3. Fazendo cálculos com Python e Lidando com String
+3. [Fazendo cálculos com Python e Tomada de decisão com Python](./content/modulo-3.md)
 4. Booleanos, condicionais, loops, introdução à listas e operações bit a bit
 5. Funções, Tuplas, Dicionários de Dados, Exceptions e Processamento de Dados

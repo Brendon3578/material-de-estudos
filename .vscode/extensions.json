@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "bierner.markdown-checkbox",
+    "bierner.markdown-emoji",
+    "bierner.markdown-footnotes",
+    "shd101wyy.markdown-preview-enhanced",
+    "bierner.markdown-preview-github-styles",
+    "bierner.markdown-mermaid",
+    "bierner.markdown-yaml-preamble",
+    "davidanson.vscode-markdownlint",
+    "pkief.material-icon-theme",
+    "fallenmax.mithril-emmet",
+    "streetsidesoftware.code-spell-checker-portuguese-brazilian",
+    "streetsidesoftware.code-spell-checker"
+  ]
+}

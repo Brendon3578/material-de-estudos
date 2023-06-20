@@ -9,6 +9,11 @@ Anotações sobre o curso de Fundamentos de AWS da Escola da Nuvem ☁
 - [Síndrome do Impostor e Inteligência Emocional](./soft-skills/aula03.md)
 - [Lifelong Learning e o Papel da Mentoria](./soft-skills/aula04.md)
 
+## Aulas - Hardskills
+
+- [Introdução à Computação em Nuvem](./hard-skills/aula01.md)
+  - [Aula de Networking](./hard-skills/career/aula01.md)
+
 ## O que são Softskills
 
 São traços e comportamentos que caracterizam nossos relacionamentos com outros. Engloba a curiosidade, resiliência e a flexibilidade:
