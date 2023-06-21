@@ -1,8 +1,8 @@
 # Certificação Associate Cloud Engineer
 
-No final você tem que ser capaz de:
+Anotações sobre a certificação de Associate Cloud Engineer do Google Cloud. Cada seção abaixo foi extraído da página oficial da certificação do cloud. As anotações que estão nos links abaixo foram de autoria própria (baseado no conteúdo do Google Cloud Skill Boost)
 
-Seção 1: configurar um ambiente de solução de nuvem
+## Seção 1: configurar um ambiente de solução de nuvem
 
 1.1 Configurar [projetos de nuvem](./project/project.md) e contas. As atividades incluem:
 
@@ -22,7 +22,7 @@ Seção 1: configurar um ambiente de solução de nuvem
 
 1.3 Instalar e configurar a interface de linha de comando (CLI), especificamente o [SDK do Cloud](./project/cloud-sdk.md) (por exemplo, configurar o projeto padrão).
 
-Seção 2: planejar e configurar uma solução de nuvem
+## Seção 2: planejar e configurar uma solução de nuvem
 
 2.1 Planejar e estimar o uso dos produtos do Google Cloud usando a calculadora de preços.
 
@@ -42,7 +42,7 @@ Seção 2: planejar e configurar uma solução de nuvem
 - Identificar a localização de recursos em uma rede para disponibilidade;
 - Configurar o Cloud DNS.
 
-Seção 3: implementar uma solução de nuvem
+## Seção 3: implementar uma solução de nuvem
 
 3.1 Implantar e implementar recursos do Compute Engine Inclui as seguintes tarefas:
 
@@ -87,7 +87,7 @@ Seção 3: implementar uma solução de nuvem
 - Como criar infraestrutura usando modelos do Cloud Foundation Toolkit e implementar práticas recomendadas
 - Instalar e configurar o Config Connector no Google Kubernetes Engine para criar, atualizar, excluir e proteger recursos
 
-Seção 4: garantir a operação de uma solução de nuvem
+## Seção 4: garantir a operação de uma solução de nuvem
 
 4.1 Gerenciar recursos do Compute Engine. Inclui as seguintes tarefas:
 
@@ -144,7 +144,7 @@ Seção 4: garantir a operação de uma solução de nuvem
 - Usar o diagnóstico de nuvem para pesquisar um problema do aplicativo (por exemplo, visualizar dados do Cloud Trace e usar o Cloud Debug para visualizar um ponto no tempo do aplicativo)
 - Visualizar o status do Google Cloud
 
-Seção 5: configurar o acesso e a segurança
+## Seção 5: configurar o acesso e a segurança
 
 5.1 Gerenciar o Identity and Access Management (IAM). Inclui as seguintes tarefas:
 

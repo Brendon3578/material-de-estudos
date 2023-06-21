@@ -8,6 +8,7 @@ Esse repositório se trata de anotações de estudo que eu faço enquanto aprend
 - [Angular 15 - Udemy](./udemy/angular15/README.md)
 - [Estudo AZ-900 - Microsoft Learn](./azure/az-900/README.md)
 - [Fundamentos de AWS - Escola da Nuvem](./escola-da-nuvem/aws-fundamentals/README.md)
+- [Cloud Associate Engineer - Google Cloud Skill Boost]
 
 ## 🧱 Conteúdos que não pretendo continuar
 
