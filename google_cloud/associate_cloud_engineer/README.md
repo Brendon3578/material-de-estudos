@@ -4,23 +4,23 @@ No final você tem que ser capaz de:
 
 Seção 1: configurar um ambiente de solução de nuvem
 
-1.1 Configurar projetos de nuvem e contas. As atividades incluem:
+1.1 Configurar [projetos de nuvem](./project/project.md) e contas. As atividades incluem:
 
-- Criar uma hierarquia de recursos
-- Aplicar políticas organizacionais à hierarquia de recursos
-- Conceder papéis do IAM de membros em um projeto
-- Gerenciar usuários e grupos no Cloud Identity (manual e automaticamente)
+- Criar uma [hierarquia de recursos](./project/resource_hierarchy.md)
+- Aplicar [políticas organizacionais à hierarquia de recursos](./project/organization-policy.md)
+- Conceder [papéis do IAM](./project/iam-roles.md) de membros em um projeto
+- [Gerenciar usuários e grupos](./project/users-and-group.md) no Cloud Identity (manual e automaticamente)
 - Ativar APIs nos projetos
 - Provisionar e configurar produtos no pacote de operações do Google Cloud
 
 1.2 Gerenciar as configurações de faturamento. As atividades incluem:
 
-- Criar uma ou mais contas de faturamento;
+- Criar uma ou mais [contas de faturamento](./biling/billing-account.md);
 - Vincular projetos a uma conta de faturamento;
-- Estabelecer orçamentos e alertas de faturamento
+- Estabelecer orçamentos e [alertas de faturamento](./biling/budget-alert.md)
 - Configurar exportações de faturamento
 
-1.3 Instalar e configurar a interface de linha de comando (CLI), especificamente o SDK do Cloud (por exemplo, configurar o projeto padrão).
+1.3 Instalar e configurar a interface de linha de comando (CLI), especificamente o [SDK do Cloud](./project/cloud-sdk.md) (por exemplo, configurar o projeto padrão).
 
 Seção 2: planejar e configurar uma solução de nuvem
 

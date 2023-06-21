@@ -1,4 +1,4 @@
-# Introdução à Computação em Nuvem
+# Introdução de Fundamentos de AWS
 
 ![Conteúdo](./images/services2.png)
 
