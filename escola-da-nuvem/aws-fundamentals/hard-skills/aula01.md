@@ -24,9 +24,9 @@ Ainda hoje há modelos de turnos de 20/7, no qual ficam monitorando o cloud 24 h
 Define qual é sua responsabilidade, e qual é do do provedor da nuvem AWS
 
 - Modelo Tradicional: On Premises
-- **Infraestrutura como Serviço** (IaaS) para Hospedar: AWS cuida da infraestrutura como um todo (Network, Storage, Servers), com você cuidando do Sistema Operacional, Banco de Dados,
-- **Plataforma como Serviço** (PaaS) para Programar: AWS cuida do Sistema Operacional
-- **Software como Serviço** (SaaS) para Usar: Você só cuida dos dados que são sendo manipulados pelo sistema
+- **Infraestrutura como Serviço** (IaaS) para **Hospedar**: AWS cuida da infraestrutura como um todo (Network, Storage, Servers), com você cuidando do Sistema Operacional, Banco de Dados (EC2).
+- **Plataforma como Serviço** (PaaS) para **Programar**: AWS cuida do Sistema Operacional (Amazon RDS)
+- **Software como Serviço** (SaaS) para **Usar**: Você só cuida dos dados que são sendo manipulados pelo sistema (Auto Scaling)
 
 ## Escalabilidade e Elasticidade
 
