@@ -36,7 +36,7 @@ Enquanto a **AWS** gerencia a **segurança DA nuvem** (**Security OF the cloud**
 - Trusted Advisor completo somente nos planos Business, Enterprise On-Ramp e Enterprise
 - Suporte em até 15 minutos, apenas no plano Enterprise
 - Concierge apenas nos planos On-Ramp e Enterprise
-- TAM apenas nos planos Enterprise, porque no OnRamp eles indicam um parceiro
+- TAM (gerente técnico da conta) apenas nos planos Enterprise, porque no OnRamp eles indicam um parceiro
 
 ## Interfaces de Acesso (API)
 

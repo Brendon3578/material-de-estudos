@@ -24,21 +24,21 @@ Anotações sobre a certificação de Associate Cloud Engineer do Google Cloud. 
 
 ## Seção 2: planejar e configurar uma solução de nuvem
 
-2.1 Planejar e estimar o uso dos produtos do Google Cloud usando a calculadora de preços.
+2.1 Planejar e estimar o uso dos produtos do Google Cloud usando a [calculadora de preços](./biling/pricing-calculator.md).
 
 2.2 Planejar e configurar recursos de computação. As considerações incluem:
 
-- Selecionar as opções de computação apropriadas para uma determinada carga de trabalho (por exemplo, Compute Engine, Google Kubernetes Engine, Cloud Run, Cloud Functions)
-- Usar VMs preemptivas e tipos de máquina personalizados, conforme apropriado.
+- Selecionar as [opções de computação](./workload/compute-options.md) apropriadas para uma determinada carga de trabalho (por exemplo, [Compute Engine](./workload/compute-engine.md), [Google Kubernetes Engine](./workload/google-kubernetes-engine.md), [Cloud Run](./workload/cloud-run.md), [Cloud Functions](./workload/cloud-functions.md))
+- Usar [VMs preemptivas](./workload/preemptive-vm.md) e tipos de máquina personalizados, conforme apropriado.
 
-2.3 Planejar e configurar as opções de armazenamento de dados. As considerações incluem:
+2.3 Planejar e configurar as [opções de armazenamento](./workload/storage-options.md) de dados. As considerações incluem:
 
-- Escolher produtos (por exemplo, Cloud SQL, BigQuery, Firestore, Cloud Spanner e Cloud Bigtable)
-- Como escolher as opções de armazenamento (por exemplo, Disco permanente por zona, Disco permanente equilibrado regional, Standard, Nearline, Coldline, Archive)
+- Escolher produtos (por exemplo, [Cloud SQL](./workload/cloud-sql.md), [BigQuery](./workload/bigquery.md), [Firestore](./workload/firestore.md), [Cloud Spanner](./workload/cloud-spanner.md), Cloud Bigtable e [App Engine](./workload/app-engine.md))
+- Como escolher as opções de armazenamento (por exemplo, Disco permanente por zona, Disco permanente equilibrado regional, [Standard, Nearline, Coldline, Archive](./workload/cloud-storage.md))
 
 2.4 Planejar e configurar os recursos de rede. As tarefas desta seção incluem:
 
-- Diferenciar as opções de balanceamento de carga;
+- Diferenciar as opções de [balanceamento de carga](./workload/cloud-load-balancing.md);
 - Identificar a localização de recursos em uma rede para disponibilidade;
 - Configurar o Cloud DNS.
 
@@ -71,7 +71,7 @@ Anotações sobre a certificação de Associate Cloud Engineer do Google Cloud. 
 
 3.5 Implantar e implementar recursos de rede. Inclui as seguintes tarefas:
 
-- Criar uma VPC com sub-redes (por exemplo, VPC de modo personalizado, VPC compartilhada)
+- Criar uma [VPC](./network/vpc.md) com sub-redes (por exemplo, VPC de modo personalizado, VPC compartilhada)
 - Inicializar uma instância do Compute Engine com configuração de rede personalizada (por exemplo, endereço IP somente interno, acesso particular ao Google, endereço IP particular e externo estático, tags de rede)
 - Criar regras de firewall de entrada e saída para uma VPC (por exemplo, sub-redes IP, tags de rede e contas de serviço)
 - Criar uma VPN entre uma Google VPC e uma rede externa usando o Cloud VPN;

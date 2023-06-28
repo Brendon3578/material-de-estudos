@@ -16,3 +16,5 @@ Anotações sobre o curso de Fundamentos de AWS da Escola da Nuvem ☁
   - [🎈 Aula de Networking](./hard-skills/career/aula01.md)
 - [Console Gerenciamento & Gerenciamento Custos](./hard-skills/aula02.md)
   - [🎈 Aula sobre Imagem e Marca Pessoal](./hard-skills/career/aula02.md)
+- [Identidade, Segurança & Computação](./hard-skills/aula03.md)
+  - [🎈 Perfil Comportamental (DISC)](./hard-skills/career/aula03.md)
