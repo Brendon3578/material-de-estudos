@@ -99,6 +99,8 @@ Um ataque DDos foca em vários sistemas sobrecarregar um alvo com tráfego.
 
 - O EC2 (**Elastic Compute Cloud**) é um serviço web que oferece uma **capacidade computacional** segurando, que é uma **instância redimensionável** (escalável/elástica) no Cloud.
 - É um IaaS
+- Oferece um SO do tipo Windows, MacOS e Linux
+- **Cobrança por hora ou segundo** (mínimo de 60 segundos)
 - Você aluga máquinas virtuais - (**EC2**)
 - Pode armazenar dados em volumes virtuais (**EBS - Elastic Block Store**)
 - Pode distribuir a carga de trabalho (**ELB - Elastic Load Balancing**)
@@ -114,7 +116,7 @@ Usa-se EC2 juntamente à EBS (opcional) para ter maior controle sobre o armazena
   <summary>Tipos de instâncias</summary>
 
 - T para Turbo (Burstable)
-- M para a maioria dos cenários (Propósito geral) = 1:4 vCPU para RAM
+- M para a maioria dos casos (propósito geral) = 1:4 vCPU para RAM
 - C para Compute (com a melhor CPU) = 1:2 vCPU para RAM
 - R para Random-Access Memory = 1:8 vCPU para RAM
 - X para Extra-Large Memory (~4TB DRAM)
@@ -127,7 +129,7 @@ Usa-se EC2 juntamente à EBS (opcional) para ter maior controle sobre o armazena
 - F para FPGA
 - A para ARM
 - Z para High Frequency
-- MAC para mac mini
+- MAC para Mac Mini
 
 </details>
 
@@ -135,12 +137,12 @@ Usa-se EC2 juntamente à EBS (opcional) para ter maior controle sobre o armazena
   <summary>Capacidades Adicionais (additional capabilities)</summary>
 
 - a para AMD CPUs
-- b para otimizado para Block Storage
+- b sendo Otimizado para Block Storage
 - d para Directly-Attached Instance Storage (NVMe)
 - e para Extra Capacity (Storage or RAM)
-- g para processadores Graviton2 (AWS)
-- i para processadores Intel (atualmente Ice Lake)
-- n para otimizado para Networking (redes)
+- g para Processadores Graviton2 (AWS)
+- i para Processadores Intel (atualmente Ice Lake)
+- n sendo Otimizado para Networking (redes)
 - z para High Frequency
 
 </details>
