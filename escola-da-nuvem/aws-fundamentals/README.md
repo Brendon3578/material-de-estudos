@@ -2,9 +2,9 @@
 
 Anotações sobre o curso de Fundamentos de AWS da Escola da Nuvem ☁
 
-## Aulas de preparo comportamental - Soft skills
+## 💡 Aulas de preparo comportamental - Soft skills
 
-- [💡 O que são Softskills](./soft-skills/aula00.md)
+- [O que são Softskills](./soft-skills/aula00.md)
 - [Mercado de trabalho e Carreira na nuvem](./soft-skills/aula01.md)
 - [Ser Protagonista da própria carreira](./soft-skills/aula02.md)
 - [Síndrome do Impostor e Inteligência Emocional](./soft-skills/aula03.md)
@@ -17,7 +17,7 @@ Anotações sobre o curso de Fundamentos de AWS da Escola da Nuvem ☁
 - [Perfil Comportamental - DISC](./hard-skills/career/aula03.md)
 - [Aula de CV - Currículo](./hard-skills/career/aula04.md)
 
-## Aulas técnicas - Hard skills
+## 🧱 Aulas técnicas - Hard skills
 
 - [Introdução de Fundamentos de AWS](./hard-skills/aula01.md)
 - [Console Gerenciamento & Gerenciamento Custos](./hard-skills/aula02.md)
