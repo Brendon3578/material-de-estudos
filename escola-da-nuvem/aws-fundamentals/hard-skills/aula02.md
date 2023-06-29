@@ -1,10 +1,21 @@
-# Console Gerenciamento & Gerenciamento Custos
+<h1> Console Gerenciamento & Gerenciamento Custos </h1>
 
-A única região que tem disponibilidade de EC2 é no brasil (são paulo)
+<h2> Sumário </h2>
+
+- [Serviços Regionais](#serviços-regionais)
+- [Serviços Globais](#serviços-globais)
+- [Responsabilidade Compartilhada](#responsabilidade-compartilhada)
+- [3 Níveis (tipos de ofertas) Gratuitos da AWS](#3-níveis-tipos-de-ofertas-gratuitos-da-aws)
+- [Planos de Suporte](#planos-de-suporte)
+- [Interfaces de Acesso (API)](#interfaces-de-acesso-api)
+- [AWS Budget (Criando um orçamento)](#aws-budget-criando-um-orçamento)
+- [AWS Cost Management](#aws-cost-management)
+- [AWS Pricing Calculator](#aws-pricing-calculator)
 
 ## Serviços Regionais
 
 - **Computação**: EC2; AWS Lambda; AWS Elastic Beanstalk; Amazon EC2 Auto Scaling
+- A única região que tem disponibilidade de EC2 é no brasil (são paulo)
 
 ## Serviços Globais
 
@@ -46,15 +57,19 @@ Enquanto a **AWS** gerencia a **segurança DA nuvem** (**Security OF the cloud**
 
 ## AWS Budget (Criando um orçamento)
 
+![AWS Budget](./images/svg/budget.svg)
+
 O AWS Budgets (Orçamentos da AWS) permite que você defina **orçamentos personalizados** e **enviar alertas** quando o uso ou os custos excede o valor orçado.
 
 - Você escolhe o meio de aviso (**e-mail** ou **notificação SNS** -*Amazon Simple Notification Service*) quando o custo real ou previsto e o uso excederem o limite do orçamento criado
 
 ## AWS Cost Management
 
+![AWS Cost Explorer](./images/svg/costexplorer.svg)
+
 É uma interface (dashboard), para visualizar e gerenciar os custos e uso da AWS ao **longo do tempo**.
 
-- Exemplo: Cost Explorer para visualizar os relatórios e baixar os relatórios em modelo CSV
+- Você usa o serivço de **Cost Explorer** para visualizar os relatórios e baixar os relatórios em modelo CSV
 - Não bloqueia o uso após extrapolação do uso
 - Para outros bloqueios em relação ao uso de dados, usa-se outras ferramentas como o **AWS Lambda** para automação de limpeza (inativação) de recursos inutilizados do AWS.
 

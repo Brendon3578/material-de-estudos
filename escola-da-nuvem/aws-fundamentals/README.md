@@ -14,10 +14,14 @@ Anotações sobre o curso de Fundamentos de AWS da Escola da Nuvem ☁
 
 - [Aula de Networking](./hard-skills/career/aula01.md)
 - [Aula sobre Imagem e Marca Pessoal](./hard-skills/career/aula02.md)
-- [Perfil Comportamental (DISC)](./hard-skills/career/aula03.md)
+- [Perfil Comportamental - DISC](./hard-skills/career/aula03.md)
+- [Aula de CV - Currículo](./hard-skills/career/aula04.md)
 
 ## Aulas técnicas - Hard skills
 
 - [Introdução de Fundamentos de AWS](./hard-skills/aula01.md)
 - [Console Gerenciamento & Gerenciamento Custos](./hard-skills/aula02.md)
 - [Identidade, Segurança & Computação](./hard-skills/aula03.md)
+- [AutoScaling, Lambda e Elastic Beanstalk](./hard-skills/aula04.md)
+
+<!-- Todas as imagens do serviços do AWS Foram tiradas desse site: https://awsicons.dev/ -->

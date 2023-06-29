@@ -65,6 +65,8 @@ Exemplo: A política abaixo **permite** que seja possível a listagem de um úni
 
 ### AWS WAF
 
+![AWS WAF](./images/svg/waf.svg)
+
 O **AWS WAF** (Web Application Firewall) é um **firewall de aplicativos** que permite especificar qual tráfego tem o acesso permito ou bloqueado, mediante a definição de **regras** criadas por você.
 
 - Ele atua na camada 7 da aplicação (http)
@@ -72,6 +74,8 @@ O **AWS WAF** (Web Application Firewall) é um **firewall de aplicativos** que p
 - **Geo-match** (bloqueio de países), **size constraints** (limitara tamanho das requisições) e **rate based-rules** (limitar quantidade de requisições por segundo)
 
 ### AWS Shield
+
+![AWS Shield](./images/svg/shield.svg)
 
 É usado pra mitigar (tratar) ataques DDos
 
@@ -96,6 +100,8 @@ Um ataque DDos foca em vários sistemas sobrecarregar um alvo com tráfego.
 ## Computação (EC2)
 
 ### EC2
+
+![Elastic Compute Cloud](./images/svg/ec2.svg)
 
 - O EC2 (**Elastic Compute Cloud**) é um serviço web que oferece uma **capacidade computacional** segurando, que é uma **instância redimensionável** (escalável/elástica) no Cloud.
 - É um IaaS
