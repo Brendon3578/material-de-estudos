@@ -1,4 +1,4 @@
-<h1> AutoScaling, Lambda e Elastic Beanstalk </h1>
+<h1> EC2, AutoScaling, Lambda e Elastic Beanstalk </h1>
 
 </h2> Sumário </h2>
 
@@ -18,7 +18,7 @@
 
 ### Sob Demanda (On-Demand)
 
-- Aalto custo se usado por longo prazo
+- Alto custo se usado por longo prazo
 - Cobrança sobre demanda (hora ou segundo)
 - **Sem compromisso de uso** (anos)
 - Sem pagamento adiantado

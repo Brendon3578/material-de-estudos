@@ -19,7 +19,9 @@
 
 ## Identidade (AWS IAM)
 
-Usa-se o serviço de gerenciamento de identidade de acesso do AWS para gerenciar quem têm acesso **a oque** (serviços), esse recurso é o **Identity and Access Management** (IAM).
+![AWS IAM](./images/svg/iam.svg)
+
+Usa-se o serviço de IAM (**Identity and Access Management**) ou gerenciamento de identidade de acesso do AWS para gerenciar quem têm acesso **a oque** (serviços)
 
 ### User Groups & Roles
 
