@@ -17,6 +17,7 @@ Anotações sobre o curso de Fundamentos de AWS da Escola da Nuvem ☁
 - [Perfil Comportamental - DISC](./hard-skills/career/aula03.md)
 - [CV - Currículo](./hard-skills/career/aula04.md)
 - [Entrevista](./hard-skills/career/aula05.md)
+- [Linkedin](./hard-skills/career/aula06.md)
 
 ## 🧱 Aulas técnicas - Hard skills
 
@@ -25,5 +26,6 @@ Anotações sobre o curso de Fundamentos de AWS da Escola da Nuvem ☁
 - [Identidade, Segurança & Computação](./hard-skills/aula03.md)
 - [EC2, AutoScaling, Lambda e Elastic Beanstalk](./hard-skills/aula04.md)
 - [Armazenamento (S3) e website estático](./hard-skills/aula05.md)
+- [EBS, Snow Family, Glacier, VPC, DNS e Route 53](./hard-skills/aula06.md)
 
 <!-- Todas as imagens do serviços do AWS Foram tiradas desse site: https://awsicons.dev/ -->
