@@ -17,7 +17,7 @@ Anotações sobre o curso de Fundamentos de AWS da Escola da Nuvem ☁
 - [Perfil Comportamental - DISC](./hard-skills/career/aula03.md)
 - [CV - Currículo](./hard-skills/career/aula04.md)
 - [Entrevista](./hard-skills/career/aula05.md)
-- [Linkedin](./hard-skills/career/aula06.md)
+- [LinkedIn](./hard-skills/career/aula06.md)
 
 ## 🧱 Aulas técnicas - Hard skills
 
