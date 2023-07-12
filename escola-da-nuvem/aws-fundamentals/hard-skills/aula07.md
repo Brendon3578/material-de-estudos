@@ -4,7 +4,9 @@
 
 ![CloudFront](images/svg/cloudfront.svg)
 
-É um serviço de entrega de conteúdo (CMS)...
+É um serviço de **entrega e conteúdo** (CDN) que entrega dos, vídeos, aplicativos e APIs a clientes e forma mundial, com **segurança, baixa latência** e alta velocidade.
+
+Acelerando a distribuição do conteúdo estático e dinâmico da web, como arquivos `.html`, `.css`, `jss` e arquivos de imagens através da rede global de datacenters chamados de **pontos de presença** (points of presence - POP)
 
 ## Elastic Load Balancer
 

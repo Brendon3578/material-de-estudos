@@ -1,5 +1,13 @@
 <h1> Introdução de Fundamentos de AWS </h1>
 
+A AWS fornece **serviços** e computação em nuvem. Recursos de TI que antes sua provisão era demorada e custosa, pode ser provisionada em segundos com a computação em nuvem moderna. Com a AWS você consegue:
+
+- Provisionar uma infraestrutura **escalável** (**elasticidade** na terminologia da AWS)
+- Criar aplicações altamente disponíveis utilizando de recursos como: **Load balancers** e **zonas de disponibilidade** que estão em regiões, possibilitando a **redundância de dados** (replicação dos recursos em várias zonas distintas da mesma região), possibilitando a **tolerância a falhas**
+- Pagar apenas pela infraestrutura que utiliza (**pay as-you-go**), facilitando a implantação de novos recursos ou o desligamento de recursos que não estão sendo utilizados
+- Gerenciar o controle do acesso aos recursos e administrar **quem** tem acesso a **quais** recursos através de políticas e permissões (utilizando o Identity Access Management)
+- Monitorar o **desempenho de recursos** podendo criar alertas para quando haver aumento no acesso aos recursos ou quanto atingir métricas pré determinadas
+
 <h2> Sumário </h2>
 
 - [O que é computação na nuvem](#o-que-é-computação-na-nuvem)
@@ -9,7 +17,7 @@
   - [Elasticidade](#elasticidade)
 - [Disponibilidade](#disponibilidade)
   - [Região](#região)
-  - [Zona de disponibilidade](#zona-de-disponibilidade)
+  - [Zona de disponibilidade - AZ](#zona-de-disponibilidade---az)
   - [Ponto de Presença](#ponto-de-presença)
 - [Serviços gerais do AWS](#serviços-gerais-do-aws)
 
@@ -17,12 +25,12 @@
 
 > É a entrega sob demanda de recursos computacionais, através de uma plataforma de serviços via Internet, sem o gerenciamento ativo do usuário
 
-Atualmente as empresas estão migrando para o ambiente cloud. Alguns dos motivos são:
+Atualmente muitas empresas buscam migrar para o ambiente cloud, sendo algumas das razões para essas migrações:
 
 - Reduzir custos
 - Reduzir Infraestrutura física (On Premises)
 - Economizar dinheiro da corporação
-- Por não ter necessidade de fazer suposições na implementação um datacenter
+- Para não ter que lidar com suposições na implementação um datacenter (lidar com recursos que estão ociosos ou com capacidade limitada)
 - Despesas variáveis (sob demanda)
 - Grandes economias em escala (a nuvem oferece serviços de gestão e faturamento)
 - Aumentar a velocidade e agilidade de toda aplicação
@@ -62,11 +70,18 @@ Exemplo para estudo: No contexto de construir um terreno para moradia, ao escala
 
 ### Região
 
-- Uma **Região** é a disponibilização de uma coleção de recursos AWS em **localização geográfica**, sendo ele composto por um **conjunto de zonas de disponibilidade**.
+Uma **Região** é a disponibilização de uma coleção de recursos AWS em **localização geográfica**, sendo ele composto por um **conjunto de zonas de disponibilidade** (são Clusters de AZ).
 
-### Zona de disponibilidade
+Para escolher uma região é necessário considerar os fatores:
 
-- Uma **Zona de disponibilidade** é um ou mais datacenters que estão na mesma Região, porém separados por uma distância significativa, **atuando de forma independente** em caso de falha de uma zona
+- **Conformidade de dados (compliance)**: regulamentações que determinam o território no qual os dados deverão ser armazenados
+- **Latência**: distância entre os recursos e os usuários que utilizarão os recursos
+- **Preço**: podem varias entre regiões
+- **Disponibilidade de serviço**: se o serviço é disponível para ser implantado na região desejada
+
+### Zona de disponibilidade - AZ
+
+- Uma **Zona de disponibilidade** (Availability Zone - AZ) é um ou mais datacenters que estão na mesma Região, porém separados por uma distância significativa, **atuando de forma independente** em caso de falha de uma zona
 - São conectas com alta velocidade, com segurança local, refrigeração e rede
 - São **redundantes** entre si via conectividade, rede e energia
 
