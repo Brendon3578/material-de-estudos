@@ -4,7 +4,7 @@
 
 - [Serviços Regionais](#serviços-regionais)
 - [Serviços Globais](#serviços-globais)
-- [Responsabilidade Compartilhada](#responsabilidade-compartilhada)
+- [Modelo de responsabilidade Compartilhada](#modelo-de-responsabilidade-compartilhada)
 - [3 Níveis (tipos de ofertas) Gratuitos da AWS](#3-níveis-tipos-de-ofertas-gratuitos-da-aws)
 - [Planos de Suporte](#planos-de-suporte)
 - [Interfaces de Acesso (API)](#interfaces-de-acesso-api)
@@ -22,7 +22,7 @@
 - **Redes e Entrega de Conteúdo**: Amazon CloudFront; Amazon Route 53;
 - **Segurança, Identidade e Compliance**: AWS Identity & Access Management; AWS WAF
 
-## Responsabilidade Compartilhada
+## Modelo de responsabilidade Compartilhada
 
 Definir os limites, o que é físico é da AWS, os dados de cliente é responsabilidade do cliente
 
@@ -57,7 +57,7 @@ Enquanto a **AWS** gerencia a **segurança DA nuvem** (**Security OF the cloud**
 
 ## AWS Budget (Criando um orçamento)
 
-![AWS Budget](./images/svg/budget.svg)
+![AWS Budget](./images/svg/cost-management/budget.svg)
 
 O AWS Budgets (Orçamentos da AWS) permite que você defina **orçamentos personalizados** e **enviar alertas** quando o uso ou os custos excede o valor orçado.
 
@@ -65,7 +65,7 @@ O AWS Budgets (Orçamentos da AWS) permite que você defina **orçamentos person
 
 ## AWS Cost Management
 
-![AWS Cost Explorer](./images/svg/costexplorer.svg)
+![AWS Cost Explorer](./images/svg/cost-management/costexplorer.svg)
 
 É uma interface (dashboard), para visualizar e gerenciar os custos e uso da AWS ao **longo do tempo**.
 

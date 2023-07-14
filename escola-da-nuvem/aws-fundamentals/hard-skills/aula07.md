@@ -2,15 +2,23 @@
 
 ## CloudFront
 
-![CloudFront](images/svg/cloudfront.svg)
+![CloudFront](images/svg/network_content-delivery/cloudfront.svg)
 
 É um serviço de **entrega e conteúdo** (CDN) que entrega dos, vídeos, aplicativos e APIs a clientes e forma mundial, com **segurança, baixa latência** e alta velocidade.
 
-Acelerando a distribuição do conteúdo estático e dinâmico da web, como arquivos `.html`, `.css`, `jss` e arquivos de imagens através da rede global de datacenters chamados de **pontos de presença** (points of presence - POP)
+Utiliza-se POPs que são pontos de presença (**Points of presence**) para acelerar a distribuição do conteúdo estático e dinâmico da web, como arquivos `.html`, `.css`, `jss` e arquivos de imagens através da rede global de datacenters. Operando do seguinte modo:
+
+- O usuário pede a solicitação através de uma URL
+- O DNS roteia a solicitação para o POP mais próximo do usuário
+- O CloudFront retorna a requisição enviando para o ponto de presença solicitado (funcionando como uma memória cache)
+
+### Segurança
+
+Para ser utilizado com segurança, utiliza-se junto a outros recursos como o **AWS WAF Web Application Firewall**, **Amazon Route 53**, **AWS Shield (contra DDoS)** e **AWS Certificate Manager SSL/TSL e HTTPS** que cria um certificado SSL customizado para entregar o conteúdo com criptografia e https
 
 ## Elastic Load Balancer
 
-![Elastic Load Balancer](images/svg/elb.svg)
+![Elastic Load Balancer](images/svg/network_content-delivery/elb.svg)
 
 É um serviço que distribui automaticamente o **tráfego de entrada** de aplicativos, como instâncias do 3C2, containers, IPs address e funções Lambda
 
@@ -19,12 +27,13 @@ Há 3 tipos de load balancer principais
 - Application Load Balancer
 - Network Load Balancer
 - Gateway Loada Balancer
+- (descontinuado) Classic Load Balancer
 
-(descontinuado) Classic Load Balancer
+![Tipos de Load Balancers](./images/load-balancer.PNG)
 
 ## CloudWatch
 
-![Cloud Watch](images/svg/cloudwatch.svg)
+![Cloud Watch](images/svg/management_governance/cloudwatch.svg)
 
 É uma ferramenta de **monitoramento de desempenho dos recursos** e dos aplicativos que voce executa no seu ambiente
 

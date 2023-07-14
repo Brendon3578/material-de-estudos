@@ -2,7 +2,7 @@
 
 ## S3 - Simple Storage Service
 
-![Simple Storage Service](./images/svg/s3.svg)
+![Simple Storage Service](./images/svg/storage/s3.svg)
 
 É um serviço **gerenciado** de **armazenamento** e recuperação de objetos, respondendo com **escalabilidade, disponibilidade e segurança e performance**
 

@@ -13,7 +13,7 @@
 
 ## Amazon EBS Elastic Block Store
 
-![Elastic Block Store](./images/svg/ebs.svg)
+![Elastic Block Store](./images/svg/storage/ebs.svg)
 
 É um serviço de **Armazenamento de blocos** (dados) **persistentes** em alta escala fácil, projetado como um **volume** e utilizado como um disco para as instâncias Amazon EC2
 
@@ -22,15 +22,15 @@
 - Diferente tipo (SSD ou Hd)
 - Redimensionar em minutos (**on-the-fly**)
 - Pago conforme a provisão
-- Snapshot manual ou automático (**point-in-time**) - armazena fotos de tempo em tempo <br> ![Snapshot](./images/svg/ebssnapshot.svg)
+- Snapshot manual ou automático (**point-in-time**) - armazena fotos de tempo em tempo <br> ![Snapshot](./images/svg/storage/ebssnapshot.svg)
 - Criptografia em repouso (ver depois e pesquisa sobre criptografia em trânsito)
 - Uma zona de disponibilidade
 
 ## Família AWS Snow
 
-![Snowcone](./images/svg/snowcone.svg)
-![Snowball](./images/svg/snowball.svg)
-![Snowmobile](./images/svg/snowmobile.svg)
+![Snowcone](./images/svg/storage/snowcone.svg)
+![Snowball](./images/svg/storage/snowball.svg)
+![Snowmobile](./images/svg/storage/snowmobile.svg)
 
 É um serviço físico para lugares no qual a rede de internet é precária ou não há infraestrutura
 
@@ -49,7 +49,7 @@
 
 ## S3 Glacier & S3 Glacier Deep Archive
 
-![S3 Glacier](./images/svg/s3gaclier.svg)
+![S3 Glacier](./images/svg/storage/s3gaclier.svg)
 
 - São Classes de armazenamento de objetos de **longo prazo**, seguras e **resilientes** do Amazon S3 a partir de 1USD por terabyte por mês
 - Você pode configurar uma regra de ciclo de vida que envia de um bucket S3 Standard para um S3 Glacier
@@ -69,7 +69,7 @@
 
 ## Amazon VPC
 
-![Amazon VPC](./images/svg/vpc.svg)
+![Amazon VPC](./images/svg/network_content-delivery/vpc.svg)
 
 É uma sessão isolada logicamente na AWS cloud, que permite customizar uma rede virtual e **executar recursos**, em um ambiente com controle total
 
@@ -91,7 +91,7 @@
 
 ## AWS Route 53
 
-![Route 53](./images/svg/route53.svg)
+![Route 53](./images/svg/network_content-delivery/route53.svg)
 
 - É um serviço que atua sendo DNS (Domain Name System) que encaminha as requests (solicitações) dos usuários para os aplicativos do AWS
 - O nome é referência a porta 53 (de DNS)

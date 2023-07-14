@@ -68,7 +68,7 @@
 
 ## AWS Auto Scaling Group
 
-![EC2 Auto Scaling](./images/svg/ec2autoscaling.svg)
+![EC2 Auto Scaling](./images/svg/compute/ec2autoscaling.svg)
 
 Quando se precisa de **Escalabilidade automatizada**: Scale Out (+ instâncias) e Scale In (- instâncias)
 
@@ -85,7 +85,7 @@ Pode ser utilizado com o **Elastic Load Balancing** para distribuir o tráfego d
 
 ## AWS Elastic Beanstalk
 
-![AWS Elastic Beanstalk](./images/svg/beanstalk.svg)
+![AWS Elastic Beanstalk](./images/svg/compute/beanstalk.svg)
 
 É um **serviço gerenciado**, para os desenvolvedores fazerem a implementação (**deploy**) de forma fácil (pode ser escalável - Load Balancing e Escalabilidade) de **aplicações e serviços web**.
 
@@ -102,7 +102,7 @@ Para decorar: **beanstalk** se refere ao pé de feijão gigante da história de 
 
 ## AWS Lambda
 
-![AWS Lambda](./images/svg/lambda.svg)
+![AWS Lambda](./images/svg/compute/lambda.svg)
 
 Permite que você execute código **sem provisionar (serverless)** ou **gerenciar serviços**, pagando apenas pelo **número de solicitações** e pelo **tempo de computação** que você utiliza
 
