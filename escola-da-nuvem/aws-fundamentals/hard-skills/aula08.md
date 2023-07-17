@@ -6,7 +6,7 @@
 
 É um serviço que possibilita **governança, conformidade, auditoria operacional** e **auditoria de riscos** em sua conta AWS
 
-É utilizado para apenas para audotoria e conformidade, quem fêz o quê na AWAS
+É utilizado para apenas para auditoria e conformidade, quem fêz o quê na AWS
 
 ## AWS Config
 
