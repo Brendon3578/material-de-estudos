@@ -2,3 +2,15 @@ remote_theme: niklasbuschmann/contrast@v2.11
 
 plugins:
   - jekyll-remote-theme
+
+show_excerpts: false # show article excerpts on the home page
+show_frame: true # adds a gray frame to the site
+show_sidebar: false # show a sidebar instead of the usual header
+
+# Menu
+
+navigation: # accepts {file, title, url, icon, sidebaricon}
+  - { file: "README.md" }
+
+external: # shows a footer with social links - for available icons see fontawesome.com/icons
+  - { title: Github, icon: github, url: "https://github.com/Brendon3578" }
