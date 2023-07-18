@@ -3,7 +3,7 @@ remote_theme: niklasbuschmann/contrast@v2.11
 plugins:
   - jekyll-remote-theme
 
-description: ""
+description: "Anotações de estudo"
 
 show_sidebar: true # show a sidebar instead of the usual header
 
@@ -12,18 +12,22 @@ show_sidebar: true # show a sidebar instead of the usual header
 navigation: # accepts {file, title, url, icon, sidebaricon}
   - {
       title: "Fundamentos do Python - Cisco",
-      url: "./cisco/python-fundamentals",
+      url: "cisco/python-fundamentals",
       icon: python,
     }
-  - { title: "Angular 15 - Udemy", url: "./azure/az-900", icon: cloud }
   - {
       title: "Estudo AZ-900 - Microsoft Learn",
+      url: "azure/az-900",
+      icon: cloud,
+    }
+  - {
+      title: "Fundamentos de AWS - Escola da Nuvem",
       url: "escola-da-nuvem/aws-fundamentals",
       icon: aws,
     }
   - {
-      title: "Fundamentos de AWS - Escola da Nuvem",
+      title: "Google Cloud Associate Engineer",
       url: "google_cloud/associate_cloud_engineer",
       icon: google,
     }
-  - { title: "Cloud Associate Engineer", url: "udemy/angular15", icon: angular }
+  - { title: "Angular 15 - Udemy", url: "udemy/angular15", icon: angular }
