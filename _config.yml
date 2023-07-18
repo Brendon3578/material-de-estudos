@@ -10,8 +10,20 @@ show_sidebar: true # show a sidebar instead of the usual header
 # Menu
 
 navigation: # accepts {file, title, url, icon, sidebaricon}
-  - { url: "cisco/python-fundamentals/README.md", icon: python }
-  - { url: "azure/az-900/README.md", icon: cloud }
-  - { url: "escola-da-nuvem/aws-fundamentals/README.md", icon: aws }
-  - { url: "google_cloud/associate_cloud_engineer/README.md", icon: google }
-  - { url: "udemy/angular15/README.md", icon: angular }
+  - {
+      title: "Fundamentos do Python - Cisco",
+      url: "./cisco/python-fundamentals",
+      icon: python,
+    }
+  - { title: "Angular 15 - Udemy", url: "./azure/az-900", icon: cloud }
+  - {
+      title: "Estudo AZ-900 - Microsoft Learn",
+      url: "escola-da-nuvem/aws-fundamentals",
+      icon: aws,
+    }
+  - {
+      title: "Fundamentos de AWS - Escola da Nuvem",
+      url: "google_cloud/associate_cloud_engineer",
+      icon: google,
+    }
+  - { title: "Cloud Associate Engineer", url: "udemy/angular15", icon: angular }
