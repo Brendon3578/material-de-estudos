@@ -1,42 +1,28 @@
+---
 remote_theme: niklasbuschmann/contrast@v2.11
-
 plugins:
   - jekyll-remote-theme
-
-description: "Anotações de estudo"
-
-show_sidebar: true # show a sidebar instead of the usual header
-
-# Menu
-
-navigation: # accepts {file, title, url, icon, sidebaricon}
-  - {
-      title: "Fundamentos do Python - Cisco",
-      url: "cisco/python-fundamentals",
-      icon: python,
-      sidebaricon: python,
-    }
-  - {
-      title: "Estudo AZ-900 - Microsoft Learn",
-      url: "azure/az-900",
-      icon: cloud,
-      sidebaricon: cloud,
-    }
-  - {
-      title: "Fundamentos de AWS - Escola da Nuvem",
-      url: "escola-da-nuvem/aws-fundamentals",
-      icon: aws,
-      sidebaricon: aws,
-    }
-  - {
-      title: "Google Cloud Associate Engineer",
-      url: "google_cloud/associate_cloud_engineer",
-      icon: google,
-      sidebaricon: google,
-    }
-  - {
-      title: "Angular 15 - Udemy",
-      url: "udemy/angular15",
-      icon: angular,
-      sidebaricon: angular,
-    }
+description: Anotações de estudo
+lang: pt-br
+show_sidebar: true
+navigation:
+  - title: Fundamentos do Python - Cisco
+    url: cisco/python-fundamentals
+    icon: python
+    sidebaricon: python
+  - title: Estudo AZ-900 - Microsoft Learn
+    url: azure/az-900
+    icon: cloud
+    sidebaricon: cloud
+  - title: Fundamentos de AWS - Escola da Nuvem
+    url: escola-da-nuvem/aws-fundamentals
+    icon: aws
+    sidebaricon: aws
+  - title: Google Cloud Associate Engineer
+    url: google_cloud/associate_cloud_engineer
+    icon: google
+    sidebaricon: google
+  - title: Angular 15 - Udemy
+    url: udemy/angular15
+    icon: angular
+    sidebaricon: angular
