@@ -2,6 +2,8 @@
 
 ## Amazon RDS - Relational Database Service
 
+![Amazon RDS](images/svg/database/rds.svg)
+
 O Amazon RDS é um banco de dados relacional que se destaca  por sua **escalabilidade**, **automatização** na aplicação de patches, provisionamento de hardware e backup na Nuvem AWS
 
 **Mecanismos disponíveis**: Amazon Aurora, MySQL, MariaDB, PostgreSQL, Oracle, SQL Server
@@ -18,6 +20,8 @@ O Recurso (banco de dados) do RDS é replicado entre duas ou mais zonas de dispo
 
 ## Amazon DynamoDB - Para Banco de Dados Não Relacional
 
+![Amazon DynamoDB](images/svg/database/dynamodb.svg)
+
 É um banco de dados não relacional, **NoSQL** de **chave-valor** e documento que oferece desempenho de milissegundos
 
 - Serverless (sem servidor)
@@ -31,6 +35,8 @@ O Recurso (banco de dados) do RDS é replicado entre duas ou mais zonas de dispo
 - Chave secundária é **opcional** e fornece flexibilidade na consulta
 
 ## AWS CloudFormation
+
+![Cloud Formation](images/svg/management_governance/cloudformation.svg)
 
 É um serviço que oferece uma **linguagem comum** para que você **possa descrever e fornecer todos os recursos de infraestrutura** em um ambiente de Nuvem
 
