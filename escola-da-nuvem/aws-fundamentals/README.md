@@ -25,5 +25,6 @@ Anotações sobre o curso de Fundamentos de AWS da Escola da Nuvem ☁
 - [EBS, Snow Family, Glacier, VPC, DNS e Route 53](./hard-skills/aula06.md)
 - [CloudFront, Elastic Load Balancer, CloudWatch](./hard-skills/aula07.md)
 - [Monitoria, Governança e Melhores Práticas AWS](./hard-skills/aula08.md)
+- [Banco de Dados SQL, NoSQL e nuvem como código](./hard-skills/aula09.md)
 
 <!-- Todas as imagens do serviços do AWS Foram tiradas desse site: https://awsicons.dev/ -->

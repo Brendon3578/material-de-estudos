@@ -2,6 +2,8 @@
 
 Esse repositório se trata de anotações de estudo que eu faço enquanto aprendo as diversas ferramentas e tecnologias que existem pela internet.
 
+Acesse a [página deste repositório](https://brendon3578.github.io/material-de-estudos/)
+
 ## 🔮 Conteúdo
 
 - [Fundamentos do Python - Cisco](./cisco/python-fundamentals/README.md)
