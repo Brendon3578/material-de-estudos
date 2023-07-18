@@ -8,11 +8,15 @@ show_sidebar: true # show a sidebar instead of the usual header
 # Menu
 
 navigation: # accepts {file, title, url, icon, sidebaricon}
-  - { file: "cisco/python-fundamentals/README.md" }
-  - { file: "azure/az-900/README.md" }
-  - { file: "escola-da-nuvem/aws-fundamentals/README.md" }
-  - { file: "google_cloud/associate_cloud_engineer/README.md" }
-  - { file: "udemy/angular15/README.md" }
+  - {
+      file: "cisco/python-fundamentals/README.md",
+      sidebaricon: python,
+      icon: python,
+    }
+  - { file: "azure/az-900/README.md", icon: cloud }
+  - { file: "escola-da-nuvem/aws-fundamentals/README.md", icon: aws }
+  - { file: "google_cloud/associate_cloud_engineer/README.md", icon: google }
+  - { file: "udemy/angular15/README.md", icon: angular }
 
 external: # shows a footer with social links - for available icons see fontawesome.com/icons
   - { title: E-mail, icon: envelope, url: "mailto:brendongomes40@gmail.com" }
