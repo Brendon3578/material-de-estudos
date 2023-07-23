@@ -68,6 +68,7 @@ Há 3 tipos de load balancer principais
 ### Atuar
 
 - Criar alarmes para atuar como **gatilho**, baseado nas métricas de uso e desempenho
+- É possível criar um alarme que envia uma notificação quando um limite de faturamento (billing alerts) é excedido
 - Opções do gatilho: amostra, %, valor máximo, mínimo etc
 - Alarm Action
   - **Auto Scaling Group**: Aumentar ou diminuir o número de instâncias no Amazon EC2

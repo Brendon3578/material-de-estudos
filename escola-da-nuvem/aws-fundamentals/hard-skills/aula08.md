@@ -1,4 +1,4 @@
-<h1> Monitoria, Governança e Melhores Práticas AWS </h1
+<h1> Monitoria, Governança e Melhores Práticas AWS </h1>
 
 <h2> Sumário </h2>
 
@@ -34,7 +34,7 @@ Permite que você:
 
 - **gerenciar e controlar** seu ambiente de modo centralizado
 - Gerenciar contas filhas
-- Consolidar **Faturamento**
+- [Consolidar **Faturamento**](./extra/consolidated-billing.md)
 - **Agregar** preços
 - **Gerar economia** com pooling de instâncias reservadas
 - **Utiliza** do Service Control Police (política de controle de serviço)
@@ -79,3 +79,10 @@ Permitidos apenas para o plano do AWS Support: **Business**, **Enterprise On-Ram
 - Otimização de Custos
 - Desempenho
 - Tolerância a falhas
+
+Com ele é possível verificar:
+
+- Permissões de buckets do S3 que são de acesso aberto
+  - Policies de bucket que concedem acesso de listagem a todos, podem resultar em altos custos, pois se usuários indesejados acessarem o bucket, irá aumentar o custo dele. Além disso, buckets com muitas policies abertas cria possíveis brechas de segurança.
+- Uso de autenticação multifator (MFA) no usuário `root`
+  - Avisa se a conta `root`  está com o MFA desabilitado

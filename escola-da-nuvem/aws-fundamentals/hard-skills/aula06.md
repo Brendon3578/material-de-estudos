@@ -17,6 +17,8 @@
 
 É um serviço de **Armazenamento de blocos** (dados) **persistentes** em alta escala fácil, projetado como um **volume** e utilizado como um disco para as instâncias Amazon EC2
 
+> Os volumes de armazenamento do EBS não podem ser compartilhados entre servidores locais e instâncias EC2, para uma solução de armazenamento de arquivos compartilhado e escalável, usa-se o [Amazon Elastic File System](./extra/amazon-efs.md) (Amazon EFS)
+
 - Recomendado para SOs e BDs
 - Proteção por redundância (replicação entre zonas - SLA)
 - Diferente tipo (SSD ou Hd)
@@ -77,6 +79,8 @@
 - Total controle na configuração
 - Camadas de segurança (SG - security group - & NACLs)
 - Conectividade com outros serviços
+
+> Para uma conexão privada dedicada entre instalações locais da empresa e a Nuvem AWS, usa-se o [AWS Direct Connect](./extra/aws-direct-connect.md)
 
 ### Composição
 
