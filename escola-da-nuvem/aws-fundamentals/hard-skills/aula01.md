@@ -109,4 +109,4 @@ Para escolher uma região é necessário considerar os fatores:
 
 ## Serviços gerais do AWS
 
-![Conteúdo](./images/services.png)
+![Conteúdo](./images/all-services.PNG)
