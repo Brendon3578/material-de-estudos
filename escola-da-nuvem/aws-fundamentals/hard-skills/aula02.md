@@ -10,7 +10,7 @@
 - [Planos de Suporte](#planos-de-suporte)
 - [Interfaces de Acesso (API)](#interfaces-de-acesso-api)
 - [AWS Budget (Criando um orçamento)](#aws-budget-criando-um-orçamento)
-- [AWS Cost Management](#aws-cost-management)
+- [AWS Cost Explorer](#aws-cost-explorer)
 - [AWS Pricing Calculator](#aws-pricing-calculator)
 
 ## Serviços Regionais
@@ -38,41 +38,48 @@ Você é responsável pela **segurança NA nuvem** - `Security IN the cloud`.
 - **Recurso gerenciado**: quando um serviço ou as configurações da camada anterior não são administrados pelo **usuário**, mas sim pela AWS.
 - Um recurso deixa de ser gerenciado por você quando a outra parte inicia o gerenciamento, as atualizações, a manutenção do sistema operacional e a segurança.
 
+---
+
 ## 3 Níveis (tipos de ofertas) Gratuitos da AWS
 
-- Serviços para testes Gratuitos
-- Serviços de 12 Meses Gratuitos (free tier) (Amazon DynamoDB até 25GB)
-- Serviços que são sempre gratuitos (auto scaling)
+- **12 Meses Gratuitos**: A partir da criação do cadastro (free tier)
+  - 750 hrs do EC2 (mas t2.micro)
+- **Testes**: Período limitado; Avaliação de testes
+  - Amazon SageMaker (2 meses de avaliação)
+- **Sempre gratuitos**: Não expiram; Disponível para todos os clientes; Tem um limite de uso
+  - Amazon AutoScaling
+  - Amazon DynamoDB - até 25 GB de armazenamento
+  - AWS Lambda - 1 milhão de request
 
 ## Planos de Suporte
 
 ![Níveis de suportes](./images/planos-de-suporte.jpeg)
 
-- **CASE** de suporte técnico não são oferecidos no plano **Básico**
-- Trusted Advisor completo somente nos planos Business, Enterprise On-Ramp e Enterprise
+- `CASE de suporte técnico` (tickets de suporte) não são oferecidos no plano **Básico**
+- Trusted Advisor completo somente nos planos `Business`, `Enterprise On-Ramp` e `Enterprise`
 - Suporte em até 15 minutos, apenas no plano Enterprise
 - Concierge apenas nos planos On-Ramp e Enterprise
-- TAM (gerente técnico da conta) apenas nos planos Enterprise, porque no OnRamp eles indicam um parceiro
+- TAM (gerente técnico da conta) apenas nos planos Enterprise, no OnRamp eles indicam um parceiro
 
 ## Interfaces de Acesso (API)
 
-- **AWS Management Console**: interface via https & app
-- **Command Line Interface (CLI)**: um terminal, é um client que pode ser acessado pelo browser ou instalado localmente
+- **AWS Management Console**: interface via https & app **(AWS Console Mobile App)**
+- **Command Line Interface (CLI)**: via terminal, é um client que pode ser acessado pelo browser ou instalado localmente
 - **Software Development Kit (SDK)**: kits para developers utilizarem da sua linguagem de programação para conversar com os serviços AWS, via **API**, programação
 
 ## AWS Budget (Criando um orçamento)
 
 ![AWS Budget](./images/svg/cost-management/budget.svg)
 
-O AWS Budgets (Orçamentos da AWS) permite que você defina **orçamentos personalizados** e **enviar alertas** quando o uso ou os custos excede o valor orçado.
+> O AWS Budgets (Orçamentos da AWS) permite que você defina **orçamentos personalizados** e **enviar alertas** quando o uso ou os custos excede o valor orçado.
 
-- Você escolhe o meio de aviso (**e-mail** ou **notificação SNS** -*Amazon Simple Notification Service*) quando o custo real ou previsto e o uso excederem o limite do orçamento criado
+- Você escolhe o meio de aviso (**e-mail** ou **notificação do SNS** (*Amazon Simple Notification Service*) quando o custo real ou previsto e o uso excederem o limite do orçamento criado
 
-## AWS Cost Management
+## AWS Cost Explorer
 
 ![AWS Cost Explorer](./images/svg/cost-management/costexplorer.svg)
 
-É uma interface (dashboard), para visualizar e gerenciar os custos e uso da AWS ao **longo do tempo**.
+> É uma interface (dashboard), para visualizar e gerenciar os custos e uso da AWS ao **longo do tempo**.
 
 - Você usa o serviço de **Cost Explorer** para visualizar os relatórios e baixar os relatórios em modelo CSV
 - Não bloqueia o uso após extrapolação do uso
@@ -80,4 +87,4 @@ O AWS Budgets (Orçamentos da AWS) permite que você defina **orçamentos person
 
 ## AWS Pricing Calculator
 
-Fazer uma estimativa do custo de um recurso/serviço (em dólar). Que informa um custo mensal e um custo anual
+> Fazer uma estimativa do custo dos recursos e serviços do projeto. Que informa um custo mensal e um custo anual da estimativa (valor em dólar)
