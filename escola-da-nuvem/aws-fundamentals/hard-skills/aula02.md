@@ -5,6 +5,7 @@
 - [Serviços Regionais](#serviços-regionais)
 - [Serviços Globais](#serviços-globais)
 - [Modelo de responsabilidade Compartilhada](#modelo-de-responsabilidade-compartilhada)
+- [Recurso gerenciado](#recurso-gerenciado)
 - [3 Níveis (tipos de ofertas) Gratuitos da AWS](#3-níveis-tipos-de-ofertas-gratuitos-da-aws)
 - [Planos de Suporte](#planos-de-suporte)
 - [Interfaces de Acesso (API)](#interfaces-de-acesso-api)
@@ -24,14 +25,18 @@
 
 ## Modelo de responsabilidade Compartilhada
 
-Definir os limites, o que é físico é da AWS, os dados de cliente é responsabilidade do cliente
+Utilizado para definir os limites, sendo o que é físico, responsabilidade da AWS, os dados de cliente é responsabilidade do cliente
 
-Enquanto a **AWS** gerencia a **segurança DA nuvem** (**Security OF the cloud**), você é responsável pela **segurança NA nuvem** (**Security IN the cloud**).
+A **AWS** gerencia a **segurança DA nuvem** - `Security OF the cloud`
+
+Você é responsável pela **segurança NA nuvem** - `Security IN the cloud`.
 
 ![Responsabilidade Compartilhada](./images/responsabilitys.PNG)
 
-- **Recurso gerenciado**: quando um serviço ou as configurações da camada anterior não são administrados pelo **usuário**.
-- Um recurso deixa de ser gerenciado por você quando a outra parte inicia o gerenciamento, os updates, a manutenção do SO e a segurança.
+## Recurso gerenciado
+
+- **Recurso gerenciado**: quando um serviço ou as configurações da camada anterior não são administrados pelo **usuário**, mas sim pela AWS.
+- Um recurso deixa de ser gerenciado por você quando a outra parte inicia o gerenciamento, as atualizações, a manutenção do sistema operacional e a segurança.
 
 ## 3 Níveis (tipos de ofertas) Gratuitos da AWS
 
@@ -69,7 +74,7 @@ O AWS Budgets (Orçamentos da AWS) permite que você defina **orçamentos person
 
 É uma interface (dashboard), para visualizar e gerenciar os custos e uso da AWS ao **longo do tempo**.
 
-- Você usa o serivço de **Cost Explorer** para visualizar os relatórios e baixar os relatórios em modelo CSV
+- Você usa o serviço de **Cost Explorer** para visualizar os relatórios e baixar os relatórios em modelo CSV
 - Não bloqueia o uso após extrapolação do uso
 - Para outros bloqueios em relação ao uso de dados, usa-se outras ferramentas como o **AWS Lambda** para automação de limpeza (inativação) de recursos inutilizados do AWS.
 

@@ -4,7 +4,8 @@
 
 - [Introdução](#introdução)
 - [O que é computação na nuvem](#o-que-é-computação-na-nuvem)
-- [Modelos de Computação](#modelos-de-computação)
+  - [Pilares (Vantagens) da AWS](#pilares-vantagens-da-aws)
+- [Modelos de computação](#modelos-de-computação)
 - [Escalabilidade e Elasticidade](#escalabilidade-e-elasticidade)
   - [Escalabilidade](#escalabilidade)
   - [Elasticidade](#elasticidade)
@@ -28,52 +29,63 @@ A AWS fornece **serviços** e computação em nuvem. Recursos de TI que antes su
 
 > É a entrega sob demanda de recursos computacionais, através de uma plataforma de serviços via Internet, sem o gerenciamento ativo do usuário
 
-Atualmente muitas empresas buscam migrar para o ambiente cloud, sendo algumas das razões para essas migrações:
+Hoje muitas empresas buscam migrar para o ambiente em nuvem, algumas das razões para essas migrações:
 
-- Reduzir custos
-- Reduzir Infraestrutura física (On Premises)
-- Economizar dinheiro da corporação
-- Para não ter que lidar com suposições na implementação um datacenter (lidar com recursos que estão ociosos ou com capacidade limitada)
-- Despesas variáveis (sob demanda)
-- Grandes economias em escala (a nuvem oferece serviços de gestão e faturamento)
-- Aumentar a velocidade e agilidade de toda aplicação
-- Tornar-se global
+### Pilares (Vantagens) da AWS
+
+- **Save Money** - Reduzir custos e Infraestrutura física
+- **Stop Guessing** - Não ter que lidar com suposições na implementação um datacenter (lidar com recursos que estão ociosos ou com capacidade limitada)
+- **Variable Expenses** - Pague conforme com o uso, diminui o TCO (sem posses), diminui CapEx e transforma em OpEx - despesas fixas para variáveis
+- Economies of Scale - Economizar dinheiro da corporação (a nuvem oferece serviços de gestão e faturamento)
+- Increase Speed and Agility - Aumentar a velocidade e agilidade de toda aplicação e de se produzir uma infraestrutura
+- Go Global - Tornar-se global em segundos (infraestrutura disponível em todo globo)
 
 Ainda hoje há modelos de turnos de 20/7, no qual ficam monitorando o cloud 24 horas
 
-## Modelos de Computação
+## Modelos de computação
 
-Define qual é sua responsabilidade, e qual é do do provedor da nuvem AWS
+> É necessário entender, para saber entregar qual tipo de serviço você deve entregar em determinado contexto
 
-- Modelo Tradicional: On Premises
-- **Infraestrutura como Serviço** (IaaS) para **Hospedar**: AWS cuida da infraestrutura como um todo (Network, Storage, Servers), com você cuidando do Sistema Operacional, Banco de Dados (EC2).
-- **Plataforma como Serviço** (PaaS) para **Programar**: AWS cuida do Sistema Operacional (Amazon RDS)
-- **Software como Serviço** (SaaS) para **Usar**: Você só cuida dos dados que são sendo manipulados pelo sistema (Auto Scaling)
+Define qual é sua responsabilidade, e qual é a responsabilidade do provedor da nuvem AWS
+
+- **Modelo Tradicional (On Premises)**: Ambiente 100% gerenciado por você
+- **Infraestrutura como Serviço (IaaS)** para `Hospedar`: AWS cuida da infraestrutura como um todo (Network, Storage, Servers), com você cuidando do Sistema Operacional, Banco de Dados
+  - EC2 (Virtual Machines)
+- **Plataforma como Serviço (PaaS)** para `Programar`: AWS dá manutenção sobre as SOs, AWS cuida do Sistema Operacional (Amazon RDS)
+  - AWS Elastic Beanstalk (Ambiente para o fácil deploy de aplicações)
+- **Software como Serviço (SaaS)** para `Utilizar`: Você só cuida dos dados que são sendo manipulados pelo sistema
+  - G-mail e outros serviços de e-mail
+  - Amazon Rekognition (ML para análise de imagens e vídeo)
 
 ## Escalabilidade e Elasticidade
 
 Exemplo para estudo: No contexto de construir um terreno para moradia, ao escalar horizontalmente você adiciona **novas** moradias (**escalabilidade**), escalando verticalmente você adiciona novos andares para a mesma moradia (**elasticidade**)
 
+- **Escalabilidade** - escalar horizontalmente - aumentar/diminuir a quantidade
+- **Elasticidade** - escalar verticalmente - aumentar/diminuir os recursos computacionais
+
 ### Escalabilidade
 
-É sobre expandir horizontalmente (quantidade), para para ser **tolerante a falhas**
+> Crescer de acordo com a capacidade desejada (métricas definidas - mínimo, desejado, máximo e o disponível para escalonar)
+
+É sobre **expandir horizontalmente** (quantidade), para para ser **tolerante a falhas**
 
 - Amazon EC2 Auto Scaling
-  - O significado de Amazon EC2 é Amazon Elastic Compute Cloud
-- É sobre o sistema ser capaz de escalar sob demanda (pico de uso) e ser tolerante a falhas, ter mais capacidade computacional.
-- Você define um número **mínimo**, **desejado** e o **número máximo** de computadores EC2
+  - Você define um número **mínimo**, **desejado** e o **número máximo** de instâncias EC2
+- Capacidade de crescer ou diminuir sob demanda (pico de uso) e ser tolerante a falhas, para ter alta disponibilidade.
 - Com isso você: **melhora a disponibilidade** da aplicação; Obtêm um ambiente tolerante a falhas; Essa abordagem reflete nos custos operacionais, você só paga conforme o uso
 
 ### Elasticidade
 
-- É sobre expandir verticalmente (capacidade) o recurso computacional, **distribuir carga de trabalho**
+- É sobre **expandir verticalmente** (capacidade) o recurso computacional, **distribuir carga de trabalho**
 - Capacidade de expandir para se adaptar à outra forma
+- Amazon EC2, Elastic Load Balancing, Elastic Beanstalk, Elastic Cache
 
 ## Disponibilidade
 
 ### Região
 
-Uma **Região** é a disponibilização de uma coleção de recursos AWS em **localização geográfica**, sendo ele composto por um **conjunto de zonas de disponibilidade** (são Clusters de AZ).
+Uma **Região** é conjunto de data centers (recursos da AWS) em uma **localização geográfica**, sendo ele composto por um **conjunto de zonas de disponibilidade** (Clusters de AZ).
 
 Para escolher uma região é necessário considerar os fatores:
 
@@ -93,7 +105,8 @@ Para escolher uma região é necessário considerar os fatores:
 - **Points of Presence** ou **Edge Locations** (locais de borda)
 - É uma infraestrutura de servidores, localizado próximo de uma Zona de disponibilidade, que **armazena os dados** mais solicitados no **cache**, para entregar com **menor latência** uma requisição de consulta
 - São utilizados como **cache de dados** para **distribuição de conteúdo**
+  - Utilizado por: CloudFront
 
 ## Serviços gerais do AWS
 
-![Conteúdo](./images/services2.png)
+![Conteúdo](./images/services.png)
