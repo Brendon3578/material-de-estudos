@@ -13,7 +13,7 @@
 
 ![Cloud Trail](images/svg/management_governance/cloudtrail.svg)
 
-É um serviço que possibilita **governança, conformidade, auditoria operacional** e **auditoria de riscos** em sua conta AWS
+> É um serviço que possibilita **governança, conformidade, auditoria operacional** e **auditoria de riscos** em sua conta AWS
 
 É utilizado para apenas para auditoria e conformidade, quem fêz o quê na AWS
 
@@ -21,8 +21,9 @@
 
 ![Config](images/svg/management_governance/config.svg)
 
+> Auxilia na auditoria das **alterações dos recursos** para compliance (conformidade) validando as configurações que você define
+
 - AWS Config é **Regional**
-- Auxilia na auditoria das **alterações dos recursos** para compliance (conformidade) validando as configurações que você define
 - Mantém **histórico das alterações** e armazena em um `Bucket S3` para posterior análise e auditoria
 - Notificações de alterações são enviada com o `Amazon SNS` e disponibilizadas no **Dashboard** do AWS Config
 
@@ -30,9 +31,10 @@
 
 ![Organization](images/svg/management_governance/organizations.svg)
 
+> Usado para **gerenciar e controlar** seu ambiente de modo centralizado (várias contas AWS e consolidar faturamento)
+
 Permite que você:
 
-- **gerenciar e controlar** seu ambiente de modo centralizado
 - Gerenciar contas filhas
 - [Consolidar **Faturamento**](./extra/consolidated-billing.md)
 - **Agregar** preços
@@ -58,7 +60,7 @@ Permite que você:
 
 ![Artifact](./images/svg/security-identity-compliance/artifact.svg)
 
-Gerar relatórios dentro de um padrão oficial (artefatos de conformidade - compliance), por exemplo ISO
+> Gerar relatórios dentro de um padrão oficial (artefatos de conformidade - compliance), por exemplo ISO
 
 - Os documentos são chamados de **artefatos**
 - Os relatórios de security e compliance, são `ISO`, `PIC` e `SOC`
@@ -68,6 +70,8 @@ Gerar relatórios dentro de um padrão oficial (artefatos de conformidade - comp
 ## AWS Trusted Advisor
 
 ![Trusted Advisor](./images/svg/security-identity-compliance/trusted-advisor.svg)
+
+> É o conselheiro do poderoso chefão. Esse "conselheiro de confiança" faz recomendações que ajudam a seguir as **boas prátaicas da AWS**
 
 O plano do AWS Support **Basic** e **Developer** oferece suporte para o AWS Trusted Advisor:
 
