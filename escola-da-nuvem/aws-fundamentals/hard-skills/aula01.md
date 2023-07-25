@@ -25,15 +25,15 @@ Hoje muitas empresas buscam migrar para o ambiente em nuvem, algumas das razões
 - **Save Money** - Reduzir custos e Infraestrutura física
 - **Stop Guessing** - Não ter que lidar com suposições na implementação um datacenter (lidar com recursos que estão ociosos ou com capacidade limitada)
 - **Variable Expenses** - Pague conforme com o uso, diminui o TCO (sem posses), diminui CapEx e transforma em OpEx - despesas fixas para variáveis
-- Economies of Scale - Economizar dinheiro da corporação (a nuvem oferece serviços de gestão e faturamento)
-- Increase Speed and Agility - Aumentar a velocidade e agilidade de toda aplicação e de se produzir uma infraestrutura
-- Go Global - Tornar-se global em segundos (infraestrutura disponível em todo globo)
+- **Economies of Scale** - Economizar dinheiro da corporação (a nuvem oferece serviços de gestão e faturamento)
+- **Increase Speed and Agility** - Aumentar a velocidade e agilidade de toda aplicação e de se produzir uma infraestrutura
+- **Go Global** - Tornar-se global em segundos (infraestrutura disponível em todo globo)
 
 Ainda hoje há modelos de turnos de 20/7, no qual ficam monitorando o cloud 24 horas
 
 ## Modelos de computação
 
-> É necessário entender, para saber entregar qual tipo de serviço você deve entregar em determinado contexto
+> É necessário saber sobre modelos de computação, para saber modelo você entregar deve entregar para o tipo de negócio desejado e qual o mais apropriado no seu devido contexto
 
 Define qual é sua responsabilidade, e qual é a responsabilidade do provedor da nuvem AWS
 

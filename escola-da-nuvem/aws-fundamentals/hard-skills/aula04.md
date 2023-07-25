@@ -2,19 +2,20 @@
 
 </h2> Sumário </h2>
 
-- [EC2 Launch types](#ec2-launch-types)
+- [EC2 Launch types / Tipos de inicializadores](#ec2-launch-types--tipos-de-inicializadores)
   - [Sob Demanda (On-Demand)](#sob-demanda-on-demand)
   - [Instâncias Reservadas (Reserved Instances)](#instâncias-reservadas-reserved-instances)
+- [Capacidade dedicada ou reservada](#capacidade-dedicada-ou-reservada)
   - [Saving Plans](#saving-plans)
-  - [Dedicated Host](#dedicated-host)
-  - [Dedicated Instances](#dedicated-instances)
+  - [Instâncias dedicadas (Dedicated Instances)](#instâncias-dedicadas-dedicated-instances)
+  - [Hosts dedicados (Dedicated Host)](#hosts-dedicados-dedicated-host)
   - [Spot Instances](#spot-instances)
 - [AWS Auto Scaling Group](#aws-auto-scaling-group)
   - [Regra geral](#regra-geral)
 - [AWS Elastic Beanstalk](#aws-elastic-beanstalk)
 - [AWS Lambda](#aws-lambda)
 
-## EC2 Launch types
+## EC2 Launch types / Tipos de inicializadores
 
 ### Sob Demanda (On-Demand)
 
@@ -27,42 +28,43 @@
 
 ### Instâncias Reservadas (Reserved Instances)
 
-- 72% de desconto comparado a On-Demand
+- **Até 72% de desconto** comparado a On-Demand
 - Aplicações que exigem capacidade Reservadas
-- **Comprometimento de uso** (1 ou 3 anos)
-- Com pagamento adiantado
+- **Comprometimento de uso** por um período e 1 ou 3 anos
+- Possui pagamento adiantado
 - **Útil para**: ambiente de produção que foi testado, aplicações que precisam estar em **estado constante**; útil para databases
+
+## Capacidade dedicada ou reservada
 
 ### Saving Plans
 
 - 72% de desconto comparado a On-Demand
 - **Comprometimento de gasto por hora** (1 ou 3 anos)
-- 3 formas dde pagamentos: antecipado, parcial e sem pagamento antecipado
+- 3 formas de pagamentos: antecipado, parcial e sem pagamento antecipado
 - **Útil para**: Workloads de longa duração, como em aplicativo em 24x7
 
-### Dedicated Host
-
-- Hardware dedicado
-- Servidor físico EC2 **exclusivo**
-- Cumprir requisitos de conformidade
-- Visibilidade de soquetes, núcleos, IDs de Host
-- **Comprometimento** por um período de 3 anos
-- Pode ser comprado sob demanda de horas
-- Se optar por **reversa**: até 70% de desconto em comparação a ON-demand
-- **Útil para**: Vincular licenças de software (Windows Server, SQL Server e SUSE Linux Enterprise Server)
-
-### Dedicated Instances
+### Instâncias dedicadas (Dedicated Instances)
 
 - **Hardware dedicado**
 - Pode compartilhar o hardware com outras instâncias na mesma conta
 - Sem controle sobre o posicionamento da instância
 - **Comprometimento** por um período de 3 anos
 
+### Hosts dedicados (Dedicated Host)
+
+- **Hardware dedicado**, mais aberto em relação às instâncias dedicadas
+- Servidor físico EC2 **exclusivo** ao seu uso
+- Cumprir requisitos de **conformidade**
+- Visibilidade de soquetes, núcleos, IDs de Host
+- **Comprometimento** por um período de 3 anos
+- Pode ser comprado sob demanda de horas
+- Se optar por **reversa**: até 70% de desconto em comparação a ON-demand
+- **Útil para**: Vincular licenças de software (Windows Server, SQL Server e SUSE Linux Enterprise Server)
+
 ### Spot Instances
 
 - Até 90% de desconto comparado a On-Demand
-- Terminadas quando o preço do spot, é maior que o preço que você estabeleceu para pagar
-- É como se fosse um leilão de instâncias
+- Terminadas quando o preço do spot, é maior que o preço que você estabeleceu para pagar **(oferta e demanda)**. É como se fosse um leilão de instâncias
 - **Terminate** = preço spot da AWS > seu preço
 - **Útil para**: Quando se tem uma urgência de grande capacidade computacional, workloads que podem parar e serem iniciados novamente, trabalho em lote, análise de dados, processamento de imagens
 
@@ -70,11 +72,12 @@
 
 ![EC2 Auto Scaling](./images/svg/compute/ec2autoscaling.svg)
 
-Quando se precisa de **Escalabilidade automatizada**: Scale Out (+ instâncias) e Scale In (- instâncias)
+> Utilizado quando se precisa de **Escalabilidade automatizada**: Scale Out (+ instâncias) e Scale In (- instâncias)
 
 ![auto scaling group](images/as-basic-diagram.png)
 
-Pode ser utilizado com o **Elastic Load Balancing** para distribuir o tráfego de acesso às aplicações entre todas as instâncias do EC2 em execução.
+- Pode ser utilizado com o **Elastic Load Balancing** para distribuir o tráfego de acesso às aplicações entre todas as instâncias do EC2 em execução.
+- Você cria um EC2 launch template para o **Auto Scaling Group** (ASG)
 
 ### Regra geral
 
@@ -87,13 +90,13 @@ Pode ser utilizado com o **Elastic Load Balancing** para distribuir o tráfego d
 
 ![AWS Elastic Beanstalk](./images/svg/compute/beanstalk.svg)
 
-É um **serviço gerenciado**, para os desenvolvedores fazerem a implementação (**deploy**) de forma fácil (pode ser escalável - Load Balancing e Escalabilidade) de **aplicações e serviços web**.
+> É um **serviço gerenciado**, para os desenvolvedores fazerem a implementação (**deploy**) de forma fácil (pode ser escalável - Load Balancing e Escalabilidade) de **aplicações e serviços web**.
 
 Pode ser usado com várias tecnologias (Python, Ruby, PHP, Node.js, Docker, .NET, JAV) etc
 
 - Ele é um serviço **gerenciado e gratuito**.
 - É um **PaaS**
-- Upload de código fonte < 51 mb ou upload via URL Bucket S3
+- Upload de código fonte < 512 mb ou upload via URL Bucket S3
 - Balanceamento de carga (load balancer)
 - Alta disponibilidade (multi-az)
 - Auto Scaling Group (ASG)
@@ -104,9 +107,9 @@ Para decorar: **beanstalk** se refere ao pé de feijão gigante da história de 
 
 ![AWS Lambda](./images/svg/compute/lambda.svg)
 
-Permite que você execute código **sem provisionar (serverless)** ou **gerenciar serviços**, pagando apenas pelo **número de solicitações** e pelo **tempo de computação** que você utiliza
+> Permite que você execute código **sem provisionar (serverless)** ou **gerenciar servidores**, pagando apenas pelo **número de solicitações** e pelo **tempo de computação** que você utiliza
 
 - Serverless (você não se preocupa com o provisionamento de máquinas e servidores)
-- Escalável
+- AWS Lambda **dimensiona** suas aplicações
 - Baixo custo: **Cobrança** por número de solicitações e pela duração por cada milissegundo que leva para que o código seja executado
-- Permite múltiplas linguagens (Go, Java, C#, Python, Ruby, Node.js, etc)
+- Permite múltiplas linguagens (Go, Java, C#, Python, Ruby, Node.js, APIS, etc)
