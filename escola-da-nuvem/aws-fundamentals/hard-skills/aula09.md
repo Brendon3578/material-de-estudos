@@ -4,33 +4,34 @@
 
 ![Amazon RDS](images/svg/database/rds.svg)
 
-O Amazon RDS é um banco de dados relacional que se destaca  por sua **escalabilidade**, **automatização** na aplicação de patches, provisionamento de hardware e backup na Nuvem AWS
+> O Amazon Relational Database Service (**Amazon RDS**) é um banco de dados relacional que se destaca  por sua **escalabilidade**, **automatização** na aplicação de patches, provisionamento de hardware e backup na Nuvem AWS
 
 **Mecanismos disponíveis**: Amazon Aurora, MySQL, MariaDB, PostgreSQL, Oracle, SQL Server
 
 - Simples, seguro e funcional
 - Réplica em outra zona e Redundância de dados
 - Eliminar Congelamento e Minimizar picos
+- Alta disponibilidade
 
 ### Arquitetura
 
 ![Arquitetura de VPC](images/aws-rds.png)
 
-O Recurso (banco de dados) do RDS é replicado entre duas ou mais zonas de disponibilidade (multi a-z)
+O Recurso (banco de dados) do RDS é replicado entre duas ou mais zonas de disponibilidade (multi-az) para ter uma maior disponibilidade, tendo uma instância de BD primária e as que estão em outras zonas,  sendo réplicas do primário
 
 ## Amazon DynamoDB - Para Banco de Dados Não Relacional
 
 ![Amazon DynamoDB](images/svg/database/dynamodb.svg)
 
-É um banco de dados não relacional, **NoSQL** de **chave-valor** e documento que oferece desempenho de milissegundos
+> É um banco de dados não relacional, **NoSQL** de **chave-valor** e documento que oferece desempenho de milissegundos
 
-- Serverless (sem servidor)
-- Escalável
-- Confiável
-- Rápido
+- Serverless (sem servidor com a AWS gerenciando)
+- Escalável (virtualmente ilimitado)
+- Confiável (criptografia em repouso por padrão)
+- Rápido (latência em microssegundos)
 
 - Tabela é uma **coleção de itens**
-  - Cada item possui **pelo menos um atributo**
+  - Cada item possui **pelo menos um atributo** e não pode ultrapassar 400kb
 - Chave primária e **obrigatória**, utilizado para identificar um item na Tabela
 - Chave secundária é **opcional** e fornece flexibilidade na consulta
 
@@ -38,19 +39,17 @@ O Recurso (banco de dados) do RDS é replicado entre duas ou mais zonas de dispo
 
 ![Cloud Formation](images/svg/management_governance/cloudformation.svg)
 
-É um serviço que oferece uma **linguagem comum** para que você **possa descrever e fornecer todos os recursos de infraestrutura** em um ambiente de Nuvem
+> É um serviço que oferece uma **linguagem comum** para que você **possa descrever e fornecer todos os recursos de infraestrutura** em um ambiente de Nuvem
 
-> Semelhante ao Terraform
-
-Utilizando arquivos `json` ou `yaml`
+- É Semelhante ao Terraform
+- Infraestrutura utilizando documento `json` ou `yaml` ou um `template` já predefinido pela AWS
 
 - **Replicar** uma infraestrutura múltiplas vezes
-- Time de devs usa como **ambiente de testes e produção**
+- Time de desenvolvedores usa como **ambiente de testes e produção**
 - Infraestrutura como Código - **IaaC**
-- Cria upload dos Templates para replicar múltiplas vezes a mesma arquitetura para ter automatização, rastreabilidade
-- Criar ou excluir Stacks (pilhas) - **arquitetura em várias camadas** - São templates dentro das camadas de organização (VPC, Regiãos, SubRedes etc)
-
-Por exemplo
+- Cria upload dos Templates para replicar múltiplas vezes a mesma arquitetura para ter automatização e rastreabilidade
+- Criar ou excluir `Stacks` (pilhas) - **arquitetura em várias camadas** - São templates dentro das camadas de organização (VPC, Regiões, SubRedes etc)
+- Quando se precisa de **controle de versão**
 
 ```yaml
 ---
