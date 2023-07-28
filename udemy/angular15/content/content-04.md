@@ -1,251 +1,128 @@
-<h1> Conteúdo 04 </h1>
+<h1> Pipe do RXJS e Resgatando dados através de parâmetros de rota </h1>
 
-<h2>Sumário</h2>
+<h2> Sumário </h2>
 
-- [Utilizando Reactive Forms](#utilizando-reactive-forms)
-- [Criando validações customizadas](#criando-validações-customizadas)
+- [RXJS Pipe](#rxjs-pipe)
+  - [Piping](#piping)
+- [Resgatando dados pelo URL através do parâmetro de rota](#resgatando-dados-pelo-url-através-do-parâmetro-de-rota)
 
-## Utilizando Reactive Forms
+## RXJS Pipe
 
-A maior diferença entre o Reactive Forms e o Template Driven  é o modo que os dados são gerenciados dentro da aplicação,  no Reactive Forms o estado do formulário é representado utilizando Observable (paradigma da programação reativa utilizando o RxJs e assincronismo), no qual é possível manipular os dados em tempo real
+Um Pipe do RXJS é diferente do Pipe do Angular
 
-Com o Reactive Forms é possível ter um controle maior nas validações, sendo possível facilmente criar validação própria customizada da forma que desejar.
+O RxJs disponibiliza operadores para trabalhar com os Observables de forma declarativa e clara. Sendo operadores, funções. Há dois tipos de operadores:
 
-É preciso importar o `ReactiveFormsModule` no modulo de routing
-
-Depois agrupar todos os "controls" (inputs etc) do formulário dentro de um FormGroup:
+- **Pipeable Operators**: Podem ser *piped* (canalizados) ou seja, utilizar a sintaxe `observableInstance.pipe(operator)`, ou `observableInstance.pipe(operatorFactory())`, para manipular um fluxo de informações.
+- **Creation Operators**: usadas pra criar novos Obeservables, exemplo `of(1,2,3)`
 
 ```ts
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { of, map } from 'rxjs';
+of(1, 2, 3)
+  .pipe(map((x) => x * x))
+  .subscribe((v) => console.log(`value: ${v}`));
+```
 
-@Component({
-  selector: 'app-register',
-  //... other properties
-})
+### Piping
+
+Observables têm o método `.pipe()` para facilitar a clareza na leitura durante a transformação dos dados do Observable. Ele transforma os dados emitidos por um Observable antes de dar ao Observador (`subscribe`)
+
+É possível usar o método `tap` para **side-effects** para notificar e monitorar as mudanças do Observable fonte
+
+Exemplo de uso no Angular:
+
+```ts
+constructor() {
+  of('banana', 'pitaia', 'pera', 'maçã')
+    .pipe(
+      map((fruta) => fruta.toUpperCase()),
+      filter((fruta) => fruta.startsWith('B') || fruta.startsWith('M')),
+      tap(console.log)
+    )
+    .subscribe((result) => {
+      this.frutas.push(result);
+    });
+}
+```
+
+Resultado:
+
+![Resultado do Código do Observable com Piping](../assets/example-pipe-rxjs.PNG)
+
+Uma [boa prática](https://angular.io/guide/rx-library#naming-conventions-for-observables) para os Observables, é sufixar a variável com o símbolo de dólar **($)** para indicar os Observables:
+
+```ts
+import { filter, map, of, tap } from 'rxjs';
+
+frutas$ = of('banana', 'pitaia', 'pera', 'maçã');
+
+constructor() {
+  this.frutas$
+    .pipe(
+      map((fruta) => fruta.toUpperCase()),
+      filter((fruta) => fruta.startsWith('B') || fruta.startsWith('M')),
+      tap(console.log)
+    )
+    .subscribe((result) => {
+      this.frutas.push(result);
+    });
+}
+```
+
+Também é possível combinar Observables, por exemplo quando for chamar duas APIs concorrentemente (ao mesmo tempo), e retornar apenas uma informação ao usuário.
+
+## Resgatando dados pelo URL através do parâmetro de rota
+
+- É adicionado uma nova rota no module de rotas de produto `product-routing.module.ts` para a captura do produto pelo Id
+- É utilizado o token `:id` que cria um slot no path para ser um parâmetro de rota
+
+```ts
+const routes: Routes = [
+  { path: '', redirectTo: 'list', pathMatch: 'full' },
+  { path: 'list', component: ListingComponent },
+  { path: 'new', component: RegisterComponent },
+  { path: 'edit/:id', component: RegisterComponent },
+];
+```
+
+- É criado um novo método no **service** de produto para resgatar um único produto pelo ID
+
+```ts
+export class ProductService {
+  private baseApiUrl = 'http://localhost:3000/';
+
+  constructor(private http: HttpClient) {}
+
+  getProducts(): Observable<ProductList> {
+    return this.http.get<ProductList>(`${this.baseApiUrl}products`);
+  }
+
+  // novo método para resgatar o produto pelo Id
+  getProductById(id: string): Observable<Product> {
+    return this.http.get<Product>(`${this.baseApiUrl}products/${id}`);
+  }
+}
+```
+
+- É resgatado os dados do produto no componente que será renderizado o produto, pegando o ID, utilizando o serviço `ActivatedRoute` que foi injetado no constructor da classe do componente
+
+```ts
 export class RegisterComponent implements OnInit {
-  //... other properties
+  id!: string;
   product!: Product;
 
-  formRegisterProduct!: FormGroup; // <-- form Group de todos os inputs
-
   constructor(
-    private productService: ProductService,
-    private activatedRoute: ActivatedRoute,
-    private router: Router,
-    // dependency injection do FormBuilder
-    private formBuilder: FormBuilder
+    private ProductService: ProductService,
+    private activatedRoute: ActivatedRoute
   ) {}
 
   ngOnInit(): void {
-    this.route = this.activatedRoute.snapshot.url[0].path;
-    // utilizar de um método pra criar o formulário 
-    this.createForm();
+    // pegar o id do produto em uma url: [//http](http://localhost:4200/product/edit/1)
+    // sendo o '/product', o url raiz
+    this.id = this.activatedRoute.snapshot.url[1].path;
 
-    if (this.route === 'edit') {
-      this.id = this.activatedRoute.snapshot.url[1].path;
-      this.productService
-        .getProductById(this.id)
-        .subscribe((product: Product) => {
-          this.product = product;
-
-          // setar todos os controles do forms com o product extraído
-          // ..do banco de dados
-          this.formRegisterProduct.controls['name'].setValue(this.product.name);
-          this.formRegisterProduct.controls['description'].setValue(
-            this.product.description
-          );
-          this.formRegisterProduct.controls['price'].setValue(
-            this.product.price
-          );
-          // ..outros controles do Product
-        });
-    } else {
-      // ..comportamento do create new product (formulário vazio)
-    }
-  }
-
-  createForm() {
-    // construindo um formulárioGorup com o formBuilder.group e utilizando validações
-    this.formRegisterProduct = this.formBuilder.group({
-      name: ['', [Validators.required]],
-      description: ['', [Validators.required]],
-      price: [0, [Validators.required, Validators.min(1)]],
-    });
-  }
-
-  // método que vai ser executado através do evento click do botão de cadastrar product/atualizar product
-  saveProduct() {
-    // verificação se o formulário foi alterado para evitar atualizações desnecessárias no banco de dados (no caso de atualizar produto)
-    if (!(this.formRegisterProduct.dirty && this.formRegisterProduct.touched)) {
-      return;
-    }
-
-    // verificar se o formulário está validado
-    if (this.formRegisterProduct.valid) {
-      // armazenar os valores do formulário
-      const productData = this.formRegisterProduct.value;
-
-      if (this.isNewProduct) {
-        this.createProduct(productData);
-      } else {
-        // atualizar o id do produto
-        this.updateProduct({ ...productData, id: this.id });
-      }
-    }
-  }
-
-  updateProduct(productData: Product) {
-    this.productService.updateProduct(productData).subscribe((res) => {
-      this.router.navigate(['product', 'list']);
-      console.log(res);
-    });
-  }
-
-  createProduct(productData: Product) {
-    this.productService.createProduct(productData).subscribe((res) => {
-      console.log('Produto criaddo com sucesso');
-      this.router.navigate(['product', 'list']);
-    });
+    this.ProductService.getProductById(this.id).subscribe(
+      (product: Product) => (this.product = product)
+    );
   }
 }
-```
-
-Template do componente do formulário
-
-```html
-<main>
-  <!-- setando o formGroup -->
-  <form class="example-form mat-elevation-z8" [formGroup]="formRegisterProduct">
-    <mat-form-field class="example-full-width">
-      <mat-label>Nome</mat-label>
-      <!-- setando o formControlName do input -->
-      <input matInput placeholder="Nome do produto" formControlName="name" />
-      <!-- utilização do mat-error (material icons) para feedback de input que não é valida -->
-      <mat-error>Insira um nome para o produto</mat-error>
-    </mat-form-field>
-
-    <mat-form-field class="example-full-width">
-      <mat-label>Descrição</mat-label>
-      <textarea
-        matInput
-        placeholder="Descrição do produto"
-        formControlName="description"
-      ></textarea>
-      <mat-error>Insira uma descrição para o produto</mat-error>
-    </mat-form-field>
-
-
-    <mat-form-field class="example-full-width">
-      <mat-label>Preço</mat-label>
-      <input
-        type="number"
-        matInput
-        placeholder="Ex: 199.99"
-        formControlName="price"
-      />
-
-      <mat-error>Insira um número maior que 0 para o preço produto</mat-error>
-    </mat-form-field>
-
-    <!-- desabilitar submit se o formulário não é valido -->
-    <button
-      mat-raised-button
-      color="primary"
-      (click)="saveProduct()"
-      [disabled]="formRegisterProduct.valid == false"
-    >
-    </button>
-  </form>
-</main>
-```
-
-## Criando validações customizadas
-
-Para criar uma validação customizada, basta criar uma função e usar a interface `ValidatorFn`, veja o exemplo criando uma validação para um input de **password**:
-
-```ts
-// ../validators/strongPasswordValidator.ts
-import { AbstractControl, ValidationErrors, ValidatorFn } from '@angular/forms';
-
-export function strongPasswordValidator(): ValidatorFn {
-  return (control: AbstractControl): ValidationErrors | null => {
-    const value = control.value;
-    if (!value) {
-      return null;
-    }
-    const hasUppercaseCharacters = /[A-Z]+/.test(value);
-    const hasLowercaseCharacters = /[a-z]+/.test(value);
-    const hasNumericCharacters = /[0-9]+/.test(value);
-
-    const passwordVality =
-      hasUppercaseCharacters && hasLowercaseCharacters && hasNumericCharacters;
-
-    return !passwordVality ? { strongPassword: true } : null;
-  };
-}
-```
-
-Implementação no componente de register:
-
-```ts
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { strongPasswordValidator } from '../validators/strongPasswordValidator';
-
-export class RegisterComponent implements OnInit {
-  formRegisterProduct!: FormGroup;
-
-  constructor(
-    private formBuilder: FormBuilder
-  ) {}
-
-  ngOnInit(): void {
-    this.createForm();
-  }
-
-  createForm() {
-    this.formRegisterProduct = this.formBuilder.group({
-      password: [
-        '',
-        [
-          Validators.required,
-          Validators.minLength(8),
-          strongPasswordValidator(),
-        ],
-      ]
-    });
-  }
-
-  get password() {
-    return this.formRegisterProduct.get('password');
-  }
-}
-```
-
-Implementação no template do componente (html):
-
-```html
-<main>
-  <form class="example-form mat-elevation-z8" [formGroup]="formRegisterProduct">
-
-    <mat-form-field class="example-full-width">
-      <mat-label>Senha</mat-label>
-      <input
-        type="text"
-        matInput
-        placeholder="Ex: 199.99"
-        formControlName="password"
-        id="password"
-      />
-      <mat-error *ngIf="password?.errors?.['required']">
-        Insira uma senha forte
-      </mat-error>
-      <mat-error *ngIf="password?.errors?.['minlength']">
-        A senha tem que ter pelo menos 8 caracteres
-      </mat-error>
-      <mat-error *ngIf="password?.errors?.['strongPassword']">
-        A senha tem que ter pelo menos uma caractere maiúsculo, minusculo e um número
-      </mat-error>
-    </mat-form-field>
-  </form>
-</main>
 ```

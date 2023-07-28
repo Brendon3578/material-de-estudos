@@ -1,5 +1,8 @@
-<h1> Conteúdo 01 </h1>
+<h1> Componentes no Angular</h1>
 
+<h2>Sumário</h2>
+
+- [Criando um novo Componente](#criando-um-novo-componente)
 - [Ciclo de vida dos componentes](#ciclo-de-vida-dos-componentes)
   - [Boas práticas](#boas-práticas)
 - [Data Binding](#data-binding)
@@ -8,11 +11,22 @@
 - [Diretivas Estrutural ngFor](#diretivas-estrutural-ngfor)
 - [Pipe](#pipe)
   - [Criando uma Pipe Customizada](#criando-uma-pipe-customizada)
-- [Criando um novo Componente](#criando-um-novo-componente)
+
+## Criando um novo Componente
+
+Usa-se a CLI do Angular, com o seguinte comando `ng generate componente <meuCoomponente>`
+
+```bash
+ng generate component ./components/toolbar
+# or
+ng g component ./components/toolbar
+# or
+ng g c ./components/home
+```
 
 ## Ciclo de vida dos componentes
 
-São métodos hooks (gancho) de lifecycle, ou seja, o Angular oferece os **Hooks** para lidar de situações durante o ciclo de vida do componente, de sua inicialização (init) até sua finalização (destroy)
+São métodos hooks de lifecycle, ou seja, o Angular oferece os **Hooks** para lidar de situações durante o ciclo de vida do componente, de sua inicialização (init) até sua finalização (destroy)
 
 É utilizado para garantir o melhor desempenho da aplicação e evitar vazamento de memória
 
@@ -186,13 +200,3 @@ products = [
 Resultado final:
 
 ![Tabela de star rating](./assets/star-pipe.PNG)
-
-## Criando um novo Componente
-
-```bash
-ng generate component ./components/toolbar
-# or
-ng g component ./components/toolbar
-# or
-ng g c ./components/home
-```

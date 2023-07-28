@@ -20,7 +20,7 @@ Anotações sobre o curso de Fundamentos de AWS da Escola da Nuvem ☁
 - [💰 Console Gerenciamento & Gerenciamento Custos](./hard-skills/aula02.md)
 - [🔐 Identidade, Segurança & Computação](./hard-skills/aula03.md)
 - [💻 EC2, AutoScaling, Lambda e Elastic Beanstalk](./hard-skills/aula04.md)
-  - [(Extra) Containers na AWS](./hard-skills/extra/containers.md)
+  - [(Extra) Containers na AWS e Serverless](./hard-skills/extra/containers.md)
 - [💿 Armazenamento (S3) e website estático](./hard-skills/aula05.md)
 - [🚚 EBS, Snow Family, Glacier, VPC, DNS e Route 53](./hard-skills/aula06.md)
 - [🌐 CloudFront, Elastic Load Balancer, CloudWatch](./hard-skills/aula07.md)
