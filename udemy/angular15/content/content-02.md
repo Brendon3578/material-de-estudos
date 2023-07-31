@@ -5,6 +5,7 @@
 - [Módulos](#módulos)
 - [Lazy Loading nas Rotas](#lazy-loading-nas-rotas)
 - [Angular Material](#angular-material)
+  - [Guias para o Angular Material](#guias-para-o-angular-material)
 
 ## Módulos
 
@@ -65,3 +66,9 @@ const routes: Routes = [
 # para adicionar na aplicação angular:
 ng add @angular/material
 ```
+
+### Guias para o Angular Material
+
+- Como criar um módulo para centralizar importações do Angular Material - [Acesse o guia](./extra/angular-material-module.md)
+- Como Implementar o Componente de DatePicker traduzido para PT-BR - [Acesse o guia](./extra/angular-material-datepicker.md)
+- Como utilizar o Componente de SnackBar sendo um serviço reutilizável - [Acesse o guia](./extra/angular-material-snackbar-as-service.md)

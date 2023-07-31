@@ -12,15 +12,18 @@ Anotações feitas a partir do Curso de Angular 15 do Alexandre Ribeiro. [Link d
 - **Pipes** para formatação de dados antes de serem exibidos na view (template)
   - Criando uma Pipe customizada de avaliações de um produto (estrelas)
 
-[Link de acesso para o material](./content/content-01.md)
+[Link de acesso para o guia](./content/content-01.md)
 
 ## Módulos, Lazy Loading e Angular Material
 
 - O que são módulos no Angular
 - Lazy Loadings nas rotas para melhorar o desempenho da aplicação
 - Angular Material para estilização "nativa" do Angular
+  - Como criar um módulo para centralizar importações do Angular Material - [Acesse o guia](./content/extra/angular-material-module.md)
+  - Como Implementar o Componente de DatePicker traduzido para PT-BR - [Acesse o guia](./content/extra/angular-material-datepicker.md)
+  - Como utilizar o Componente de SnackBar sendo um serviço reutilizável - [Acesse o guia](./content/extra/angular-material-snackbar-as-service.md)
 
-[Link de acesso para o material](./content/content-02.md)
+[Link de acesso para o guia](./content/content-02.md)
 
 ## Serviços e Injeção de Dependência
 
@@ -30,7 +33,7 @@ Anotações feitas a partir do Curso de Angular 15 do Alexandre Ribeiro. [Link d
   - Diferença entre Promise nativa do JS e o Observable do RXJS
 - Exemplo de uma requisição HTTP Client e como usar com os serviços
 
-[Link de acesso para o material](./content/content-03.md)
+[Link de acesso para o guia](./content/content-03.md)
 
 ## Pipe do RXJS e Resgatando dados através de parâmetros de rota
 
@@ -39,7 +42,7 @@ Anotações feitas a partir do Curso de Angular 15 do Alexandre Ribeiro. [Link d
   - Boa prática para nomear Observables
 - Resgatar informações através de parâmetros de rota
 
-[Link de acesso para o material](./content/content-04.md)
+[Link de acesso para o guia](./content/content-04.md)
 
 ## Capturando e Manipulando dados de um Formulário no Angular
 
@@ -48,7 +51,7 @@ Anotações feitas a partir do Curso de Angular 15 do Alexandre Ribeiro. [Link d
 - Formas de capturar e manipular dados providos de um formulário html
 - Captura de dados do formulário através de Template Driven, utilizando **ngModel** e **FormsModule**
 
-[Link de acesso para o material](./content/content-05.md)
+[Link de acesso para o guia](./content/content-05.md)
 
 ### Utilizando Reactive Forms
 
@@ -56,11 +59,20 @@ Anotações feitas a partir do Curso de Angular 15 do Alexandre Ribeiro. [Link d
 - Validações reativas
   - Criando validações customizadas usando **ValidatorFn**
 
-[Link de acesso para o material](./content/content-06.md)
+[Link de acesso para o guia](./content/content-06.md)
 
 ## Inversão de Dependência Compartilhamento de dados entre componente pai e filho
 
 - Inversão de Dependência (DIP)
 - Compartilhamento de dados entre componente pai e filho utilizando os decorators **@Input** e **@Output**
 
-[Link de acesso para o material](./content/content-07.md)
+[Link de acesso para o guia](./content/content-07.md)
+
+## Autorização e Autenticação no Angular
+
+- Autenticação do usuário no Angular
+- Utilização de Subject e Behavior Subject para armazenar o estado do usuário e direcionar para vários Observers
+- Guardas de rotas para negar ou permitir o acesso do usuário à rotas criadas
+- Implementando o Interceptor para adicionar ao Header o token de autorização nas requisições HTTP  
+
+[Link de acesso para o guia](./content/content-08.md)

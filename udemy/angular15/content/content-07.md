@@ -18,3 +18,13 @@ Dependency Inversion Principle consiste em depender de abstrações (uma camada 
 - Utiliza-se o decorator `@Output`
 - Permite que um componente filho emita eventos para o componente pai
 - Criar eventos personalizados no componente filho  que podem ser capturados e processados pelo componente pai. Permitindo a comunicação de eventos de filho para pai.
+
+### Decorator ViewChild
+
+O `@ViewChild` é decorator que permite que um componente pai **acesse e interaja** com um componente filho **diretamente no próprio template**. É utilizado para obter uma referência a um componente filho dentro de um componente pai.
+
+Usa-se **template variables** com o ViewChild para essa referência, através do hashtag `#`
+
+### Decorator ViewChildren
+
+O `@ViewChildren` permite que um componente pai acesse uma coleção de componentes filhos que correspondem a um determinado seletor de consulta. Ele permite a comunicação e interação com múltiplos componentes filhos ao mesmo tempo
