@@ -14,7 +14,7 @@ Enquanto o Identity Access Management (IAM) é focado no usuário, **quem** tem 
 
 ## Restrições (Constraints)
 
-É um tipo específico de limitação quanto a um serviço ou lista dde serviços do Google Cloud. Toda a restrição tem um tipo:
+É um tipo específico de limitação quanto a um serviço ou lista de serviços do Google Cloud. Toda a restrição tem um tipo:
 
 - **Lista**. exemplo: uma lista de endereços IP que podem se conectar a uma máquina virtual
 - **Booleano**. Exemplo: se contas de serviço externas podem ser criadas.

@@ -76,3 +76,13 @@ Anotações feitas a partir do Curso de Angular 15 do Alexandre Ribeiro. [Link d
 - Implementando o Interceptor para adicionar ao Header o token de autorização nas requisições HTTP  
 
 [Link de acesso para o guia](./content/content-08.md)
+
+## Operadores do RXJS
+
+- Operadores de utilidade: `tap`
+- Operadores para criar Observables: `from`, `of`, e funções `interval` e `timer`
+- Operadores de filtro: `filter`, `map`, `switchMap`, `distinctUntilChanged`, `takeUntil`
+- Operadores de captura de erros: `catchError`
+- Operadores de combinação: `forkJoin`
+
+[Link de acesso para o guia](./content/content-09.md)

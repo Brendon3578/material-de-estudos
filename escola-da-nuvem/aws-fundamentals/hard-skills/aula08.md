@@ -27,7 +27,7 @@
   - Visualização através de uma dashboard
 
 - `CloudTrail`: para efetuar **Auditoria e Conformidade**
-  - É uma trilha (*trail*), no qual é possível ver os rastros das operações que foram efetuadas dentro do ambiente cloud AWS (que tipo dde operação foi realizada e em que momento, qual o endereço IP de origem, etc)
+  - É uma trilha (*trail*), no qual é possível ver os rastros das operações que foram efetuadas dentro do ambiente cloud AWS (que tipo de operação foi realizada e em que momento, qual o endereço IP de origem, etc)
   - É registrado em um trail log (temporário ou permanente, ambos armazenados em um bucket do S3)
   - Cada trail pode armazenar Events, podendo ser Management events, Data events e Insights events
 

@@ -75,7 +75,7 @@ Ambos tem o objetivo de desenvolver o mentorado
 
 Pra ser um **Mentorado**:
 
-- Ser sempre o **protagonista** dda própria carreira
+- Ser sempre o **protagonista** da própria carreira
 - Questione, faça perguntas alinhadas à sua meta
 - Evite respostas simplificadas, busque aprofundar o conhecimento
 - Se comprometer no aprendizado

@@ -155,8 +155,6 @@ export class LoginComponent implements OnInit {
 
   login() {
     this.authLogin = Object.assign({}, this.authLogin, this.loginForm.value);
-    // this.authLogin.email = this.authLogin.email.toLowerCase()
-    console.log(this.authLogin);
     this.authenticationService.login(this.authLogin).subscribe(
       (user) => {
         if (user?.id) {

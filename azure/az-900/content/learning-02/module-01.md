@@ -164,9 +164,9 @@ São uma unidade de gerenciamento, cobrança e escala. Elas permitem organizar l
 
 ### Criar Assinaturas Adicionais
 
-É possível criar assinaturas adicionais para gerenciamento dde recursos ou cobrança. É possível criar assinaturas adicionais para separar:
+É possível criar assinaturas adicionais para gerenciamento de recursos ou cobrança. É possível criar assinaturas adicionais para separar:
 
-- **Ambientes**: para configurar ambientes separados (desenvolvimento, teste), segurança ou para isolar dados por motivos dde conformidade. O controle de acesso ao recurso ocorre no nível da assinatura
+- **Ambientes**: para configurar ambientes separados (desenvolvimento, teste), segurança ou para isolar dados por motivos de conformidade. O controle de acesso ao recurso ocorre no nível da assinatura
 - **Estruturas organizacionais**: para refletir diferentes estruturas organizacionais. Permite gerenciar e controlar o acesso aos recursos que os usuários provisionam em cada assinatura
 - **Cobrança**: como os custos são agregados primeiro no nível de assinatura, você pode criar assinaturas para fins de cobrança, controlando os custos com base nas necessidades.
 
@@ -175,7 +175,7 @@ São uma unidade de gerenciamento, cobrança e escala. Elas permitem organizar l
 Os recursos são reunidos em grupos de recursos e os grupos de recursos são reunidos em assinaturas.
 
 - Se tiver muitas assinaturas, é necessário um modo de gerenciar o acesso, as políticas e a conformidade com eficiência para essas assinaturas.
-- Os **grupos de gerenciamento** fornecem um nível de escopo acima das assinaturas. Organizando em **contêineres** e aplicando as condições dde governança a esses grupos.
+- Os **grupos de gerenciamento** fornecem um nível de escopo acima das assinaturas. Organizando em **contêineres** e aplicando as condições de governança a esses grupos.
 - Todas as assinaturas em um grupo de gerenciamento herdam as condições aplicadas ao grupo de gerenciamento.
 - Fornecem gerenciamento corporativo em larga escala, pois podem ser aninhados (um dentro do outro).
 

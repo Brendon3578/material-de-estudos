@@ -92,7 +92,7 @@ Há quando é utilizado os recursos de diferentes provedores, ou quando há a mi
 
 ## Solução VMware No Azure
 
-Usado quando o consumidor já está estabelecido com o VMware em um ambiente dde nuvem privada. Permitindo executar cargas de trabalho do VMware no Azure, com integração e escalabilidade total
+Usado quando o consumidor já está estabelecido com o VMware em um ambiente de nuvem privada. Permitindo executar cargas de trabalho do VMware no Azure, com integração e escalabilidade total
 
 # Modelo baseado em consumo
 

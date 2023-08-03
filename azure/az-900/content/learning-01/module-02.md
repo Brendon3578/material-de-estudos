@@ -60,7 +60,7 @@ Utilizando ferramentas como: **dimensionamento automático**, **balanceamento de
 
 ### Previsibilidade de custos
 
-Se concentra em prever o custo dos gastos com a nuvem. No qual o desenvolvedor pode acompanhar o uso de recursos em **tempo real**, monitorar os recursos para garantir a maior eficiência de uso possível e aplicar a análise de dados para encontrar padrões que ajudam a planejar melhor as implantações dde recursos.
+Se concentra em prever o custo dos gastos com a nuvem. No qual o desenvolvedor pode acompanhar o uso de recursos em **tempo real**, monitorar os recursos para garantir a maior eficiência de uso possível e aplicar a análise de dados para encontrar padrões que ajudam a planejar melhor as implantações de recursos.
 
 você pode prever custos futuros e ajustar os recursos conforme o necessário. Podendo usar ferramentas como **TCO** (*total cost of ownership* ou custo total de propriedade) ou a Calculadora de Preços para obter uma estimativa de possíveis gastos com a nuvem.
 

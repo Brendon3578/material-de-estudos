@@ -103,7 +103,7 @@ Outro exemplo, a política abaixo define que o usuário do IAM altere sua própr
 - **Funções** possuem credenciais **temporárias**
 - Usuários root **Não** devem ser compartilhados
 - Use o `least privilege principle` nos usuários
-- **Documentos JSON** definem as permissões dde acesso
+- **Documentos JSON** definem as permissões de acesso
 - **Grupos** contém outros usuários, mas **Não** podem conter outros grupos
 
 ## Segurança (AWS WAF e AWS Shield)

@@ -141,9 +141,9 @@ Um programa armazenado na ROM têm o nome de **Firmware**. Tendo três programas
 
 ### Composição da Memória Principal
 
-- Composta por **unidades de acesso** chamadas **células**, cada uma capaz dde armazenar um número de **bits (1 e 0)**.
+- Composta por **unidades de acesso** chamadas **células**, cada uma capaz de armazenar um número de **bits (1 e 0)**.
 - Cada célula tem um **endereço** (posição da célula dentro da memória).
-- Quando um programa lê/escreve um dado em uma célula, primeiro ele especifica o endereço dda memória desejado.
+- Quando um programa lê/escreve um dado em uma célula, primeiro ele especifica o endereço da memória desejado.
 - O endereço da célula a ser acessada fica armazenado em um **registrador de endereço de memória**.
 
 O número de células endereçadas na memória é limitado pelo tamanho do registrador de endereço. Se o registrador possuir **n** bits, a memória endereça **2^n** células.

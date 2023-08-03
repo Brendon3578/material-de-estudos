@@ -174,7 +174,6 @@ export class RegisterComponent implements OnInit {
 
   createProduct(productData: Product) {
     this.productService.createProduct(productData).subscribe((res) => {
-      console.log('Produto criaddo com sucesso');
       this.router.navigate(['product', 'list']);
     });
   }

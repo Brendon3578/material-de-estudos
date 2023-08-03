@@ -15,6 +15,6 @@ Se o seu app for tolerante falha, poderá reduzir consideravelmente os custos do
 
 - É recomendado a criação em **massa de VMS**
 - Usar formas menores de máquina
-- Executar grandes clusters dde VM preemptiva fora dos horários de pico
+- Executar grandes clusters de VM preemptiva fora dos horários de pico
 - Desenvolver APPs para serem tolerantes a falhas e preempção
-- Criar scrips de desligamentos para salvar o progresso ddo trabalho.
+- Criar scrips de desligamentos para salvar o progresso do trabalho.

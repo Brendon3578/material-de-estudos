@@ -24,7 +24,7 @@ As bibliotecas fornecem APIs para acessar os serviços (application APIs e Admin
 - Suporte à linguagens, como SDKs, libs, runtime environments, e compiladores para Java, Python, Node, etc.
 - Visualização web que permite visualizar aplicações web rodando no Cloud Shell
 
-Com o **Cloudd Shell** você consegue:
+Com o **Cloud Shell** você consegue:
 
 - Criar e gerenciar instâncias do Compute Engine
 - Criar e acessar banco de dados SQL do Cloud

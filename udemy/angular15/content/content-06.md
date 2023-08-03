@@ -99,13 +99,11 @@ export class RegisterComponent implements OnInit {
   updateProduct(productData: Product) {
     this.productService.updateProduct(productData).subscribe((res) => {
       this.router.navigate(['product', 'list']);
-      console.log(res);
     });
   }
 
   createProduct(productData: Product) {
     this.productService.createProduct(productData).subscribe((res) => {
-      console.log('Produto criaddo com sucesso');
       this.router.navigate(['product', 'list']);
     });
   }

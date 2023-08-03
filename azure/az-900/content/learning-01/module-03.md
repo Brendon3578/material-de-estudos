@@ -33,7 +33,7 @@ Cenários comuns:
 
 - **Estrutura de Desenvolvimento**: Fornecendo uma estrutura que os desenvolvedores podem usar como base para desenvolver ou personalizar aplicativos baseados em nuvem.
   - Permite aos desenvolvedores criar **aplciações** usando componentes de software interno (recursos de nuvem, escalabilidade, alta disponibilidade, funcionalidade de multi locatário, etc).
-- **Análise ou Business Intelligence**: Permitindo que as organizações analisem e minerem dados, encontrando insights e padrões e prevendo resultados para aprimorar a previsão, as decisões de design de um produto, os retornos sobre investimentos e outras decisões dde negócios
+- **Análise ou Business Intelligence**: Permitindo que as organizações analisem e minerem dados, encontrando insights e padrões e prevendo resultados para aprimorar a previsão, as decisões de design de um produto, os retornos sobre investimentos e outras decisões de negócios
 
 # Software como Serviço (SaaS)
 
