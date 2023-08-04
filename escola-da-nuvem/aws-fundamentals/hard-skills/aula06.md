@@ -92,14 +92,18 @@
 - **Sub-rede Pública** (Tem acesso à internet), usa-se juntamente com o `Internet Gateway` para que recursos se conectem com a internet
 - **Sub-rede Privada** (Não tem acesso à internet), usa-se juntamente com o `Nat Gateway` para que recursos da sub-rede privada se conectem à internet, permite que recursos conversem entre si
 - **Tabela de Roteamento**: faz a comunicação entre a sub-rede e as instâncias
-- `SG` (Security Group): firewall no nível das instâncias
-- `NACLs` (Network Access List): firewall no nível das subredes
+- `SG` (Security Group): firewall no **nível das instâncias**
+- `NACLs` (Network Access List): firewall no nível das **sub-redes**
 
 ![exemplo de uma arquitetura VPC](./images/vpc-example.png)
 
 ---
 
-> Para uma conexão privada dedicada entre instalações locais da empresa e a Nuvem AWS, usa-se o [AWS Direct Connect](./extra/aws-direct-connect.md)
+> Para uma conexão privada dedicada entre instalações locais da empresa e a Nuvem AWS, usa-se o [AWS Direct Connect](./extra/aws-direct-connect.md).
+
+---
+
+> Explicação dos [procedimentos de como criar uma VPC](./extra/vpc.md)
 
 ## AWS Route 53
 
