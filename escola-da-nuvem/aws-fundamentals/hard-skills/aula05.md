@@ -54,6 +54,8 @@ No qual, é composto de:
 
 ![Storage classes](./images/s3_storage_classes_2.png)
 
+Para ver a respeito de ciclo de vida de objetos, [acesse esse material](./extra/storage.md)
+
 ## Bibliografia
 
 <https://blog.dsbrigade.com/introducao-aws-s3/>

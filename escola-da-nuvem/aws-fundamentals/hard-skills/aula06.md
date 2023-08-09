@@ -19,12 +19,12 @@
 
 - Blocos persistentes (Volume, recomendado para SOs e BDs)
 - Proteção por redundância (replicação entre zonas - SLA)
-- Diferente tipo (SSD ou Hd)
+- Diferente tipos de volume (SSD ou HDD)
 - Redimensionar em minutos (**on-the-fly**)
 - Pago conforme a provisão
-- Snapshot manual ou automático (**point-in-time**) - armazena fotos de tempo em tempo <br> ![Snapshot](./images/svg/storage/ebssnapshot.svg)
+- Snapshot (backups) manual ou automático (**point-in-time**) - armazena fotos de tempo em tempo <br> ![Snapshot](./images/svg/storage/ebssnapshot.svg)
 - Criptografia em repouso (ver depois e pesquisa sobre criptografia em trânsito)
-- Uma zona de disponibilidade (precisa estar na mesma zona que a instância)
+- Replicado automaticamente em uma **zona de disponibilidade** (precisa estar na mesma zona que a instância)
 
 ---
 

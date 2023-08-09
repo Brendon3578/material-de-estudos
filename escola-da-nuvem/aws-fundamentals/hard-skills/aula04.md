@@ -53,9 +53,8 @@
 ### Hosts dedicados (Dedicated Host)
 
 - **Hardware dedicado**, mais aberto em relação às instâncias dedicadas
-- Servidor físico EC2 **exclusivo** ao seu uso
-- Cumprir requisitos de **conformidade**
-- Visibilidade de soquetes, núcleos, IDs de Host
+- Servidor físico EC2 **exclusivo** ao seu uso, ajuda a cumprir requisitos regulatórios de **conformidade**
+- Fornecem visibilidade de soquetes, núcleos, IDs de Host
 - **Comprometimento** por um período de 3 anos
 - Pode ser comprado sob demanda de horas
 - Se optar por **reversa**: até 70% de desconto em comparação a ON-demand
