@@ -48,7 +48,7 @@ Um exemplo comum é o Amazon Simple Storage Service (S3)
 ### Volumes do EBS
 
 - Para um armazenamento persistente usa-se **volumes EBS**, serve-se como um HD externo de um computador, com você definindo o tamanho de armazenamento do volume (é escalonável).
-  - É um recurso zonal
+  - É um recurso zonal e replicado em vários servidores na mesma zona.
 - Não pode ser compartilhado ou anexado a várias instâncias  **ao mesmo tempo**
   - Para anexar o mesmo volume EBS à várias instâncias usa-se o EBS Multi-attach
 - Para backups do EBS usa-se **snapshots**

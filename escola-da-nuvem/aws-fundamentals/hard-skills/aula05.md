@@ -20,6 +20,7 @@
 - **Armazenar snapshots** (backup de um momento específico do armazenamento), backups, gerar um armazenamento híbrido entre ambiente on-premises (data center físico)
 - Baixa latência e alta velocidade
 - Durabilidade (SLA) 99,999999999
+- **Replicação** de objetos em várias AZs em uma região
 
 - Buckets = Armazenamento
   - Um bucket é regional

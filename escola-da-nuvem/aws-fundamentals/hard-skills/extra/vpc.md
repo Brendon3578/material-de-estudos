@@ -21,7 +21,7 @@ Para que uma VPC se conecte com um ambiente **On-premisses** de uma empresa/data
 
 ## Tabela de roteamento
 
-Quando vc cria uma VPC, a AWS cria também uma **tabela de rotas principal** que permite o tráfego entre todas as sub-redes na rede do VPC - tráfego de target `local`
+Quando vc cria uma VPC, a AWS cria também uma **tabela de rotas principal** que permite o tráfego entre todas as sub-redes na rede do VPC (tráfego de target `local`)
 
 - Uma tabela de rotas é um conjunto de regras (rotas) que determina o local que o tráfego será redirecionado
 - Tem a funcionalidade de permitir o trafego entre recursos que estão dentro de uma sub-rede
@@ -30,7 +30,7 @@ Quando vc cria uma VPC, a AWS cria também uma **tabela de rotas principal** que
     - Pode ser `0.0.0.0/0` para levar e entregar tráfego de qualquer lugar
   - `Target`: é o alvo no qual o trafego será redirecionado (na **tabela de rotas principal** é o *local*)
     - Pode ser um `Internet Gateway` para permitir o acesso da sub-rede, que futuramente será associada, à internet
-    - Por exemplo `local`
+    - Por exemplo `local`, que todas as tabelas de rotas possuem, permitindo o acesso da sub-rede entre outras sub-redes
 
 ## Segurança na VPC
 
