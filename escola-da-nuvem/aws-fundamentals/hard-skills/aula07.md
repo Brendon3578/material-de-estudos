@@ -42,6 +42,24 @@ Há 3 tipos de load balancer principais
 
 ![Tipos de Load Balancers](./images/load-balancer.PNG)
 
+---
+
+<small>
+
+- O ELB é **altamente disponível**. Deve-se garantir apenas que o balanceador seja implementado em várias AZs.
+- O ELB é **dimensionado automaticamente** para atender à demanda do tráfego de entrada. Ele lida com o tráfego de entrada e o envia para a aplicação de back-end
+
+O serviço **Elastic Load Balancer** é composto por 3 componentes principais:
+
+- `Listeners`: O cliente se conecta ao listener (ouvidor), que deve ser fornecido uma porta e o protocolo
+- `Grupos de Destino (Target groups)`:  São os servidores de back-end (servidores), podendo ser instâncias EC2, funções do AWS Lambda, ou endereços IP.
+  - Deve-se também definir uma verificação de integridade (health check) para cada Target group
+- `Regras`: são condições que pode ser o endereço IP de origem do cliente, e uma condição para qual Target Group deve-se enviar o tráfego
+
+</small>
+
+Veja mais sobre o funcionamento do [Application Load Balancer](./extra/application-load-balancer.md).
+
 ## CloudWatch
 
 ![Cloud Watch](images/svg/management_governance/cloudwatch.svg)

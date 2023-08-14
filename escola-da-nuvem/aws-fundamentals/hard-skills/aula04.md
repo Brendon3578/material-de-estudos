@@ -12,6 +12,7 @@
   - [Spot Instances](#spot-instances)
 - [AWS Auto Scaling Group](#aws-auto-scaling-group)
   - [Regra geral](#regra-geral)
+  - [Guias úteis](#guias-úteis)
 - [AWS Elastic Beanstalk](#aws-elastic-beanstalk)
 - [AWS Lambda](#aws-lambda)
 
@@ -76,7 +77,9 @@
 ![auto scaling group](images/as-basic-diagram.png)
 
 - Pode ser utilizado com o **Elastic Load Balancing** para distribuir o tráfego de acesso às aplicações entre todas as instâncias do EC2 em execução.
-- Você cria um EC2 launch template para o **Auto Scaling Group** (ASG)
+- Você cria um `EC2 launch template` para o **Auto Scaling Group** (ASG) além de especificar a VPC e as sub-redes que as instâncias serão executadas.
+- É possível também especificar o tipo de compra para as instâncias do EC2, sendo sob demanda spot ou a combinação dos dois.
+- Voce pode criar uma **política de escalabilidade** para responder a alarmes adicionais (alarmes do CloudWatch) mesmo quando uma ação de escalabilidade ou substituição de healthy check estiver em andamento, por exemplo adicionar novas instâncias apenas quando uma outra já estiver sido inicializada
 
 ### Regra geral
 
@@ -84,6 +87,24 @@
 - Realiza verificações de integridade (**health checks**), finaliza as instâncias não íntegras (**unhealthy**) e inicia novas instâncias
 - Você pode: aumentar conforme a demanda (**Scale Out**) e diminuir quando a demanda diminui (**Scale In**)
 - É **gratuito**, você paga apenas sob demanda das instâncias
+
+---
+
+<small>
+
+Você pode definir o que o EC2 Auto Scaling precisa através de uma **configuração de execução**, porém ela não permite o versionamento usando uma configuração de **execução**  criada anteriormente como modelo. Além de não permitir a criação por meio de uma instância do EC2 já existente.
+
+> A AWS recomenda usar um **modelo de inicialização** em vez de uma configuração de execução.
+
+### Guias úteis
+
+- [AWS: Modelos de Execução (Launch Templates)](https://docs.aws.amazon.com/pt_br/autoscaling/ec2/userguide/launch-templates.html)
+- [AWS: definição de limites de capacidade para o seu grupo do Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/asg-capacity-limits.html)
+- [AWS: políticas de escalabilidade simples e de etapas para o Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-simple-step.html)
+- [AWS: políticas de dimensionamento com monitoramento do target para o Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-target-tracking.html)
+- [AWS: criação de um grupo do Auto Scaling usando um modelo de inicialização](https://docs.aws.amazon.com/autoscaling/ec2/userguide/create-asg-launch-template.html)
+
+</small>
 
 ## AWS Elastic Beanstalk
 
