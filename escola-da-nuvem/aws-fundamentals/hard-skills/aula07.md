@@ -50,6 +50,8 @@ Há 3 tipos de load balancer principais
 
 Funciona em quatro etapas: `Coletar` ➡ `Monitorar` ➡ `Atuar` ➡ `Analisar`
 
+Veja as vantagens do [Monitoramento de recursos na AWS](./extra/monitoring.md).
+
 ### Coletar
 
 - Coletar por meios de métricas e logs de recursos e serviços
@@ -70,7 +72,7 @@ Funciona em quatro etapas: `Coletar` ➡ `Monitorar` ➡ `Atuar` ➡ `Analisar`
 ### Atuar
 
 - **Criar alarmes** para atuar como **gatilho**, baseado nas métricas de uso e desempenho
-- É possível criar um alarme que envia uma notificação quando um limite de faturamento (billing alerts) é excedido
+- É possível criar um alarme que envia uma notificação quando um limite (threshold) de faturamento (billing alerts) é excedido
 - Opções do gatilho: amostra, %, valor máximo, mínimo etc
 - Alarm Action
   - **Auto Scaling Group**: Aumentar ou diminuir o número de instâncias no Amazon EC2
@@ -81,8 +83,8 @@ Funciona em quatro etapas: `Coletar` ➡ `Monitorar` ➡ `Atuar` ➡ `Analisar`
 
 Analisar em tempo real o ambiente, em segundos ou posterior com até 15 meses de armazenamento dos logs
 
-Análise de alarmes:
+Você pode atribuir os seguintes **estados de alarmes**:
 
-- `ok`: tudo está ocorrendo normalmente
-- `insufficient_data`: ainda está coletando dados
-- `alarm`: algo ruim aconteceu ou **indicar** que uma métrica foi atingida
+- `OK`: **tudo está ocorrendo normalmente**, a métrica está dentro do **threshold** (limite) definido.
+- `ALARM`: algo ruim aconteceu ou **indicar** que o **threshold** da métrica foi atingido.
+- `INSUFICIENT_DATA`: o alarme está inicializando, ainda está coletando dados ou a métrica não está disponível

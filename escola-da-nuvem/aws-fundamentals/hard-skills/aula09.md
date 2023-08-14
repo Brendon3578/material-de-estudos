@@ -1,4 +1,11 @@
-# Banco de Dados SQL, NoSQL e nuvem como código
+<h1> Banco de Dados SQL, NoSQL e nuvem como código </h1>
+
+<h2> Sumário </h2>
+
+- [Amazon RDS - Relational Database Service](#amazon-rds---relational-database-service)
+  - [Arquitetura](#arquitetura)
+- [Amazon DynamoDB - Para Banco de Dados Não Relacional](#amazon-dynamodb---para-banco-de-dados-não-relacional)
+- [AWS CloudFormation](#aws-cloudformation)
 
 ## Amazon RDS - Relational Database Service
 
@@ -6,27 +13,26 @@
 
 > O Amazon Relational Database Service (**Amazon RDS**) é um banco de dados relacional que se destaca  por sua **escalabilidade**, **automatização** na aplicação de patches, provisionamento de hardware e backup na Nuvem AWS
 
-- **Mecanismos disponíveis**: Amazon Aurora, MySQL, MariaDB, PostgreSQL, Oracle, SQL Server
+- **Mecanismos disponíveis (engine types)**: Amazon Aurora, MySQL, MariaDB, PostgreSQL, Oracle, SQL Server
 - Simples, seguro e funcional
 - Réplica em outra zona e Redundância de dados
 - Eliminar Congelamento e Minimizar picos
 - Alta disponibilidade
-
----
-
-<small>
-
-O Amazon RDS é um **banco de dados gerenciado**, isso envolve o modelo de responsabilidade compartilhada pois você cuida apenas da **otimização de aplicações**: criação de esquema e de índice, stored procedures, criptografia de dados, controle de acesso e a otimização de consultas.
-
-Caso você decidisse instalar um banco de dados em uma instância EC2, você estaria lidando com um **banco de dados não gerenciado**, ou seja,você além de lidar com a otimização de aplicações, terá que lidar com os backups, alta disponibilidade, escalabilidade, patches de SO e do BD, entre outras configurações.
-
-</small>
+- Preço cobrado por hora de atividade da instância (podendo ser instâncias sob demanda ou reservada)
 
 ### Arquitetura
 
 ![Arquitetura de VPC](images/aws-rds.png)
 
-O Recurso (banco de dados) do RDS é replicado entre duas ou mais zonas de disponibilidade (multi-az) para ter uma maior disponibilidade, tendo uma instância de BD primária e as que estão em outras zonas,  sendo réplicas do primário
+A instância do banco de dados do RDS é replicado entre duas ou mais zonas de disponibilidade (multi-az) para ter uma maior disponibilidade, tendo uma instância de BD primária e outras que estão em outras zonas,sendo réplicas do primário (standy-by).
+
+---
+
+<small>
+
+Veja mais detalhes sobre a configuração do [Amazon RDS](./extra/rds.md) em uma VPC, seus backups e sobre ser um banco de dados gerenciado pela AWS
+
+</small>
 
 ## Amazon DynamoDB - Para Banco de Dados Não Relacional
 
@@ -41,8 +47,11 @@ O Recurso (banco de dados) do RDS é replicado entre duas ou mais zonas de dispo
 
 - Tabela é uma **coleção de itens**
   - Cada item possui **pelo menos um atributo** e não pode ultrapassar 400kb
-- Chave primária e **obrigatória**, utilizado para identificar um item na Tabela
-- Chave secundária é **opcional** e fornece flexibilidade na consulta
+- Chave primária (partição) e **obrigatória**, utilizado para identificar um item na Tabela
+- Chave secundária (classificação) é **opcional** e fornece flexibilidade na consulta
+- Schemas flexíveis
+
+A interação do cliente é por via de chamadas de API
 
 ## AWS CloudFormation
 
