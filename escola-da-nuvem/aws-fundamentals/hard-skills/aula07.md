@@ -20,7 +20,7 @@
 Utiliza-se PoPs que são pontos de presença (**Points of presence**) para acelerar a distribuição do conteúdo estático e dinâmico da web, como arquivos `.html`, `.css`, `.js` e arquivos de imagens através da rede global de datacenters. Operando do seguinte modo:
 
 - O usuário pede a solicitação através de uma URL
-- O DNS roteia a solicitação para o POP mais próximo do usuário
+- O DNS roteia a solicitação para o POP (**locais de borda e caches de borda regionais**) mais próximo do usuário
 - O CloudFront retorna a requisição enviando para o ponto de presença solicitado (funcionando como uma memória cache)
 
 ### Segurança

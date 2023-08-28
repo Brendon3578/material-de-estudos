@@ -73,7 +73,7 @@ Você é responsável pela **segurança NA nuvem** - `Security IN the cloud`.
 
 > O AWS Budgets (Orçamentos da AWS) permite que você defina **orçamentos personalizados** e **enviar alertas** quando o uso ou os custos excede o valor orçado.
 
-- Você escolhe o meio de aviso (**e-mail** ou **notificação do SNS** (*Amazon Simple Notification Service*) quando o custo real ou previsto e o uso excederem o limite do orçamento criado
+- Você escolhe o meio de aviso (**e-mail** ou **notificação do SNS** (*Amazon Simple Notification Service*)) quando o custo real ou previsto e o uso excederem o limite do orçamento criado
 
 ## AWS Cost Explorer
 

@@ -112,6 +112,10 @@ Você pode definir o que o EC2 Auto Scaling precisa através de uma **configura�
 
 > É um **serviço gerenciado**, para os desenvolvedores fazerem a implementação (**deploy**) de forma fácil (pode ser escalável - Load Balancing e Escalabilidade) de **aplicações e serviços web**.
 
+---
+
+> Ele permite **implantar e dimensionar** serviços e aplicativos Web desenvolvido em uma linguagem de programação em infraestrutura implantada automaticamente com gerenciamento de capacidade, balanceamento de carga, auto scaling e monitoramento, ele facilita o **provisionamento** e a **conformidade** de um aplicativo
+
 Pode ser usado com várias tecnologias (Python, Ruby, PHP, Node.js, Docker, .NET, JAV) etc
 
 - Ele é um serviço **gerenciado e gratuito**.
@@ -131,5 +135,5 @@ Para decorar: **beanstalk** se refere ao pé de feijão gigante da história de 
 
 - Serverless (você não se preocupa com o provisionamento de máquinas e servidores)
 - AWS Lambda **dimensiona** suas aplicações
-- Baixo custo: **Cobrança** por número de solicitações e pela duração por cada milissegundo que leva para que o código seja executado
+- Baixo custo: **Cobrança** por **número de solicitações feitas** e pela **duração** por cada milissegundo que leva para que o código seja executado
 - Permite múltiplas linguagens (Go, Java, C#, Python, Ruby, Node.js, APIS, etc)

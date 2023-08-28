@@ -24,13 +24,20 @@ Anotações sobre o curso de Fundamentos de AWS da Escola da Nuvem ☁
 - [💿 Armazenamento (S3) e website estático](./hard-skills/aula05.md)
   - [💡 Tipos de armazenamento na AWS](./hard-skills/extra/storage.md)
 - [🚚 EBS, Snow Family, Glacier, VPC, DNS e Route 53](./hard-skills/aula06.md)
-  - [💡 Armazenamento de arquivos com Amazon EFS](./hard-skills/extra/amazon-efs.md)
+  -+ [💡 Armazenamento de arquivos com Amazon EFS](./hard-skills/extra/amazon-efs.md)
 - [🌐 CloudFront, Elastic Load Balancer, CloudWatch](./hard-skills/aula07.md)
 - [📝 Monitoria, Governança e Melhores Práticas AWS](./hard-skills/aula08.md)
   - [💡 Monitoramento de recursos na AWS](./hard-skills/extra/monitoring.md)
   - [💡 Faturamento consolidado](./hard-skills/extra/consolidated-billing.md)
 - [📼 Banco de Dados SQL, NoSQL e nuvem como código](./hard-skills/aula09.md)
   - [💡 Boas práticas do Amazon RDS](./hard-skills/extra/rds.md)
+
+---
+
+### Outros recursos da AWS
+
+- [🧠 AWS para Machine Learning de tradução](./others/language-ml.md)
+- [🌱 Migrando para a a AWS](./others/lift-and-shift.md)
 
 ## ❔ O que é a AWS
 

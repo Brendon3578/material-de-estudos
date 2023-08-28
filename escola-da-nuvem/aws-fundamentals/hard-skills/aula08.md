@@ -22,14 +22,17 @@
 
 ### Amazon CloudWatch x AWS CloudTrail
 
-- `CloudWatch`: para monitorar **Performance e Desempenho** de recursos
+- `CloudWatch`: para monitorar **Performance e Desempenho** de recursos na AWS
   - Usado para monitorar o desempenho dos recursos ao longo do tempo através de logs e relatórios diante das métricas definidas
   - Visualização através de uma dashboard
 
-- `CloudTrail`: para efetuar **Auditoria e Conformidade**
+- `CloudTrail`: para efetuar **Auditoria e Conformidade** e habilitar a governança na AWS
   - É uma trilha (*trail*), no qual é possível ver os rastros das operações que foram efetuadas dentro do ambiente cloud AWS (que tipo de operação foi realizada e em que momento, qual o endereço IP de origem, etc)
+  - As ações realizadas por um usuário, função ou um serviço da AWS são registradas como ***eventos*** no CloudTrail
   - É registrado em um trail log (temporário ou permanente, ambos armazenados em um bucket do S3)
-  - Cada trail pode armazenar Events, podendo ser Management events, Data events e Insights events
+  - Cada trail armazena Events, podendo ser Management events, Data events e Insights events
+
+É possível utilizar os dois de forma conjunta, por exemplo quando é necessário monitorar e receber alertas sobre eventos de login do console que envolvem o usuário-raiz da conta da AWS
 
 ## AWS Config
 
@@ -38,7 +41,7 @@
 > Auxilia na auditoria das **alterações dos recursos** para compliance (conformidade) validando as configurações que você define
 > Permite **acessar, auditar e avaliar** as configurações dos recursos da AWS
 
-- Acompanhar a linha do tempo das configurações dos recursos
+- Monitora e registra continuamente as alterações nos recursos da AWS, utilizado para acompanhar a linha do tempo das configurações dos recursos
 - AWS Config é **Regional**
 - Mantém **histórico das alterações** e armazena em um `Bucket S3` para posterior análise e auditoria
 - **Notificações** de alterações são enviadas através do `Amazon SNS` e disponibilizadas no **Dashboard** do AWS Config
@@ -86,12 +89,12 @@ Permite que você:
 
 ### 6 pilares Well-Architected
 
-1.**Operational Excellence**: executar e monitorar para entregar valor
-2. Security: proteger informações e sistemas
-3. **Reliability**: garantir que uma carga de trabalho execute sua função pretendida corretamente e de modo consistente
-4. **Performance Efficiency**: uso eficiente de recursos e computação
-5. **Cost Optimization**: compreensão e controle de onde o dinheiro está sendo gasto, ajustando os recursos e serviços
-6. **Sustainability**: (novo na AWS) Reflete sobre o modelo de responsabilidade compartilhada para sustentabilidade
+1. **Operational Excellence** `(Excelência Operacional)`: executar e monitorar para entregar valor
+2. **Security** `(Segurança)`:proteger dados, sistemas e ativos para utilizar as tecnologias de nuvem a fim de melhorar a segurança na nuvem
+3. **Reliability** `(Confiabilidade)`: garantir que uma carga de trabalho execute sua função pretendida corretamente e de modo consistente quando é esperado
+4. **Performance Efficiency** `(Eficiência de desempenho)`: capacidade de usar recursos computacionais com eficiência para atender aos requisitos do sistema e manter essa eficiência sob demanda e enquanto as tecnologias evoluem.
+5. **Cost Optimization** `(Otimização de custos)`: compreensão e controle de onde o dinheiro está sendo gasto, ajustando os recursos e serviços, proporcionando valor comercial pelo menor preço
+6. **Sustainability** `(Sustentabilidade)`: (novo na AWS) Reflete sobre o modelo de responsabilidade compartilhada para sustentabilidade
 
 ## AWS Artifact (Acordos e Relatórios de Conformidade)
 
@@ -125,7 +128,7 @@ Permite que você:
 Com ele é possível verificar:
 
 - Segurança
-  - Grupos de seguranças que tem portas específicas sem restrição
+  - Grupos de seguranças que tem portas específicas sem restrição (irrestrito)
   - Se há o MFA na conta `root`
   - Permissões de buckets do S3 que são de acesso aberto
     - > Buckets políticas abertas cria possíveis brechas de segurança, o que ocasionará futuramente um aumento nos custos se haver acessos indesejados.

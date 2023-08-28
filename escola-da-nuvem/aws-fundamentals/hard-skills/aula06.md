@@ -111,6 +111,10 @@
 
 > É um serviço que atua sendo DNS (Domain Name System) que encaminha as requests (solicitações) dos usuários para os aplicativos da nuvem AWS
 
+- Com ele você pode:
+  - Registrar nomes de domínio (domain name)
+  - Rotear o tráfego da internet para oss recursos do domínio
+  - Conferir a integridade desses recursos
 - O nome é referência a porta 53 (de DNS)
   - DNS é um conjuntos de regras que ajudam o cliente a chegar ao destino através de uma *friendly* URL
 

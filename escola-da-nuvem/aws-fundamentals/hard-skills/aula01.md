@@ -89,6 +89,8 @@ Para escolher uma região é necessário considerar os fatores:
 - São conectas com alta velocidade, com segurança local, refrigeração e rede
 - São **redundantes** entre si via conectividade, rede e energia
 
+> Com uma estratégia Multi-AZ é possível aumentar a disponibilidade e prevenir um único ponto de falha da aplicação.
+
 ### Ponto de Presença
 
 - **Points of Presence** ou **Edge Locations** (locais de borda)

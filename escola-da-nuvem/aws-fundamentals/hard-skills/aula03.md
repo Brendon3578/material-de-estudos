@@ -8,6 +8,7 @@
   - [User Groups \& Roles](#user-groups--roles)
   - [Autenticação e Autorização](#autenticação-e-autorização)
   - [Regras gerais](#regras-gerais)
+  - [Acesso programático](#acesso-programático)
 - [Segurança (AWS WAF e AWS Shield)](#segurança-aws-waf-e-aws-shield)
   - [AWS WAF](#aws-waf)
   - [AWS Shield](#aws-shield)
@@ -31,7 +32,7 @@ Quando criamos uma conta na AWS pela primeira vez, ele se torna o usuário raiz 
 
 ### MFA - Multi-factor Authentication
 
-É recomendado habilitar o **MFA** (autenticação com multi-fatores) para a conta `root`, podendo ser um dispositivo físico, virtual ou U2F (hardware que conecta a porta USB do computador), para a maior proteção e segurança da conta
+É **extremamente** recomendado habilitar o **MFA** (autenticação com multi-fatores) para a conta `root`, podendo ser um dispositivo físico, virtual ou U2F (hardware que conecta a porta USB do computador), para adicionar uma **camada adicional de segurança de login** ao Console de Gerenciamento da AWS dando uma maior proteção e segurança da conta, tanto `root` quanto a de usuários IAM
 
 ## Identidade - AWS Identity and Access Management
 
@@ -105,6 +106,11 @@ Outro exemplo, a política abaixo define que o usuário do IAM altere sua própr
 - Use o `least privilege principle` nos usuários
 - **Documentos JSON** definem as permissões de acesso
 - **Grupos** contém outros usuários, mas **Não** podem conter outros grupos
+- Há a [Política de uso aceitável da AWS ⤴](https://aws.amazon.com/pt/aup/) que define as ações proibidas dentro da AWS
+
+### Acesso programático
+
+Para obter `acesso programático` a uma conta da AWS é necessário uma **ID de chave de acesso** e uma **chave de acesso secreta** que pode ser atribuída a um usuário
 
 ## Segurança (AWS WAF e AWS Shield)
 

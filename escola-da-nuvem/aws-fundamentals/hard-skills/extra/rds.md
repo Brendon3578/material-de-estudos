@@ -40,7 +40,8 @@ Para backups você pode usar:
 
 ### Redundância para Disponibilidade com Multi-AZ
 
-Quando você habilita o Amazon RDS `Multi-AZ`, é criado uma cópia redundante do banco de dados em outra AZ: você acaba com duas cópias: **uma primária** em uma sub-rede em uma AZ e uma **standyby** (não é um BD ativo) em uma sub-rede em outra AZ para funcionar como um **failover automático**.
+- Quando você habilita o Amazon RDS `Multi-AZ`, é criado uma cópia redundante do banco de dados em outra AZ: você acaba com duas cópias: **uma primária** em uma sub-rede em uma AZ e uma **standyby** (não é um BD ativo) em uma sub-rede em outra AZ para funcionar como um **failover automático**.
+- Essa estratégia envolve o pilar de `Confiabilidade` do AWS Well-Architected Framework
 
 Esse failover é feito através de um DNS fornecido pela AWS
 
