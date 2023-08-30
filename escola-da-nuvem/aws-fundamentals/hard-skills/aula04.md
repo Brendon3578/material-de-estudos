@@ -2,26 +2,26 @@
 
 </h2> Sumário </h2>
 
-- [EC2 Launch types / Tipos de inicializadores](#ec2-launch-types--tipos-de-inicializadores)
+- [EC2 Launch types / Tipos de compra de instâncias](#ec2-launch-types--tipos-de-compra-de-instâncias)
   - [Sob Demanda (On-Demand)](#sob-demanda-on-demand)
   - [Instâncias Reservadas (Reserved Instances)](#instâncias-reservadas-reserved-instances)
-- [Capacidade dedicada ou reservada](#capacidade-dedicada-ou-reservada)
   - [Saving Plans](#saving-plans)
-  - [Instâncias dedicadas (Dedicated Instances)](#instâncias-dedicadas-dedicated-instances)
-  - [Hosts dedicados (Dedicated Host)](#hosts-dedicados-dedicated-host)
-  - [Spot Instances](#spot-instances)
+  - [Servidores físicos dedicados](#servidores-físicos-dedicados)
+    - [Instâncias dedicadas (Dedicated Instances)](#instâncias-dedicadas-dedicated-instances)
+    - [Hosts dedicados (Dedicated Host)](#hosts-dedicados-dedicated-host)
+- [Spot Instances](#spot-instances)
 - [AWS Auto Scaling Group](#aws-auto-scaling-group)
   - [Regra geral](#regra-geral)
   - [Guias úteis](#guias-úteis)
 - [AWS Elastic Beanstalk](#aws-elastic-beanstalk)
 - [AWS Lambda](#aws-lambda)
 
-## EC2 Launch types / Tipos de inicializadores
+## EC2 Launch types / Tipos de compra de instâncias
 
 ### Sob Demanda (On-Demand)
 
+- É a compra de instâncias EC2 padrão, tendo a cobrança sobre demanda (conforme o uso, sendo hora ou segundo)
 - Alto custo se usado por longo prazo
-- Cobrança sobre demanda (hora ou segundo)
 - **Sem compromisso de uso** (anos)
 - Sem pagamento adiantado
 - Aumenta o Diminui a capacidade computacional
@@ -29,13 +29,11 @@
 
 ### Instâncias Reservadas (Reserved Instances)
 
-- **Até 72% de desconto** comparado a On-Demand
+- São um desconto de Faturamento (até 72% de desconto) aplicado ao uso de instâncias on-demand
 - Aplicações que exigem capacidade Reservadas
 - **Comprometimento de uso** por um período e 1 ou 3 anos
 - Possui pagamento adiantado
 - **Útil para**: ambiente de produção que foi testado, aplicações que precisam estar em **estado constante**; útil para databases
-
-## Capacidade dedicada ou reservada
 
 ### Saving Plans
 
@@ -44,24 +42,26 @@
 - 3 formas de pagamentos: antecipado, parcial e sem pagamento antecipado
 - **Útil para**: Workloads de longa duração, como em aplicativo em 24x7
 
-### Instâncias dedicadas (Dedicated Instances)
+### Servidores físicos dedicados
+
+#### Instâncias dedicadas (Dedicated Instances)
 
 - **Hardware dedicado**
 - Pode compartilhar o hardware com outras instâncias na mesma conta
 - Sem controle sobre o posicionamento da instância
 - **Comprometimento** por um período de 3 anos
 
-### Hosts dedicados (Dedicated Host)
+#### Hosts dedicados (Dedicated Host)
 
-- **Hardware dedicado**, mais aberto em relação às instâncias dedicadas
-- Servidor físico EC2 **exclusivo** ao seu uso, ajuda a cumprir requisitos regulatórios de **conformidade**
+- **Hardware dedicado**, porém oferece uma visibilidade e controle maior sobre como as instâncias são colocadas em um servidor físico, permitindo também que você sempre as implante no mesmo servidor físico ao longo do tempo
+- Servidor físico EC2 **exclusivo** ao seu uso, ajuda a cumprir requisitos regulatórios de **Conformidade**
 - Fornecem visibilidade de soquetes, núcleos, IDs de Host
 - **Comprometimento** por um período de 3 anos
 - Pode ser comprado sob demanda de horas
 - Se optar por **reversa**: até 70% de desconto em comparação a ON-demand
 - **Útil para**: Vincular licenças de software (Windows Server, SQL Server e SUSE Linux Enterprise Server)
 
-### Spot Instances
+## Spot Instances
 
 - Até 90% de desconto comparado a On-Demand
 - Terminadas quando o preço do spot, é maior que o preço que você estabeleceu para pagar **(oferta e demanda)**. É como se fosse um leilão de instâncias

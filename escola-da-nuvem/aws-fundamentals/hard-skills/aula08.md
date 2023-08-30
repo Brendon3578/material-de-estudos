@@ -76,7 +76,7 @@ Permite que você:
 - Automatizar a sua arquitetura para sua **experimentação ser fácil**
 - Permitir a **evolução** da arquitetura
 - Construir sua arquitetura **baseado em dados**
-- **Melhora** através de gamedays
+- **Melhora** através de game days
 - Utiliza-se da ferramenta `AWS Well-Architected Tool` para revisar as cargas de trabalho, comparando com as melhores práticas da arquitetura AWS
 
 ### Princípios do Design
@@ -128,10 +128,10 @@ Permite que você:
 Com ele é possível verificar:
 
 - Segurança
-  - Grupos de seguranças que tem portas específicas sem restrição (irrestrito)
-  - Se há o MFA na conta `root`
+  - Grupos de seguranças que tem portas específicas que não possuem restrição (portas irrestritas)
+  - Se o MFA está ativado na conta `root`
   - Permissões de buckets do S3 que são de acesso aberto
-    - > Buckets políticas abertas cria possíveis brechas de segurança, o que ocasionará futuramente um aumento nos custos se haver acessos indesejados.
+    - > Buckets políticas abertas cria possíveis brechas de segurança, o que se haver acessos indesejados ocasionará futuramente um aumento nos custos.
   - Se há pelo menos um usuário do IAM criado para a conta AWS
 - Otimização de custos (Business, Enterprise)
   - Load balancers ociosos ou instâncias EC2 subutilizadas
@@ -141,4 +141,4 @@ Com ele é possível verificar:
 - Tolerância a falhas (Business, Enterprise)
   - Backups do Amazon RDS
   - Recursos do grupo Auto Scaling
-  - Implantações Multi-AZ do Amazon RDSD
+  - Implantações Multi-AZ do Amazon RDS
