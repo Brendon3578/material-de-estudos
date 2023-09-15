@@ -1,20 +1,12 @@
-# Fundamentos de AWS - Escola da Nuvem
+# Fundamentos de AWS - Escola da Nuvem - AWS Cloud Practitioner
 
-Anotações sobre o curso de Fundamentos de AWS da Escola da Nuvem ☁
+Essas anotações me ajudaram muito a conseguir a certificação de 🏆 **AWS Cloud Practitioner** 🏆
 
-## 💡 Aulas de preparo comportamental - Soft skills
+Veja minha certificação [clicando aqui](https://www.credly.com/badges/19a56a8a-e2df-4a43-badf-2c439b1719e1)
 
-- [O que são Softskills](./soft-skills/aula00.md)
-- [Mercado de trabalho e Carreira na nuvem](./soft-skills/aula01.md)
-- [Ser Protagonista da própria carreira](./soft-skills/aula02.md)
-- [Síndrome do Impostor e Inteligência Emocional](./soft-skills/aula03.md)
-- [Lifelong Learning e o Papel da Mentoria](./soft-skills/aula04.md)
+Anotações sobre o curso de Fundamentos de AWS da Escola da Nuvem ☁ para a certificação de AWS Cloud Practitioner (CLF-C01) e para a versão atual do exame (CLF-C02). Essas anotações é uma união do conteúdo lecionado pela Escola da Nuvem com a documentação oficial de serviços da própria AWS com algumas anotações que eu achei importante anotar que pode ajudar aquele que estudar para a certificação de Cloud Practitioner
 
-### 🎈 Aulas de preparo de carreira
-
-- [Aulas - Como alavancar a sua carreira](./hard-skills/career/aula.md)
-
-## 🧱 Aulas técnicas - Hard skills
+## 🔮 Aulas sobre a AWS - Hard skills
 
 - [Introdução de Fundamentos de AWS](./hard-skills/aula01.md)
 - [💰 Console Gerenciamento & Gerenciamento Custos](./hard-skills/aula02.md)
@@ -32,9 +24,21 @@ Anotações sobre o curso de Fundamentos de AWS da Escola da Nuvem ☁
 - [📼 Banco de Dados SQL, NoSQL e nuvem como código](./hard-skills/aula09.md)
   - [💡 Boas práticas do Amazon RDS](./hard-skills/extra/rds.md)
 
+## 💡 Aulas de preparo comportamental - Soft skills
+
+- [O que são Softskills](./soft-skills/aula00.md)
+- [Mercado de trabalho e Carreira na nuvem](./soft-skills/aula01.md)
+- [Ser Protagonista da própria carreira](./soft-skills/aula02.md)
+- [Síndrome do Impostor e Inteligência Emocional](./soft-skills/aula03.md)
+- [Lifelong Learning e o Papel da Mentoria](./soft-skills/aula04.md)
+
+### 💡 Aulas de preparo de carreira
+
+- [Aulas - Como alavancar a sua carreira](./hard-skills/career/aula.md)
+
 ---
 
-### Outros recursos da AWS
+## 🎈 Anotações para o novo modelo de exame CLF-C02
 
 - [🧠 AWS para Machine Learning de tradução](./others/language-ml.md)
 - [🌱 Migrando para a a AWS](./others/lift-and-shift.md)
