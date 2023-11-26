@@ -14,11 +14,13 @@ Acesse a [página deste repositório](https://brendon3578.github.io/material-de-
 
 ## 🎈 Conselho sobre o estudo de Tecnologias da Informação
 
-Antes mesmo de estudar qualquer tecnologia que é voltada para a internet, seja uma linguagem de programação, framework ou ferramentas de desenvolvimento, é fundamental ter uma base sólida sobre os seguintes conceitos: A **Lógica de Programação** e o **Pensamento Computacional**.
+Antes mesmo de estudar qualquer tecnologia que é voltada para a internet, seja uma linguagem de programação ou um framework, é fundamental ter uma base sólida sobre os seguintes conceitos: **Lógica de Programação** e **Pensamento Computacional**.
 
-Compreender como algoritmos são desenvolvidos, a utilização de desvios condicionais e laços de repetições, como os dados são estruturados é fundamental antes mesmo de estudar qualquer linguagem de programação.
+Compreender como algoritmos são desenvolvidos, a utilização de desvios condicionais e laços de repetições, como os dados são estruturados é fundamental antes mesmo de estudar qualquer linguagem de programação. Pois quando você entende **a lógica de como um computador raciocina**, o que sobra no final de contas serão apenas:
 
-Pois quando você entende **a lógica de como um computador raciocina**, o que sobra no final de contas vai ser apenas a **sintaxe** específica da linguagem (que são nada mais do que regras simples e palavras chaves reservadas da própria linguagem) e os paradigmas que ela utiliza (que é a forma de como o problema vai ser resolvido, seja por classes ou funções).
+- **A sintaxe específica da linguagem**: que são nada mais do que regras simples e palavras chaves reservadas da própria linguagem
+- **Os paradigmas que ela utiliza**: que é a forma de como o problema vai ser resolvido, seja por classes ou funções
+- **As boas práticas de cada linguagem de programação**: que é buscar resolver o problema da melhor forma possível (com mais coesão).
 
 O pensamento computacional por exemplo, pode ser entendido em quatro etapas fundamentais:
 
