@@ -25,7 +25,7 @@
 - **Sem compromisso de uso** (anos)
 - Sem pagamento adiantado
 - Aumenta o Diminui a capacidade computacional
-- **Útil para**: Workload de curto prazo, validar hipótese, com **pico de uso imprevisível**, testar e experimentar um ambiente
+- **Útil para:** Workload de curto prazo, validar hipótese, com **pico de uso imprevisível**, testar e experimentar um ambiente
 
 ### Instâncias Reservadas (Reserved Instances)
 
@@ -33,14 +33,14 @@
 - Aplicações que exigem capacidade Reservadas
 - **Comprometimento de uso** por um período e 1 ou 3 anos
 - Possui pagamento adiantado
-- **Útil para**: ambiente de produção que foi testado, aplicações que precisam estar em **estado constante**; útil para databases
+- **Útil para:** ambiente de produção que foi testado, aplicações que precisam estar em **estado constante**; útil para databases
 
 ### Saving Plans
 
 - 72% de desconto comparado a On-Demand
 - **Comprometimento de gasto por hora** (1 ou 3 anos)
 - 3 formas de pagamentos: antecipado, parcial e sem pagamento antecipado
-- **Útil para**: Workloads de longa duração, como em aplicativo em 24x7
+- **Útil para:** Workloads de longa duração, como em aplicativo em 24x7
 
 ### Servidores físicos dedicados
 
@@ -58,21 +58,21 @@
 - Fornecem visibilidade de soquetes, núcleos, IDs de Host
 - **Comprometimento** por um período de 3 anos
 - Pode ser comprado sob demanda de horas
-- Se optar por **reversa**: até 70% de desconto em comparação a ON-demand
-- **Útil para**: Vincular licenças de software (Windows Server, SQL Server e SUSE Linux Enterprise Server)
+- Se optar por **reversa:** até 70% de desconto em comparação a ON-demand
+- **Útil para:** Vincular licenças de software (Windows Server, SQL Server e SUSE Linux Enterprise Server)
 
 ## Spot Instances
 
 - Até 90% de desconto comparado a On-Demand
 - Terminadas quando o preço do spot, é maior que o preço que você estabeleceu para pagar **(oferta e demanda)**. É como se fosse um leilão de instâncias
 - **Terminate** = preço spot da AWS > seu preço
-- **Útil para**: Quando se tem uma urgência de grande capacidade computacional, workloads que podem parar e serem iniciados novamente, trabalho em lote, análise de dados, processamento de imagens
+- **Útil para:** Quando se tem uma urgência de grande capacidade computacional, workloads que podem parar e serem iniciados novamente, trabalho em lote, análise de dados, processamento de imagens
 
 ## AWS Auto Scaling Group
 
 ![EC2 Auto Scaling](./images/svg/compute/ec2autoscaling.svg)
 
-> Utilizado quando se precisa de **Escalabilidade automatizada**: Scale Out (+ instâncias) e Scale In (- instâncias)
+> Utilizado quando se precisa de **Escalabilidade automatizada:** Scale Out (+ instâncias) e Scale In (- instâncias)
 
 ![auto scaling group](images/as-basic-diagram.png)
 

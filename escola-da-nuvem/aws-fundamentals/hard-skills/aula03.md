@@ -42,12 +42,12 @@ Usa-se o serviço de IAM (**Identity and Access Management**) do AWS, que é um 
 
 ### User Groups & Roles
 
-- **Usuários (Users)**: representa uma pessoa ou um serviço que interage com a AWS, tendo credenciais **permanentes**.
+- **Usuários (Users):** representa uma pessoa ou um serviço que interage com a AWS, tendo credenciais **permanentes**.
   - Não compartilhe o user `root`
   - Use o `least privilege` (privilégio mínimo)
-- **Grupos (Groups)**: Coleção de usuários que permite os usuários herdarem as permissões atribuídas ao grupo.
+- **Grupos (Groups):** Coleção de usuários que permite os usuários herdarem as permissões atribuídas ao grupo.
   - Não podem ser aninhados (estar dentro do outro).
-- **Funções (Roles)**: Não são permissões, é uma método de autenticação **temporária**, geralmente atribuído para serviços e recursos. Sendo assumidas programaticamente, elas expiram e são alternadas, rotacionando automaticamente
+- **Funções (Roles):** Não são permissões, é uma método de autenticação **temporária**, geralmente atribuído para serviços e recursos. Sendo assumidas programaticamente, elas expiram e são alternadas, rotacionando automaticamente
   - Toda comunicação na AWS é feita via uma API
   - Para estabelecer essa comunicação é necessário uma **função**
 

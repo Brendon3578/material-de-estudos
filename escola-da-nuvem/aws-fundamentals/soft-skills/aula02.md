@@ -36,9 +36,9 @@ Quando vai expor uma ideia produtiva, faça isso com prioridade (primeiro ao ges
 
 ### Como ser protagonista?
 
-- **Locus Interno**: Entender onde e como está para planejar chegar onde sonha.
-- **Responsabilidade**: Sua carreira depende de você. É necessário voltar a responsabilidade do sucesso para o "eu".
-- **Protagonismo**: Responsável pela carreira e pelo sucesso.
+- **Locus Interno:** Entender onde e como está para planejar chegar onde sonha.
+- **Responsabilidade:** Sua carreira depende de você. É necessário voltar a responsabilidade do sucesso para o "eu".
+- **Protagonismo:** Responsável pela carreira e pelo sucesso.
 
 #### Aceita-te, conheça-te, supera-te
 

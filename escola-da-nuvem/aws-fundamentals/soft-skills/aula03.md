@@ -8,12 +8,12 @@ As pessoas que sofrem disso mostram incapazes de apreciar os próprios feitos na
 
 ### Sintomas de não pertencimento
 
-- **Perfeccionismo**: "Não está bom"
-- **Procrastinação**: "Amanhã eu termino"
-- **Multitarefas**: "Fazendo tudo ao mesmo tempo"
-- **Ser Forte**: "Não precisa descansar"
-- **Autocrítica extrema**: "O que irão pensar disso"
-- **Preguiça**: "Querer o jeito mais fácil"
+- **Perfeccionismo:** "Não está bom"
+- **Procrastinação:** "Amanhã eu termino"
+- **Multitarefas:** "Fazendo tudo ao mesmo tempo"
+- **Ser Forte:** "Não precisa descansar"
+- **Autocrítica extrema:** "O que irão pensar disso"
+- **Preguiça:** "Querer o jeito mais fácil"
 
 ### Como lidar com esse fenômeno
 
@@ -56,10 +56,10 @@ Essa síndrome pode ser visualizado quando vamos aprender algo novo:
 
 ### É necessário ter sempre em mente
 
-- **O progresso não é linear**: Para ir além, é necessário correr riscos de errar, e estar aberto a aprender com o erro
-- **Persistir e ter paciência**: Aceitando as próprias limitações e entendendo o próprio tempo
-- **Nosso pensamento tem grande poder sobre nós**: Nosso maior inimigo é a nossa própria mente, nós colocamos os obstáculos que nos dificulta
-- **Reconhecer e comemorar todas as suas conquistas**: Das as pequenas conquistas até as grandes, todas fazem parte do progresso
+- **O progresso não é linear:** Para ir além, é necessário correr riscos de errar, e estar aberto a aprender com o erro
+- **Persistir e ter paciência:** Aceitando as próprias limitações e entendendo o próprio tempo
+- **Nosso pensamento tem grande poder sobre nós:** Nosso maior inimigo é a nossa própria mente, nós colocamos os obstáculos que nos dificulta
+- **Reconhecer e comemorar todas as suas conquistas:** Das as pequenas conquistas até as grandes, todas fazem parte do progresso
 
 ## Inteligência Emocional
 
@@ -104,12 +104,12 @@ Envolve um alto grau de cognitivo, de percepção e avaliação de algo.
 
 ### Domínios da Inteligência Emocional
 
-- **Autoconsciência**: Você se perceber, se você sabe como agir
-- **Autocontrole**: Fazer perguntas sobre a emoção para saber como resolver
+- **Autoconsciência:** Você se perceber, se você sabe como agir
+- **Autocontrole:** Fazer perguntas sobre a emoção para saber como resolver
   - O que nos gera medo ou o que nos afligem? (quais são os nossos gatilhos?)
-- **Automotivação**: Sendo **Auto**, o Eu, e a **Motivação** o motivo para agir, ou seja **Buscar motivo para agir**
+- **Automotivação:** Sendo **Auto**, o Eu, e a **Motivação** o motivo para agir, ou seja **Buscar motivo para agir**
   - Não delegar, terceirizar a Motivação. Você que precisa ter o motivo para agir
-- **Empatia**: Perceber ou saber o momento (abertura) do outro para falar, saber como falar e principalmente **saber como escutar**
+- **Empatia:** Perceber ou saber o momento (abertura) do outro para falar, saber como falar e principalmente **saber como escutar**
   - Para reflexão: por quê temos duas orelhas e uma boca
 - **Sociabilidade** (Habilidades sociais): Saber lidar com as pessoas e pensamentos diferentes do seu, saber aceitar críticas que pareçam pessoais
 

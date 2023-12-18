@@ -76,10 +76,10 @@ Veja as vantagens do [Monitoramento de recursos na AWS](./extra/monitoring.md).
 - Recursos e serviços na Nuvem e on-premises
 - Métrica padrão 5 minutos / detalhada ($$$) por minuto
 - Exemplo de métricas:
-  - **EC2**: Utilização CPU, Status check, Rede (**Não verifica memória RAM**)
-  - **EBS**: Leitura e Gravação do disco
-  - **S3**: tamanho do bucket, número de objetos
-  - **Lambda**: tempo de execução e duração
+  - **EC2:** Utilização CPU, Status check, Rede (**Não verifica memória RAM**)
+  - **EBS:** Leitura e Gravação do disco
+  - **S3:** tamanho do bucket, número de objetos
+  - **Lambda:** tempo de execução e duração
 
 ### Monitorar
 
@@ -93,15 +93,15 @@ Veja as vantagens do [Monitoramento de recursos na AWS](./extra/monitoring.md).
 - É possível criar um alarme que envia uma notificação quando um limite (threshold) de faturamento (billing alerts) é excedido
 - Opções do gatilho: amostra, %, valor máximo, mínimo etc
 - Alarm Action
-  - **Auto Scaling Group**: Aumentar ou diminuir o número de instâncias no Amazon EC2
-  - **Amazon EC2**: Parar, terminar, reiniciar ou recuperar uma instância
-  - **Amazon SNS**: Enviar **notificações** para um **SNS Topic**, para que os assinantes recebam um **e-mail**
+  - **Auto Scaling Group:** Aumentar ou diminuir o número de instâncias no Amazon EC2
+  - **Amazon EC2:** Parar, terminar, reiniciar ou recuperar uma instância
+  - **Amazon SNS:** Enviar **notificações** para um **SNS Topic**, para que os assinantes recebam um **e-mail**
 
 ### Analisar
 
 Analisar em tempo real o ambiente, em segundos ou posterior com até 15 meses de armazenamento dos logs
 
-Você pode atribuir os seguintes **estados de alarmes**:
+Você pode atribuir os seguintes **estados de alarmes:**
 
 - `OK`: **tudo está ocorrendo normalmente**, a métrica está dentro do **threshold** (limite) definido.
 - `ALARM`: algo ruim aconteceu ou **indicar** que o **threshold** da métrica foi atingido.

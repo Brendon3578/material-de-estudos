@@ -13,13 +13,13 @@ O **aprendizado** em si ocorre através de:
 
 ### Características
 
-- **Mentalidade de Crescimento**: aprender a superar os obstáculos e vê-los como oportunidade de aprender
-- **Mente Aberta**: mente aberta para aprender, desaprender, e reaprender
-- **Curiosidade Intelectual**: É a própria necessidade de entender o processo daquilo que se aprende (o porquê), buscar aprender
-- **Humildade Intelectual**: _aprender a **aprender**_, estar aberto a aprender com os outros, e novas formas e
-- **Protagonismo na aprendizagem**: não se limitar na própria aprendizagem e em perguntar
+- **Mentalidade de Crescimento:** aprender a superar os obstáculos e vê-los como oportunidade de aprender
+- **Mente Aberta:** mente aberta para aprender, desaprender, e reaprender
+- **Curiosidade Intelectual:** É a própria necessidade de entender o processo daquilo que se aprende (o porquê), buscar aprender
+- **Humildade Intelectual:** _aprender a **aprender**_, estar aberto a aprender com os outros, e novas formas e
+- **Protagonismo na aprendizagem:** não se limitar na própria aprendizagem e em perguntar
 
-**Vantagens**:
+**Vantagens:**
 
 - Desenvolvimento de novas habilidades;
 - Estímulo da Criatividade;
@@ -54,11 +54,11 @@ O método de plano de ação SMART foca em definir características para uma met
 
 Sendo necessário definir ao longo do processo de aprendizagem:
 
-- **Ação**: Decidir o que precisa aprender
-- **Meta**: Etapas de aprendizagem
-- **Métrica**: Saber medir o seu aprendizado (realizando provas, questionamentos, testes etc)
-- **Prazo**: Definir um prazo para não se perder durante o aprendizado
-- **Avaliação**: Saber se vale a pena aprender aquilo
+- **Ação:** Decidir o que precisa aprender
+- **Meta:** Etapas de aprendizagem
+- **Métrica:** Saber medir o seu aprendizado (realizando provas, questionamentos, testes etc)
+- **Prazo:** Definir um prazo para não se perder durante o aprendizado
+- **Avaliação:** Saber se vale a pena aprender aquilo
 
 Separar o momento certo para buscar aprender, não aprender várias coisas ao mesmo tempo
 
@@ -70,10 +70,10 @@ Separar o momento certo para buscar aprender, não aprender várias coisas ao me
 
 Ambos tem o objetivo de desenvolver o mentorado
 
-- **Mentor**: aquele que tem experiência em uma determinada área, com **vasta experiência**
-- **Mentorado**: aquele que deseja **verdadeiramente** aprender com a experiÊncia do mentor e **se fortalecer pessoal e profissionalmente**
+- **Mentor:** aquele que tem experiência em uma determinada área, com **vasta experiência**
+- **Mentorado:** aquele que deseja **verdadeiramente** aprender com a experiÊncia do mentor e **se fortalecer pessoal e profissionalmente**
 
-Pra ser um **Mentorado**:
+Pra ser um **Mentorado:**
 
 - Ser sempre o **protagonista** da própria carreira
 - Questione, faça perguntas alinhadas à sua meta

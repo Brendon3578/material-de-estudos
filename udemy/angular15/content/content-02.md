@@ -15,9 +15,9 @@ São uma forma de organizar e encapsular (separar) funcionalidades e da aplicaç
 
 Há 2 tipos de módulos:
 
-- **Feature Modules**: encapsula uma funcionalidade da aplicação, ex: módulo de login ou módulo de carrinho de compras.
+- **Feature Modules:** encapsula uma funcionalidade da aplicação, ex: módulo de login ou módulo de carrinho de compras.
   - Contêm components, directives, services e pipes necessário para implementar a funcionalidade
-- **Root Module**: módulo principal da aplicação, carregado quando a aplicação é inicializado
+- **Root Module:** módulo principal da aplicação, carregado quando a aplicação é inicializado
 
 ```bash
 ng generate module ./features/product --routing

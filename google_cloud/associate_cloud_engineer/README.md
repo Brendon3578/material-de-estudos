@@ -1,5 +1,7 @@
 # Certificação Associate Cloud Engineer
 
+![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white)
+
 Anotações sobre a certificação de Associate Cloud Engineer do Google Cloud. Cada seção abaixo foi extraído da página oficial da certificação do cloud. As anotações que estão nos links abaixo foram de autoria própria (baseado no conteúdo do Google Cloud Skill Boost)
 
 ## Seção 1: configurar um ambiente de solução de nuvem

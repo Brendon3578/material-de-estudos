@@ -98,8 +98,8 @@ Usado quando o consumidor já está estabelecido com o VMware em um ambiente de 
 
 Ao comparar modelos de infraestrutura de TI, há dois tipos de despesas a serem consideradas. **CapEx** (despesas de capital) e **OpEx** (despesas operacionais).
 
-- **CapEx**: despesa inicial única para comprar ou proteger recursos tangíveis. Por exemplo a construção de um datacenter
-- **OpEx**: gasto de capital em serviços ou produtos ao longo do tempo. Por exemplo a assinatura de serviços de nuvem.
+- **CapEx:** despesa inicial única para comprar ou proteger recursos tangíveis. Por exemplo a construção de um datacenter
+- **OpEx:** gasto de capital em serviços ou produtos ao longo do tempo. Por exemplo a assinatura de serviços de nuvem.
 
 A computação em nuvem se enquadra na **OpEx**, pois opera em um modelo baseado em consumo. Você não paga pela infraestrutura física, mas pelos **recursos de TI que usa sob demanda**.
 

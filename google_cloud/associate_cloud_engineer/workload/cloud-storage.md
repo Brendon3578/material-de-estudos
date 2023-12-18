@@ -4,7 +4,7 @@
 
 Estrutura do Cloud Storage
 
-- **Organização**: imagine que você trabalha em uma empresa chamada "Example Inc.", que criou uma organização do Google Cloud com o nome de exampleinc.org.
-- **Projeto**: Cada projeto utiliza o próprio conjunto de APIs do Cloud Storage, além de outros recursos.
-- **Bucket**: cada projeto pode conter vários buckets, que são contêineres usados para armazenar objetos. Por exemplo, você tem a opção de criar um bucket **photos** para armazenar todos os arquivos de **imagem** gerados pelo aplicativo da empresa e um outro bucket chamado **videos**.
-- **Objeto**: um **arquivo individual**, como uma imagem chamada puppy.png.
+- **Organização:** imagine que você trabalha em uma empresa chamada "Example Inc.", que criou uma organização do Google Cloud com o nome de exampleinc.org.
+- **Projeto:** Cada projeto utiliza o próprio conjunto de APIs do Cloud Storage, além de outros recursos.
+- **Bucket:** cada projeto pode conter vários buckets, que são contêineres usados para armazenar objetos. Por exemplo, você tem a opção de criar um bucket **photos** para armazenar todos os arquivos de **imagem** gerados pelo aplicativo da empresa e um outro bucket chamado **videos**.
+- **Objeto:** um **arquivo individual**, como uma imagem chamada puppy.png.

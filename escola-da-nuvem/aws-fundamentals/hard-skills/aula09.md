@@ -13,7 +13,7 @@
 
 > O Amazon Relational Database Service (**Amazon RDS**) é um banco de dados relacional que se destaca  por sua **escalabilidade**, **automatização** na aplicação de patches, provisionamento de hardware e backup na Nuvem AWS
 
-- **Mecanismos disponíveis (engine types)**: Amazon Aurora, MySQL, MariaDB, PostgreSQL, Oracle, SQL Server
+- **Mecanismos disponíveis (engine types):** Amazon Aurora, MySQL, MariaDB, PostgreSQL, Oracle, SQL Server
 - Simples, seguro e funcional
 - Réplica em outra zona e Redundância de dados
 - Eliminar Congelamento e Minimizar picos

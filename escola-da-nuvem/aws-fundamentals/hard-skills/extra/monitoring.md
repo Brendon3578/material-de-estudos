@@ -16,9 +16,9 @@ Recursos diferentes na **AWS** criam diferentes tipos de métricas sobre a sua *
 
 Os dados de log enviados para o CloudWatch Logs são organizados do seguinte modo:
 
-- **Evento de log**: é um registro da atividade registrada pela aplicação ou recurso que está sendo monitorado, tendo um `date/time` carimbado e uma mensagem de evento.
-- **Fluxo de log**: são sequências de eventos de log do mesmo recurso que está sendo monitorado.
-- **Grupos de log**: agrupamento de fluxos de log que compartilham as mesmas configurações de retenção e permissões.
+- **Evento de log:** é um registro da atividade registrada pela aplicação ou recurso que está sendo monitorado, tendo um `date/time` carimbado e uma mensagem de evento.
+- **Fluxo de log:** são sequências de eventos de log do mesmo recurso que está sendo monitorado.
+- **Grupos de log:** agrupamento de fluxos de log que compartilham as mesmas configurações de retenção e permissões.
 
 ## Benefícios de monitoramento
 

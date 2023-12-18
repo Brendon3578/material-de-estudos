@@ -161,7 +161,7 @@ export class RegisterComponent implements OnInit {
 
 ## Criando validações customizadas
 
-Para criar uma validação customizada, basta criar uma função e usar a interface `ValidatorFn`, veja o exemplo criando uma validação para um input de **password**:
+Para criar uma validação customizada, basta criar uma função e usar a interface `ValidatorFn`, veja o exemplo criando uma validação para um input de **password:**
 
 ```ts
 // ../validators/strongPasswordValidator.ts

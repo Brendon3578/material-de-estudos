@@ -209,7 +209,7 @@ Porém surge  so seguinte problema: como escrever uma String, que dentro contêm
 
 Há duas soluções:
 
-- Utilizar o **caractere de escape**: `\` (barra invertida) que aponta que o próximo caractere terá um comportamento diferente, e colocar em seguida as apas `"`: `\"`.
+- Utilizar o **caractere de escape:** `\` (barra invertida) que aponta que o próximo caractere terá um comportamento diferente, e colocar em seguida as apas `"`: `\"`.
   - Nota: chama-se **sequência de escape** o conjunto de adicionar o **caractere de escape** com outro **carácter qualquer**, exemplo de sequências de escape: `\n`, `\t` `\"`
 - Ou usar um apóstrofo `'` em vez de aspas duplas
 

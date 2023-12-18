@@ -1,5 +1,7 @@
 # Fundamentos de AWS - Escola da Nuvem - AWS Cloud Practitioner
 
+![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
+
 Essas anotações me ajudaram muito a conseguir a certificação de 🏆 **AWS Cloud Practitioner** 🏆
 
 Veja minha certificação [clicando aqui](https://www.credly.com/badges/19a56a8a-e2df-4a43-badf-2c439b1719e1)
@@ -51,7 +53,7 @@ Anotações sobre o curso de Fundamentos de AWS da Escola da Nuvem ☁ para a ce
 
 - Provisionar uma infraestrutura **escalável** e **elástica**
 - Criar aplicações altamente disponíveis utilizando de recursos como: **Load balancers** e **zonas de disponibilidade** (que estão em regiões), possibilitando a **redundância de dados** (replicação dos recursos em várias zonas distintas da mesma região), permitindo ser **tolerante a falhas**
-- **Pay as-you-go**: Pagar apenas pela infraestrutura que utiliza, facilitando a implantação de novos recursos ou o desligamento de recursos que não estão sendo utilizados
+- **Pay as-you-go:** Pagar apenas pela infraestrutura que utiliza, facilitando a implantação de novos recursos ou o desligamento de recursos que não estão sendo utilizados
 - Gerenciar o controle do acesso aos recursos e administrar **quem** tem acesso a **quais** recursos através de políticas e permissões
 - Monitorar o **desempenho de recursos** podendo criar alertas para quando haver aumento no acesso aos recursos ou quanto atingir métricas pré determinadas
 

@@ -6,9 +6,9 @@ Por exemplo se você for gerenciar uma VM, você deve ser capaz de Criar, Exclui
 
 Há 3 tipos de roles no Iam:
 
-- **Basic roles**: **owner**, **editor** e **viewer**. Como boa prática, é usado **apenas** para testar recursos
-- **Predefined roles**: um conjunto de roles do IAM que possuem manutenção constante do Google. Exemplo, no BigQuery: `admin, dataOwner, jobUser, dataEditor` que dentro há as permissões como: `bigquery.table.create` etc.
-- **Custom roles**: são criados e gerenciados diretamente pelo usuário.
+- **Basic roles:** **owner**, **editor** e **viewer**. Como boa prática, é usado **apenas** para testar recursos
+- **Predefined roles:** um conjunto de roles do IAM que possuem manutenção constante do Google. Exemplo, no BigQuery: `admin, dataOwner, jobUser, dataEditor` que dentro há as permissões como: `bigquery.table.create` etc.
+- **Custom roles:** são criados e gerenciados diretamente pelo usuário.
 
 ⚠ Os Basic Roles incluem milhares de permissões em todos os serviços do GCP. é recomendado usar **Predefined roles** ou **Custom Roles** no ambiente de produção.
 

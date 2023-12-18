@@ -1,6 +1,6 @@
 # Fundamentos de Python
 
-<img height="150px" src="./assets/python-animal.webp" alt="Python cobra">
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
 ## Guia de estudos rápido sobre Python, abordando seus fundamentos até o avançado
 

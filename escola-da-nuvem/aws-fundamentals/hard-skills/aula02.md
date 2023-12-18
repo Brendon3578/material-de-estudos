@@ -15,13 +15,13 @@
 
 ## Serviços Regionais
 
-- **Computação**: EC2; AWS Lambda; AWS Elastic Beanstalk; Amazon EC2 Auto Scaling
+- **Computação:** EC2; AWS Lambda; AWS Elastic Beanstalk; Amazon EC2 Auto Scaling
 - A única região que tem disponibilidade de EC2 é no brasil (são paulo)
 
 ## Serviços Globais
 
-- **Redes e Entrega de Conteúdo**: Amazon CloudFront; Amazon Route 53;
-- **Segurança, Identidade e Compliance**: AWS Identity & Access Management; AWS WAF
+- **Redes e Entrega de Conteúdo:** Amazon CloudFront; Amazon Route 53;
+- **Segurança, Identidade e Compliance:** AWS Identity & Access Management; AWS WAF
 
 ## Modelo de responsabilidade Compartilhada
 
@@ -35,18 +35,18 @@ Você é responsável pela **segurança NA nuvem** - `Security IN the cloud`.
 
 ## Recurso gerenciado
 
-- **Recurso gerenciado**: quando um serviço ou as configurações da camada anterior não são administrados pelo **usuário**, mas sim pela AWS.
+- **Recurso gerenciado:** quando um serviço ou as configurações da camada anterior não são administrados pelo **usuário**, mas sim pela AWS.
 - Um recurso deixa de ser gerenciado por você quando a outra parte inicia o gerenciamento, as atualizações, a manutenção do sistema operacional e a segurança.
 
 ---
 
 ## 3 Níveis (tipos de ofertas) Gratuitos da AWS
 
-- **12 Meses Gratuitos**: A partir da criação do cadastro (free tier)
+- **12 Meses Gratuitos:** A partir da criação do cadastro (free tier)
   - 750 hrs do EC2 (mas t2.micro)
-- **Testes**: Período limitado; Avaliação de testes
+- **Testes:** Período limitado; Avaliação de testes
   - Amazon SageMaker (2 meses de avaliação)
-- **Sempre gratuitos**: Não expiram; Disponível para todos os clientes; Tem um limite de uso
+- **Sempre gratuitos:** Não expiram; Disponível para todos os clientes; Tem um limite de uso
   - Amazon AutoScaling
   - Amazon DynamoDB - até 25 GB de armazenamento
   - AWS Lambda - 1 milhão de request
@@ -63,9 +63,9 @@ Você é responsável pela **segurança NA nuvem** - `Security IN the cloud`.
 
 ## Interfaces de Acesso (API)
 
-- **AWS Management Console**: interface via https & app **(AWS Console Mobile App)**
-- **Command Line Interface (CLI)**: via terminal, é um client que pode ser acessado pelo browser ou instalado localmente
-- **Software Development Kit (SDK)**: kits para developers utilizarem da sua linguagem de programação para conversar com os serviços AWS, via **API**, programação
+- **AWS Management Console:** interface via https & app **(AWS Console Mobile App)**
+- **Command Line Interface (CLI):** via terminal, é um client que pode ser acessado pelo browser ou instalado localmente
+- **Software Development Kit (SDK):** kits para developers utilizarem da sua linguagem de programação para conversar com os serviços AWS, via **API**, programação
 
 ## AWS Budget (Criando um orçamento)
 

@@ -53,19 +53,14 @@
 
 > Usado para **gerenciar e controlar** seu ambiente de modo centralizado (várias contas AWS e consolidar faturamento)
 
-Permite que você:
-
-- Gerenciar contas filhas
-- [**Consolidar Faturamento**](./extra/consolidated-billing.md)
-- **Agregar** preços
-- **Gerar economia** com pooling de instâncias reservadas
-- **Utilizar** de Service Control Police (política de controle de serviço) para colocar restrições nas contas
-
 - É um **serviço Global**
 - Permite **gerenciar** múltiplas contas AWS
 - Há uma conta principal (**Master Account**) para gerenciar as outras contas AWS
 - API disponível para **criação de contas**
 - Restrição das contas usando SCP (**Service Control Police**)
+- Permite **gerenciar** contas filhas e [**Consolidar Faturamento**](./extra/consolidated-billing.md)
+- Permite **Agregar** preços e **Gerar economia** com pooling de instâncias reservadas
+- Permite **Utilizar** de Service Control Police (política de controle de serviço) para colocar restrições nas contas
 
 ## Well Architected Framework
 
@@ -81,11 +76,11 @@ Permite que você:
 
 ### Princípios do Design
 
-- **Escalabilidade**: vertical & horizontal
-- **Recursos descartáveis**: nada é para sempre (projetar o sistema sendo desacoplados)
-- **Automação**: serverless, IaaS, autoscaling
-- **Loose couple**: falhas não podem cascatear & não ao monólito
-- **Serviços não Servidores**: será que não tem um serviço para isso?
+- **Escalabilidade:** vertical & horizontal
+- **Recursos descartáveis:** nada é para sempre (projetar o sistema sendo desacoplados)
+- **Automação:** serverless, IaaS, autoscaling
+- **Loose couple:** falhas não podem cascatear & não ao monólito
+- **Serviços não Servidores:** será que não tem um serviço para isso?
 
 ### 6 pilares Well-Architected
 
@@ -118,7 +113,7 @@ Permite que você:
 - O plano do AWS Support **Basic** e **Developer** oferece suporte para o AWS Trusted Advisor apenas para:
   - Segurança
   - Limites de Serviço
-- Permitidos apenas para o plano do AWS Support: **Business**, **Enterprise On-Ramp** e **Enterprise**:
+- Permitidos apenas para o plano do AWS Support: **Business**, **Enterprise On-Ramp** e **Enterprise:**
   - Segurança
   - Limites de Serviço
   - Otimização de Custos

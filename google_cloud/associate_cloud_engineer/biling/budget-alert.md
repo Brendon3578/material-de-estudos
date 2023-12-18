@@ -12,7 +12,7 @@ Regras de limite (threshold rules) define os gatilhos de eventos para gerar uma 
 
 Você consegue especificar os destinatários de e-mail dos alertas de orçamento do seguinte modo:
 
-- **Role-based (default)**: você envia alertas de email para os Billing Account Administrators e Billing Account Users (que são recipientes)
+- **Role-based (default):** você envia alertas de email para os Billing Account Administrators e Billing Account Users (que são recipientes)
 - **Usar o Cloud Monitoring**, que você especifica outras pessoas (e-mails) na **organização** (como gerentes de projetos) para receber os budget alerts.
 
 ![Recipientes de e-mail](image/budget-alert-diagram-cbar.png)

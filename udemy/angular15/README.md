@@ -1,5 +1,8 @@
 # Estudo do Angular 15
 
+![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+
 Anotações feitas a partir do Curso de Angular 15 do Alexandre Ribeiro. [Link do curso na Udemy](https://www.udemy.com/course/curso-angular-15/)
 
 ## Componentes no Angular

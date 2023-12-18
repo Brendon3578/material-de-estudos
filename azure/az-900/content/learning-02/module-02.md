@@ -29,16 +29,16 @@ Permite criar e gerenciar um grupo de VMs **idênticas** com um **balanceamento 
 Projetado para garantir que as VMs escalonem atualizações e tenham conectividade de rede e energia variadas, impedindo a perca de todas as VMs com uma só falha de rede ou energia.
 
 - Os conjuntos de disponibilidade agrupam as VMs de duas maneiras:
-  - **Domínio de atualização (update domain)**: essas VMs podem ser reinicializadas ao mesmo tempo. Permitindo que você aplique atualizações sabendo que apenas um grupo de domínio de atualização estará offline por vez.
+  - **Domínio de atualização (update domain):** essas VMs podem ser reinicializadas ao mesmo tempo. Permitindo que você aplique atualizações sabendo que apenas um grupo de domínio de atualização estará offline por vez.
     - Um grupo de atualizações que passa pelo processo de atualização recebe um tempo de 30 minutos para se recuperar antes que a manutenção no próximo domínio de atualização seja iniciada.
-  - **Domínio de falha (fault domain)**: agrupa as VMs por origem de energia comum e computador de rede. Por padrão, um conjunto de disponibilidade divide as VMs em até 3 domínios de falha, ajudando a proteger contra uma falha de energia física ou de rede, tendo VMs em diferentes domínios de falha.
+  - **Domínio de falha (fault domain):** agrupa as VMs por origem de energia comum e computador de rede. Por padrão, um conjunto de disponibilidade divide as VMs em até 3 domínios de falha, ajudando a proteger contra uma falha de energia física ou de rede, tendo VMs em diferentes domínios de falha.
 
 ## Casos comuns de se usar usar VMs
 
-- **Durante o teste e o desenvolvimento**: fornecendo um meio rápido de criar diferentes configurações de SOs e aplicativos
-- **Executando aplicativos na nuvem**: a capacidade de usar capacidade computacional de VMs apenas conforme o uso, e não em uma infraestrutura on premisse.
-- **Estender o datacenter para a nuvem**: uma organização pode estender os recursos de sua própria rede local criando uma rede virtual no Azure e adicionando VMs a ela.
-- **Durante a recuperação de desastre**: Se um datacenter primário (local) falhar, você poderá criar VMs em execução no Azure para executar seus aplicativos críticos e desligá-los quando o datacenter primário ficar operacional novamente.
+- **Durante o teste e o desenvolvimento:** fornecendo um meio rápido de criar diferentes configurações de SOs e aplicativos
+- **Executando aplicativos na nuvem:** a capacidade de usar capacidade computacional de VMs apenas conforme o uso, e não em uma infraestrutura on premisse.
+- **Estender o datacenter para a nuvem:** uma organização pode estender os recursos de sua própria rede local criando uma rede virtual no Azure e adicionando VMs a ela.
+- **Durante a recuperação de desastre:** Se um datacenter primário (local) falhar, você poderá criar VMs em execução no Azure para executar seus aplicativos críticos e desligá-los quando o datacenter primário ficar operacional novamente.
 
 ## Migrar para nuvem com Vms
 

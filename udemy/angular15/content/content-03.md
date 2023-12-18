@@ -66,7 +66,7 @@ Ambos são utilizados para lidar com programação assíncrona em JavaScript
 
 ---
 
-Exemplo de uma requisição HTTP do tipo `GET` utilizando o HTTP Client, sendo a resposta dessa requisição, um **Observable**:
+Exemplo de uma requisição HTTP do tipo `GET` utilizando o HTTP Client, sendo a resposta dessa requisição, um **Observable:**
 
 - Primeiro cria-se um serviço de Users para abstrair a lógica de trabalhar com requisições HTTP
 

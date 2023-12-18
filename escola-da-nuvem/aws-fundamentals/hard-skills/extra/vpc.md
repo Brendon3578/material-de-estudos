@@ -41,7 +41,7 @@ Para se ter segurança no acesso dentro da VPC usa-se dois recursos: **Access Co
 > Através das ACLs você define **regras de entrada e regras de saída** (de tráfego) no nível das sub-redes
 
 - Tudo é permitido por padrão
-- Usa para **permitir (allow)** ou **negar (deny)**: **Todo o tráfego** ou tráfegos: HTTP, HTTPS, TCP, UDP, SSH
+- Usa para **permitir (allow)** ou **negar (deny):** **Todo o tráfego** ou tráfegos: HTTP, HTTPS, TCP, UDP, SSH
 - São state-less (sem estado)
 
 ### Security Group

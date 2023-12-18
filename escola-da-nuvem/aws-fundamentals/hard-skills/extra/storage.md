@@ -74,15 +74,15 @@ Os de versionamento do bucket podem ser: `UnVersioned` que é default, `Versioni
 
 ### Automatizando transições de camada com gerenciamento do ciclo de vida de objetos
 
-É possível automatizar o processo de alternar os objetos nas camadas de armazenamento definindo uma **política de ciclo de vida**:
+É possível automatizar o processo de alternar os objetos nas camadas de armazenamento definindo uma **política de ciclo de vida:**
 
 - Podem ser **ações de transição**, que definem quando os objetos devem fazer a transição para outra classe de armazenamento
 - Podem ser **ações de expiração**, que definem quando os objetos expiram e devem ser excluídos permanentemente
 
 #### Casos de uso para o gerenciamento de ciclo de vida
 
-- **Logs periódicos**: logs para um intervalo, podendo ser excluídos após uma semana ou um mês
-- **Dados com diferentes frequências de acesso**: Você pode fazer a transição de objetos para a classe de armazenamento S3 Standard-IA 30 dias após criá-los ou arquivar objetos para o S3 Glacier um anos após sua criação, para cumprir com requisitos regulatórios
+- **Logs periódicos:** logs para um intervalo, podendo ser excluídos após uma semana ou um mês
+- **Dados com diferentes frequências de acesso:** Você pode fazer a transição de objetos para a classe de armazenamento S3 Standard-IA 30 dias após criá-los ou arquivar objetos para o S3 Glacier um anos após sua criação, para cumprir com requisitos regulatórios
 
 ## Anotações extras
 

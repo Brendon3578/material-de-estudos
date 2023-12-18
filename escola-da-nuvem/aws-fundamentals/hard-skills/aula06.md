@@ -44,8 +44,8 @@
   - 8 TB e têm um poder computacionais
 - `Snowball Edge`
   - **Migrar dados em Petabytes**
-  - **Storage Optimized**: 100 TB (80 TB disponível), 24vCPU e 32 GB de memória
-  - **Compute Optimized**: 42 TB (39,5 TB disponível), 52vCPU, 208 GB de memória e SSD 7.68 TB NVMe
+  - **Storage Optimized:** 100 TB (80 TB disponível), 24vCPU e 32 GB de memória
+  - **Compute Optimized:** 42 TB (39,5 TB disponível), 52vCPU, 208 GB de memória e SSD 7.68 TB NVMe
     - Possui poder computacional
   - Criptografia dem 256 bits e são resistentes a violações
 - `SnowMobile`
@@ -71,8 +71,8 @@
 - **Durabilidade** anual média de 99,99999999%
 - Recuperação de até 12 horas
   - Dados recuperados ficam no bucket S3 por 24 horas
-  - **Recuperação padrão**: 3 a 5 horas
-  - **Recuperação Massa**: 5 a 12 horas
+  - **Recuperação padrão:** 3 a 5 horas
+  - **Recuperação Massa:** 5 a 12 horas
   - **Recuperação Expressa** (< 250mb): 1 a 5 minutos
 
 ## Amazon VPC
@@ -91,7 +91,7 @@
 - Estabelecida em uma **Região** (uma VPC só compõe 1 região) e pode ser dividido em Zonas Disponibilidade
 - **Sub-rede Pública** (Tem acesso à internet), usa-se juntamente com o `Internet Gateway` para que recursos se conectem com a internet
 - **Sub-rede Privada** (Não tem acesso à internet), usa-se juntamente com o `Nat Gateway` para que recursos da sub-rede privada se conectem à internet, permite que recursos conversem entre si
-- **Tabela de Roteamento**: faz a comunicação entre a sub-rede e as instâncias
+- **Tabela de Roteamento:** faz a comunicação entre a sub-rede e as instâncias
 - `SG` (Security Group): firewall no **nível das instâncias**
 - `NACLs` (Network Access List): firewall no nível das **sub-redes**
 
@@ -130,11 +130,11 @@
 
 Definem como o Route 53 responde a consulta de DNS. Oferece as seguintes políticas:
 
-- **Simple Routing Policy**: encaminhar trafego para um único recurso (sem health check)
+- **Simple Routing Policy:** encaminhar trafego para um único recurso (sem health check)
 - **Weighted Routing Policy** (ponderado): Encaminhar o tráfego para vários recursos nas proporções que você define (%) (sem health check)
-- **Latency Routing Policy**: Encaminhar o tráfego para o recurso com menor latência (mais próximo) (possui health check)
-- **Failover Routing Policy**: Redirecionar quando há failover, redireciona para uma instância primária se falhar devido ao health check, é redirecionado à uma instância failover (healthy)
-- **GeoLocation Routing Policy**: (por região) Encaminhar tráfego da internet para seus recursos com base na localização dos usuários (possui health check)
-- **Multivalue Answer Routing Policy**: responder a consultas e DNS com até oito critérios selecionados (possui health check)
-- **Geoproximity Routing Policy**: Encaminhar tráfego com base na localização dos recursos
-- **IP-based Routing Policy**: Para rotear o tráfego com base no local dos usuários e tiver os IPs de origem do tráfego
+- **Latency Routing Policy:** Encaminhar o tráfego para o recurso com menor latência (mais próximo) (possui health check)
+- **Failover Routing Policy:** Redirecionar quando há failover, redireciona para uma instância primária se falhar devido ao health check, é redirecionado à uma instância failover (healthy)
+- **GeoLocation Routing Policy:** (por região) Encaminhar tráfego da internet para seus recursos com base na localização dos usuários (possui health check)
+- **Multivalue Answer Routing Policy:** responder a consultas e DNS com até oito critérios selecionados (possui health check)
+- **Geoproximity Routing Policy:** Encaminhar tráfego com base na localização dos recursos
+- **IP-based Routing Policy:** Para rotear o tráfego com base no local dos usuários e tiver os IPs de origem do tráfego

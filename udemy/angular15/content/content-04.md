@@ -12,8 +12,8 @@ Um Pipe do RXJS é diferente do Pipe do Angular
 
 O RxJs disponibiliza operadores para trabalhar com os Observables de forma declarativa e clara. Sendo operadores, funções. Há dois tipos de operadores:
 
-- **Pipeable Operators**: Podem ser *piped* (canalizados) ou seja, utilizar a sintaxe `observableInstance.pipe(operator)`, ou `observableInstance.pipe(operatorFactory())`, para manipular um fluxo de informações.
-- **Creation Operators**: usadas pra criar novos Obeservables, exemplo `of(1,2,3)`
+- **Pipeable Operators:** Podem ser *piped* (canalizados) ou seja, utilizar a sintaxe `observableInstance.pipe(operator)`, ou `observableInstance.pipe(operatorFactory())`, para manipular um fluxo de informações.
+- **Creation Operators:** usadas pra criar novos Obeservables, exemplo `of(1,2,3)`
 
 ```ts
 import { of, map } from 'rxjs';

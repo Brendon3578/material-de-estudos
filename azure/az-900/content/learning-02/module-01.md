@@ -109,9 +109,9 @@ Ao hospedar a infraestrutura, a configuração de sua redundância exigirá a cr
 
 - As zonas são usadas principalmente à VMs, discos gerenciados, balanceadores de cargas e banco de dados SQL.
 - Os serviços que dão suporte às zonas de disponibilidade possuem três categorias
-  - **Serviços em zonas**: fixa o recurso a uma zona específica (exemplo: VMs, endereços IP)
-  - **Serviços com redundância de zona**: replicação automática entre zonas (exemplo: Banco de Dados SQL)
-  - **Serviços não regionais**: serviços  serviços sempre disponíveis em geografias do Azure, sendo também resilientes a interrupções em toda a zona ou toda região
+  - **Serviços em zonas:** fixa o recurso a uma zona específica (exemplo: VMs, endereços IP)
+  - **Serviços com redundância de zona:** replicação automática entre zonas (exemplo: Banco de Dados SQL)
+  - **Serviços não regionais:** serviços  serviços sempre disponíveis em geografias do Azure, sendo também resilientes a interrupções em toda a zona ou toda região
 
 Para lidar com casos que um evento afete várias zonas de disponibilidades em uma só região, o Azure oferece Pares de Regiões
 
@@ -158,17 +158,17 @@ São uma unidade de gerenciamento, cobrança e escala. Elas permitem organizar l
 - A utilização do Azure exige uma Assinatura do Azure. Uma assinatura fornece acesso autenticado a serviços e produtos do Azure.
 - Uma assinatura se vincula a uma conta do Azure, que é uma identidade no Azure AD (**Azure Active Directory**) ou em um diretório no qual o Azure AD confia.
 - Uma conta pode ter várias assinaturas, podendo ser utilizado para configurar diferentes **modelos de cobrança** e aplicar diferentes **políticas de gerenciamento de acesso**. Podendo usa-lás para definir **limites** em relação aos recursos do Azure.
-- Existe dois tipos de **limites de assinatura**:
-  - **Limite de cobrança**: usado para determinar como uma conta é cobrada pelo uso do Azure (definir requisitos de cobrança). No qual o Azure gera relatórios de cobrança e faturas separadas
-  - **Limite de controle de acesso**: aplicar políticas de gerenciamento de acesso ao nível da assinatura. Usado, por exemplo para criar políticas de assinatura para cad departamento.
+- Existe dois tipos de **limites de assinatura:**
+  - **Limite de cobrança:** usado para determinar como uma conta é cobrada pelo uso do Azure (definir requisitos de cobrança). No qual o Azure gera relatórios de cobrança e faturas separadas
+  - **Limite de controle de acesso:** aplicar políticas de gerenciamento de acesso ao nível da assinatura. Usado, por exemplo para criar políticas de assinatura para cad departamento.
 
 ### Criar Assinaturas Adicionais
 
 É possível criar assinaturas adicionais para gerenciamento de recursos ou cobrança. É possível criar assinaturas adicionais para separar:
 
-- **Ambientes**: para configurar ambientes separados (desenvolvimento, teste), segurança ou para isolar dados por motivos de conformidade. O controle de acesso ao recurso ocorre no nível da assinatura
-- **Estruturas organizacionais**: para refletir diferentes estruturas organizacionais. Permite gerenciar e controlar o acesso aos recursos que os usuários provisionam em cada assinatura
-- **Cobrança**: como os custos são agregados primeiro no nível de assinatura, você pode criar assinaturas para fins de cobrança, controlando os custos com base nas necessidades.
+- **Ambientes:** para configurar ambientes separados (desenvolvimento, teste), segurança ou para isolar dados por motivos de conformidade. O controle de acesso ao recurso ocorre no nível da assinatura
+- **Estruturas organizacionais:** para refletir diferentes estruturas organizacionais. Permite gerenciar e controlar o acesso aos recursos que os usuários provisionam em cada assinatura
+- **Cobrança:** como os custos são agregados primeiro no nível de assinatura, você pode criar assinaturas para fins de cobrança, controlando os custos com base nas necessidades.
 
 ## Grupos de Gerenciamento do Azure
 

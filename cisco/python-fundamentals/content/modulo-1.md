@@ -84,7 +84,7 @@ Em 1999, Guido van Rossum, criador do Python, definiu seus objetivos para o Pyth
 
 ## Porquê aprender Python?
 
-- **Fácil de aprender**: o tempo necessário para aprender Python é mais curto do que para muitas outras linguagens
+- **Fácil de aprender:** o tempo necessário para aprender Python é mais curto do que para muitas outras linguagens
 
 ```py
 # input
@@ -93,7 +93,7 @@ nome = input("Qual é o seu nome?")
 print("Olá ", nome)
 ```
 
-- **Fácil de ensinar**: a carga de trabalho de ensino é menor do que a necessária em outros idiomas; isso significa que o professor pode colocar mais ênfase nas técnicas de programação geral
+- **Fácil de ensinar:** a carga de trabalho de ensino é menor do que a necessária em outros idiomas; isso significa que o professor pode colocar mais ênfase nas técnicas de programação geral
 
 ```py
 print("Conjectura de Collatz")
@@ -113,7 +113,7 @@ while x != 1:
     print(x)
 ```
 
-- **Fácil de se usar**: muitas vezes é possível escrever código mais rápido ao usar Python
+- **Fácil de se usar:** muitas vezes é possível escrever código mais rápido ao usar Python
 
 ## Python 2 e Python 3
 

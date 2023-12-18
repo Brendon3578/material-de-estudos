@@ -37,7 +37,7 @@ Ainda hoje há modelos de turnos de 20/7, no qual ficam monitorando o cloud 24 h
 
 Define qual é sua responsabilidade, e qual é a responsabilidade do provedor da nuvem AWS
 
-- **Modelo Tradicional (On Premises)**: Ambiente 100% gerenciado por você
+- **Modelo Tradicional (On Premises):** Ambiente 100% gerenciado por você
 - **Infraestrutura como Serviço (IaaS)** para `Hospedar`: AWS cuida da infraestrutura como um todo (Network, Storage, Servers), com você cuidando do Sistema Operacional, Banco de Dados
   - EC2 (Virtual Machines)
 - **Plataforma como Serviço (PaaS)** para `Programar`: AWS dá manutenção sobre as SOs, AWS cuida do Sistema Operacional (Amazon RDS)
@@ -78,10 +78,10 @@ Uma **Região** é conjunto de data centers (recursos da AWS) em uma **localiza�
 
 Para escolher uma região é necessário considerar os fatores:
 
-- **Conformidade de dados (compliance)**: regulamentações que determinam o território no qual os dados deverão ser armazenados
-- **Latência**: distância entre os recursos e os usuários que utilizarão os recursos
-- **Preço**: podem varias entre regiões
-- **Disponibilidade de serviço**: se o serviço é disponível para ser implantado na região desejada
+- **Conformidade de dados (compliance):** regulamentações que determinam o território no qual os dados deverão ser armazenados
+- **Latência:** distância entre os recursos e os usuários que utilizarão os recursos
+- **Preço:** podem varias entre regiões
+- **Disponibilidade de serviço:** se o serviço é disponível para ser implantado na região desejada
 
 ### Zona de disponibilidade - AZ
 

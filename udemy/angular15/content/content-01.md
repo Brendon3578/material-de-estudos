@@ -46,9 +46,9 @@ export class AppComponent implements OnInit {
 
 - **ngOnInit:** é executado uma vez quando o componente é **inicializado**.
   - Usado quando precisa fazer muitas coisas antes de inicializar o componente, podendo ser algum tipo de configuração, por exemplo: pegara parâmetros de rotas (url)
-- **ngOnChanges**: executado uma vez na criação do componente e toda vez que ele sofrer alguma mudança;
-- **ngDoCheck**: executado a cada mudança que o ngOnChange não detecta;
-- **ngOnDestroy**: executado na destruição do componente.
+- **ngOnChanges:** executado uma vez na criação do componente e toda vez que ele sofrer alguma mudança;
+- **ngDoCheck:** executado a cada mudança que o ngOnChange não detecta;
+- **ngOnDestroy:** executado na destruição do componente.
 
 <img src="./assets/angular-component-lifecycle.png" alt="Ciclo de vida dos componentes" width="240px">
 

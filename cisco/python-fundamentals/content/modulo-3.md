@@ -39,7 +39,7 @@ Um operador unário é um operador com apenas um operando -1 ou +3. Já um opera
 
 ### Hierarquia dos operadores
 
-Alguns operadores agem antes de outros - a **hierarquia de prioridades**:
+Alguns operadores agem antes de outros - a **hierarquia de prioridades:**
 
 - O operador de exponenciação `**`  tem a prioridade mais alta.
 - Os operadores unários `+` e `-`, exemplo : `4 ** -1` que resulta em 0.25

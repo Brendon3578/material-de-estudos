@@ -4,13 +4,14 @@ Esse repositório se trata de anotações de estudo que eu faço enquanto aprend
 
 Acesse a [página deste repositório](https://brendon3578.github.io/material-de-estudos/)
 
-## 🔮 Conteúdo
+## 🔮 Anotações de Estudo
 
 - [☁ Fundamentos de AWS - Escola da Nuvem - AWS Cloud Practitioner](./escola-da-nuvem/aws-fundamentals/README.md)
 - [☁ Cloud Associate Engineer - Google Cloud Skill Boost](./google_cloud/associate_cloud_engineer/README.md)
 - [☁ Estudo AZ-900 - Microsoft Learn](./azure/az-900/README.md)
 - [🐍 Fundamentos do Python - Cisco](./cisco/python-fundamentals/README.md)
 - [💎 Angular 15 - Udemy](./udemy/angular15/README.md)
+- [Banco de Dados NoSQL MongoDB - DIO](./dio/mongodb/README.md)
 
 ## 🎈 Conselho sobre o estudo de Tecnologias da Informação
 
@@ -18,9 +19,9 @@ Antes mesmo de estudar qualquer tecnologia que é voltada para a internet, seja 
 
 Compreender como algoritmos são desenvolvidos, a utilização de desvios condicionais e laços de repetições, como os dados são estruturados é fundamental antes mesmo de estudar qualquer linguagem de programação. Pois quando você entende **a lógica de como um computador raciocina**, o que sobra no final de contas serão apenas:
 
-- **A sintaxe específica da linguagem**: que são nada mais do que regras simples e palavras chaves reservadas da própria linguagem
-- **Os paradigmas que ela utiliza**: que é a forma de como o problema vai ser resolvido, seja por classes ou funções
-- **As boas práticas de cada linguagem de programação**: que é buscar resolver o problema da melhor forma possível (com mais coesão).
+- **A sintaxe específica da linguagem:** que são nada mais do que regras simples e palavras chaves reservadas da própria linguagem
+- **Os paradigmas que ela utiliza:** que é a forma de como o problema vai ser resolvido, seja por classes ou funções
+- **As boas práticas de cada linguagem de programação:** que é buscar resolver o problema da melhor forma possível (com mais coesão).
 
 O pensamento computacional por exemplo, pode ser entendido em quatro etapas fundamentais:
 
