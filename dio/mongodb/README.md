@@ -8,4 +8,5 @@ Anotações voltadas para o estudo de banco de dados NoSQL, com ênfase no **Mon
 
 - [O que é banco de dados NoSQL e exemplos](./content/introduction.md)
 - [Introdução ao MongoDB](./content/mongodb.md)
-- [Estrutura do MongoDB](./content/structure.md)
+- [Estrutura de dados do MongoDB](./content/structure.md)
+- [Operações no MongoDB](./content/operation.md)
