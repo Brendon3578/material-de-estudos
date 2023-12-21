@@ -2,7 +2,7 @@
 
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 
-Anotações voltadas para o estudo de banco de dados NoSQL, com ênfase no **MongoDB** que é um banco de dados orientado a documentos
+Anotações voltadas para o estudo de banco de dados NoSQL da plataforma Digital Innovation One, com ênfase no **MongoDB** que é um banco de dados orientado a documentos
 
 ## Sumário
 

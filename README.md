@@ -6,12 +6,13 @@ Acesse a [página deste repositório](https://brendon3578.github.io/material-de-
 
 ## 🔮 Anotações de Estudo
 
-- [☁ Fundamentos de AWS - Escola da Nuvem - AWS Cloud Practitioner](./escola-da-nuvem/aws-fundamentals/README.md)
-- [☁ Cloud Associate Engineer - Google Cloud Skill Boost](./google_cloud/associate_cloud_engineer/README.md)
-- [☁ Estudo AZ-900 - Microsoft Learn](./azure/az-900/README.md)
-- [🐍 Fundamentos do Python - Cisco](./cisco/python-fundamentals/README.md)
-- [💎 Angular 15 - Udemy](./udemy/angular15/README.md)
+- [Fundamentos de AWS - Escola da Nuvem - AWS Cloud Practitioner](./escola-da-nuvem/aws-fundamentals/README.md)
+- [Cloud Associate Engineer - Google Cloud Skill Boost](./google_cloud/associate_cloud_engineer/README.md)
+- [Estudo AZ-900 - Microsoft Learn](./azure/az-900/README.md)
+- [Fundamentos do Python - Cisco](./cisco/python-fundamentals/README.md)
+- [Angular 15 - Udemy](./udemy/angular15/README.md)
 - [Banco de Dados NoSQL MongoDB - DIO](./dio/mongodb/README.md)
+- [Desenvolvimento de APIs RESTful com Kotlin e Spring Boot - DIO](./dio/kotlin-spring/README.md)
 
 ## 🎈 Conselho sobre o estudo de Tecnologias da Informação
 
