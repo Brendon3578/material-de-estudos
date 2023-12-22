@@ -2,6 +2,11 @@
 
 <h2> Sumário </h2>
 
+- [O que é uma API (Application Programming Interface)](#o-que-é-uma-api-application-programming-interface)
+- [O que significa ser REST](#o-que-significa-ser-rest)
+  - [Requisição (Request) da API REST](#requisição-request-da-api-rest)
+  - [Reposta (Response) da API REST](#reposta-response-da-api-rest)
+
 ## O que é uma API (Application Programming Interface)
 
 - API é um termo bastante amplo utilizado para se referir às aplicações que são utilizadas como interfaces, servindo de intermediárias que permitem um aplicativo se comunicar com o outro, como se fosse um contrato de serviço
