@@ -9,3 +9,4 @@ Anotações sobre o desenvolvimento de APIs RESTful utilizando a linguagem de pr
 
 - [Introdução à APIs RESTful](./content/introduction.md)
 - [O que é Spring Framework](./content/spring.md)
+- [Persistência de dados com JPA e JDBC](./content/data-persistence.md)
