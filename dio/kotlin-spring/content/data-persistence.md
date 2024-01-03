@@ -7,6 +7,7 @@
   - [O que são POJO](#o-que-são-pojo)
 - [Hibernate](#hibernate)
   - [O que é ORM](#o-que-é-orm)
+- [Projeto Spring Data](#projeto-spring-data)
 
 ## O que é JDBC (Java EE Database Connectivity)
 
@@ -18,6 +19,7 @@
 
 - o **Java Persistence API (JPA)** é um framework baseado em POJOs (Plain Old Java Object), que são entidades, usado na camada de persistência de uma aplicação para persistir dados dentro de uma aplicação
 - Ela é uma API criada para ser uma especificação de como os frameworks ORM devem ser implementados para prover a persistência de dados em banco de dados relacionais
+- No ecossistema do Spring Framework, usa-se o [Spring Data Jpa](#projeto-spring-data)
 
 ![Diagrama da utilização de JPA](../assets/jpa_diagram.png)
 
@@ -78,3 +80,11 @@ data class User(val username: String, val email: String)
 
 - Um **Object Relational Mapper (ORM)**, que significa mapeamento de objeto-relacional, é um conjunto de ferramentas que facilita a comunicação entre um banco de dados e uma linguagem de programação orientada a objetos
 - Ele agiliza o processo de manipulação de um banco de dados, automatizando a persistência de dados em um banco de dados, convertendo os dados de objetos para as tabelas
+
+## Projeto Spring Data
+
+O Spring Data é um projeto que pertence ao ecossistema Spring Framework que facilita a **persistência de dados** dentro de aplicações do Spring, dentro dele há vários subprojetos, a depender  do banco de dados e a conexão que você utiliza dentro da sua aplicação. Como por exemplo:
+
+- **Spring Data JPA:** Utilizado para repositórios baseados em JPA (**Java Persistence API**) para facilitar a persistência de dados
+- **Spring Data MongoDB:** Utilizado para integrar com o banco de dados NoSQL de documentos MongoDB
+- **Spring Elasticsearch:** Utilizado para facilitar a integração de aplicativos Spring com o AWS Elasticsearch
