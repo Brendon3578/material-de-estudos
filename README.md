@@ -13,6 +13,7 @@ Acesse a [página deste repositório](https://brendon3578.github.io/material-de-
 - [Angular 15 - Udemy](./udemy/angular15/README.md)
 - [Banco de Dados NoSQL MongoDB - DIO](./dio/mongodb/README.md)
 - [Desenvolvimento de APIs RESTful com Kotlin e Spring Boot - DIO](./dio/kotlin-spring/README.md)
+- [Mineração de dados](./others/mineracao-de-dados/README.md)
 
 ## 🎈 Conselho sobre o estudo de Tecnologias da Informação
 
